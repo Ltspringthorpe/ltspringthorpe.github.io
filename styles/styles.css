@@ -109,4 +109,6 @@ img {
   position: relative;
   font-weight: bold;
   font-size: 20pt;
+  color: black;
+  text-shadow: 2px 2px 4px white;
 }
