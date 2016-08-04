@@ -16,14 +16,14 @@ body {
 }
 
 canvas {
-  margin: 25px auto;
+  margin: 50px auto;
   position: relative;
   display: block;
 }
 
 .logo {
   display: block;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .github-link {
@@ -45,7 +45,7 @@ canvas {
 
 h1 {
   display: inline;
-  margin: 25px auto;
+  margin: 25px 150px 25px 0;
   font-size: 36pt;
   text-align: center;
   width: 100%;
@@ -54,8 +54,7 @@ h1 {
 button {
   font-family: 'Josefin Slab', serif;
   display: inline;
-  margin-top: 0;
-  margin-left: -300px;
+  margin-right: 150px;
   border-radius: 10px;
   padding: 10px;
   font-size: 20pt;
@@ -108,8 +107,7 @@ button {
 
 .me {
   float:left;
-
-    margin: 5px 45px 5px 20px;
+  margin: 5px 45px 5px 20px;
 }
 
 .me::before {
