@@ -38,7 +38,7 @@ Game.prototype.addFrog = function () {
 };
 ```
 
-## Future Ideas
+### Future Ideas
 
 There are still a few features I'd like to add to Frogger in my spare time:
 * Levels increase in difficulty as you go
