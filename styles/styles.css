@@ -24,13 +24,28 @@ canvas {
 .logo {
   display: block;
   margin-top: 15px;
+}
 
+.github-link {
+  float: right;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.github-link div {
+  display: inline;
+  top: -7px;
+}
+
+.github-img {
+  display: inline;
+  width: 30px;
+  height: 30px;
 }
 
 h1 {
   display: inline;
-  margin-top: 25px;
-  margin-left: -300px;
+  margin: 25px auto;
   font-size: 36pt;
   text-align: center;
   width: 100%;
@@ -46,7 +61,7 @@ button {
   font-size: 20pt;
 }
 
-img {
+.frog-img {
   float:left;
   width: 100px;
   display: inline;
@@ -81,7 +96,6 @@ img {
     border-radius: 0px;
     content: "\00a0";
     display: block;
-    /*height: 16px;*/
     position: absolute;
     top: 17px;
     transform:             rotate( 29deg ) skew( -35deg );
