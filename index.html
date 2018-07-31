@@ -1,47 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="https://res.cloudinary.com/jolinar1013/image/upload/v1469067453/favicon_ano0ab.png">
-    <title>Frogger</title>
-  </head>
+	<head>
+		<title>Leanne Springthorpe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-  <body>
-    <div class="logo" id="logo">
-      <h1 id="title" class="title">Frogger</h1>
-      <img class="frog-img" src="img/Frogger_hyperarcade_art.png"/>
-      <div class="bubble me">I'm too young to die...</div>
-      <a class="github-link" href="https://github.com/Ltspringthorpe/ltspringthorpe.github.io">
-        <div>View on GitHub</div>
-        <img class="github-img" src="img/github.png"/>
-      </a>
-    </div>
-    <canvas style="background: url('./img/background3_edit.png')"></canvas>
-    <div class="bottom">
-      <div id="directions" class="directions">Use arrow keys to move. Don't get run over!</div>
-    </div>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>Leanne Springthorpe</strong></h1>
+					<div>Software Developer</div>
+					<div>in fullstack web apps</div>
+				</div>
+			</header>
 
-    <script type="application/javascript" src="vendor/keymaster.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-    <script type="application/javascript" src="lib/util.js"></script>
-    <script type="application/javascript" src="lib/movingObject.js"></script>
-    <script type="application/javascript" src="lib/car.js"></script>
-    <script type="application/javascript" src="lib/frog.js"></script>
-    <script type="application/javascript" src="lib/game.js"></script>
-    <script type="application/javascript" src="lib/gameView.js"></script>
+		<!-- Main -->
+			<div id="main">
 
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Hello! My name is Leanne and I am a fullstack web developer.</h2>
+						</header>
+						<p>I studied functional web development at <a href="https://www.appacademy.io/" target="_blank">App Academy</a>, the #1 rated coding school in the country. My specialties include JavaScript, React.js, Ruby, and single-page web apps.</p>
+					</section>
 
-    <script type="application/javascript">
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Projects</h2>
+						<div class="row">
 
-      var canvasEl = document.getElementsByTagName("canvas")[0];
-      (function () {
-        canvasEl.width = Frogger.Game.DIM_X;
-        canvasEl.height = Frogger.Game.DIM_Y;
-      })();
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h2>Open Vector Editor</h2>
+								<h3>(Javascript, React.js, Cerebral.js)</h3>
+								<h2>Custom-built frontend software used by researchers on-site</h2>
+								<p>Written for biofuel scientists at the Joint BioEnergy Institute, this software allows for complex manipulation of DNA strands, proteins, cutsites and  more.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/JBEI/openVectorEditor" target="_blank" class="button">View on Github</a></li>
+								</ul>
+							</article>
 
-      var ctx = canvasEl.getContext("2d");
-      var Game = new Frogger.Game();
-      new Frogger.GameView(Game, ctx).start();
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h2>OkAlpha</h2>
+								<h3>(Ruby on Rails, React.js)</h3>
+								<h2>A fullstack single-page web app built to mimic OkCupid</h2>
+								<p>Interested in finding true love, but too busy crusing the galaxy aboard the Enterprise? Look no further than OkAlpha, the Alpha Quadrant's best online dating site!</p>
+								<ul class="actions">
+									<li><a href="https://github.com/Ltspringthorpe/OkAlpha" target="_blank" class="button">View on Github</a></li>
+									<li><a href="https://okalpha.herokuapp.com/" target="_blank" class="button">View Live</a></li>
+								</ul>
+							</article>
 
-    </script>
-  </body>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h2>Frogger</h2>
+								<h3>(Javascript, Canvas)</h3>
+								<h2>An in-browser, frontend-only game based on the classic arcade game</h2>
+								<p>The game determines win/lose conditions by detecting collisions between overlapping objects in Canvas. Try to not die.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/Ltspringthorpe/ltspringthorpe.github.io" target="_blank" class="button">View on Github</a></li>
+									<li><a href="https://ltspringthorpe.github.io/" target="_blank" class="button">View Live</a></li>
+								</ul>
+							</article>
+
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h2>Chess</h2>
+								<h3>(Ruby)</h3>
+								<h2>A two-player, interactive, in-console game</h2>
+								<p>The game calculates check-mate by deep-duping the board and processing all possible moves. It also highlights squares indicating valid moves when hovering over a piece.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/Ltspringthorpe/Chess" target="_blank" class="button">View on Github</a></li>
+								</ul>
+							</article>
+
+						</div>
+					</section>
+
+					<!-- Three -->
+						<section id="three">
+							<h2>Experience</h2>
+							<ul>
+								<li>
+									<div style="font-size:20px;">Infuse</div>
+									<div>Software Engineer, March 2018 - present</div>
+									<p>❏ Develop and build large software products with a small team of engineers and designers<br/>
+										 ❏ Work on the project’s backend server, frontend portal, iOS app, and Android app</p>
+								</li>
+								<li>
+									<div style="font-size:20px;">Joint BioEnergy Institute</div>
+									<div>Software Developer, November 2016 - September 2017</div>
+									<p>❏ Designed from scratch major features for immersive JavaScript protein-editing software<br/>
+										 ❏ Worked independently to create and improve existing features in Java backend project</p>
+								</li>
+								<li>
+									<div style="font-size:20px;">Dash Robotics</div>
+									<div>Programming Consultant, April 2014 - October 2016</div>
+									<p>❏	Wrote software in Python and Node.js to control a robot remotely with a Raspberry Pi<br/>
+										 ❏	Designed example programs in Arduino to showcase the robots’ functionality and features</p>
+								</li>
+							</ul>
+
+						</section>
+
+				<!-- Four -->
+					<section id="four">
+						<h2>Education</h2>
+						<ul>
+							<li>
+								<div style="font-size:20px;">App Academy</div>
+								<div>October 2015 - January 2016</div>
+								<p>Studied fullstack software engineering</p>
+							</li>
+							<li>
+								<div style="font-size:20px;">University of North Carolina at Chapel Hill</div>
+								<div>August 2005 - May 2009</div>
+								<p>Bachelors of Science in physics</p>
+							</li>
+						</ul>
+
+					</section>
+
+				<!-- Five -->
+					<section id="five">
+						<h2>Skills</h2>
+						<table style="width:75%; margin-left:1.5em;">
+							<tr>
+								<td>❏ React</td>
+								<td>❏ Flux</td>
+								<td>❏ JavaScript</td>
+								<td>❏ Ruby</td>
+							</tr>
+							<tr>
+								<td>❏ HTML5</td>
+								<td>❏ Angular</td>
+								<td>❏ Ruby on Rails</td>
+								<td>❏ PostgreSQL</td>
+							</tr>
+							<tr>
+								<td>❏ Node.js</td>
+								<td>❏ Python</td>
+								<td>❏ CSS3</td>
+								<td>❏ jQuery</td>
+							</tr>
+						</table>
+
+					</section>
+
+				<!-- Six -->
+					<section id="six">
+						<h2>Get In Touch</h2>
+						<ul class="labeled-icons">
+							<li>
+								<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+								<a href="mailto:lrteeter@gmail.com" target="_blank">lrteeter@gmail.com</a>
+							</li>
+							<li>
+								<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+								<a href="tel:1-919-247-8505" target="_blank">919.247.8505</a>
+							</li>
+							<li>
+								<h3 class="icon fa-linkedin-square"><span class="label">LinkedIn</span></h3>
+								<a href="https://www.linkedin.com/in/leannespringthorpe/" target="_blank">LinkedIn</a>
+							</li>
+							<li>
+								<h3 class="icon fa-github"><span class="label">Github</span></h3>
+								<a href="https://github.com/Ltspringthorpe" target="_blank">Github</a>
+							</li>
+						</ul>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/leannespringthorpe/" target="_blank" class="icon fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Ltspringthorpe" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:lrteeter@gmail.com" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
