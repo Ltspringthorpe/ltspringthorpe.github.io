@@ -13,11 +13,13 @@ jobs:
     steps:
 
     - name: Build
+      run: |
       env:
         CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.REACT_APP_CLIENT_SECRET }}
 
     - name: Deploy
+      run: |
       env:
         CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.REACT_APP_CLIENT_SECRET }}
