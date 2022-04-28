@@ -122,8 +122,8 @@
         $('#mounts').toggleClass('hidden');
 
         $('#inputParams').on('submit', function() {
-            const client_id = process.env.CLIENT_ID;
-            const client_secret = process.env.CLIENT_SECRET;
+            const client_id = process.env.REACT_APP_CLIENT_ID;
+            const client_secret = process.env.REACT_APP_CLIENT_SECRET;
 
             var region = $('#region').val() ? $('#region').val() : 'us';
             var namespace = $('#namespace').val() ? $('#namespace').val() : 'profile-us';
