@@ -118,12 +118,18 @@
         }).join(' ');
     }
 
+    function decharify(ascii) {
+        return ascii.split('-').map(function (ltr) {
+            return (String.fromCharCode(ltr));
+        }).join('');
+    }
+
     $('#mountsBtn').on('click', function() {
         $('#mounts').toggleClass('hidden');
 
         $('#go').on('click', function() {
-            const client_id = process.env.REACT_APP_CLIENT_ID;
-            const client_secret = process.env.REACT_APP_CLIENT_SECRET;
+            const client_id = '54-50-98-100-99-52-56-51-97-56-53-49-52-98-54-55-97-97-101-52-98-51-48-102-97-54-54-98-50-98-48-56';
+            const client_secret = '66-105-117-56-122-106-81-104-97-79-107-74-82-87-79-53-48-82-115-117-72-49-90-99-121-78-82-103-109-85-99-114';
 
             var region = $('#region').val() ? $('#region').val() : 'us';
             var namespace = $('#namespace').val() ? $('#namespace').val() : 'profile-us';
@@ -207,8 +213,8 @@
                     method: 'POST',
                     url: 'https://' + region + '.battle.net/oauth/token',
                     data: {
-                        client_id: client_id,
-                        client_secret: client_secret,
+                        client_id: decharify(client_id),
+                        client_secret: decharify(client_secret),
                         grant_type: 'client_credentials',
                     },
                     success: function(token) {
