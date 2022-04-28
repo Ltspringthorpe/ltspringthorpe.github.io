@@ -227,7 +227,7 @@
             }
 
             // get A mounts
-            function getAMounts(token, store_mounts) {
+            function getAMounts(token) {
                 var request = $.ajax({
                     method: 'GET',
                     url: 'https://' + region + '.api.blizzard.com/profile/wow/character/' + realm1 + '/' + toon1 + '/collections/mounts',
@@ -246,7 +246,7 @@
             }
 
             // get B mounts
-            function getBMounts(token, store_mounts, a_mounts) {
+            function getBMounts(token, a_mounts) {
                 var request = $.ajax({
                     method: 'GET',
                     url: 'https://' + region + '.api.blizzard.com/profile/wow/character/' + realm2 + '/' + toon2 + '/collections/mounts',
@@ -265,7 +265,6 @@
             }
 
             function parseMounts(a_mounts, b_mounts) {
-                debugger;
                 a_mounts = a_mounts['mounts'].filter(function(mount) {
                     return !!mount['is_useable'] && !exclude_mounts.includes(mount['mount']['name']);
                 });
