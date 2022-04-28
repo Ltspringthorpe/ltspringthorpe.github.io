@@ -1,117 +1,305 @@
 /*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Strata by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
-	var $window = $(window),
-		$body = $('body'),
-		$header = $('#header'),
-		$footer = $('#footer'),
-		$main = $('#main'),
-		settings = {
+    var $window = $(window),
+    $body = $('body'),
+    $header = $('#header'),
+    $footer = $('#footer'),
+    $main = $('#main'),
+    settings = {
 
-			// Parallax background effect?
-				parallax: true,
+        // Parallax background effect?
+        parallax: true,
 
-			// Parallax factor (lower = more intense, higher = less intense).
-				parallaxFactor: 20
+        // Parallax factor (lower = more intense, higher = less intense).
+        parallaxFactor: 20
 
-		};
+    };
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:  [ '1281px',  '1800px' ],
-			large:   [ '981px',   '1280px' ],
-			medium:  [ '737px',   '980px'  ],
-			small:   [ '481px',   '736px'  ],
-			xsmall:  [ null,      '480px'  ],
-		});
+    // Breakpoints.
+    breakpoints({
+        xlarge:  [ '1281px',  '1800px' ],
+        large:   [ '981px',   '1280px' ],
+        medium:  [ '737px',   '980px'  ],
+        small:   [ '481px',   '736px'  ],
+        xsmall:  [ null,      '480px'  ],
+    });
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+    // Play initial animations on page load.
+    $window.on('load', function() {
+        window.setTimeout(function() {
+            $body.removeClass('is-preload');
+        }, 100);
+    });
 
-	// Touch?
-		if (browser.mobile) {
+    // Touch?
+    if (browser.mobile) {
 
-			// Turn on touch mode.
-				$body.addClass('is-touch');
+        // Turn on touch mode.
+        $body.addClass('is-touch');
 
-			// Height fix (mostly for iOS).
-				window.setTimeout(function() {
-					$window.scrollTop($window.scrollTop() + 1);
-				}, 0);
+        // Height fix (mostly for iOS).
+        window.setTimeout(function() {
+            $window.scrollTop($window.scrollTop() + 1);
+        }, 0);
 
-		}
+    }
 
-	// Footer.
-		breakpoints.on('<=medium', function() {
-			$footer.insertAfter($main);
-		});
+    // Footer.
+    breakpoints.on('<=medium', function() {
+        $footer.insertAfter($main);
+    });
 
-		breakpoints.on('>medium', function() {
-			$footer.appendTo($header);
-		});
+    breakpoints.on('>medium', function() {
+        $footer.appendTo($header);
+    });
 
-	// Header.
+    // Header.
 
-		// Parallax background.
+    // Parallax background.
 
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-				if (browser.name == 'ie'
-				||	browser.mobile)
-					settings.parallax = false;
+    // Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+    if (browser.name == 'ie'
+    ||	browser.mobile)
+    settings.parallax = false;
 
-			if (settings.parallax) {
+    if (settings.parallax) {
 
-				breakpoints.on('<=medium', function() {
+        breakpoints.on('<=medium', function() {
 
-					$window.off('scroll.strata_parallax');
-					$header.css('background-position', '');
+            $window.off('scroll.strata_parallax');
+            $header.css('background-position', '');
 
-				});
+        });
 
-				breakpoints.on('>medium', function() {
+        breakpoints.on('>medium', function() {
 
-					$header.css('background-position', 'left 0px');
+            $header.css('background-position', 'left 0px');
 
-					$window.on('scroll.strata_parallax', function() {
-						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-					});
+            $window.on('scroll.strata_parallax', function() {
+                $header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+            });
 
-				});
+        });
 
-				$window.on('load', function() {
-					$window.triggerHandler('scroll');
-				});
+        $window.on('load', function() {
+            $window.triggerHandler('scroll');
+        });
 
-			}
+    }
 
-	// Main Sections: Two.
+    // Lightbox gallery.
+    $window.on('load', function() {
 
-		// Lightbox gallery.
-			$window.on('load', function() {
+        $('#two').poptrox({
+            caption: function($a) { return $a.next('h2').text(); },
+            overlayColor: '#2c2c2c',
+            overlayOpacity: 0.85,
+            popupCloserText: '',
+            popupLoaderText: '',
+            selector: '.work-item a.image',
+            usePopupCaption: true,
+            usePopupDefaultStyling: false,
+            usePopupEasyClose: false,
+            usePopupNav: true,
+            windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+        });
 
-				$('#two').poptrox({
-					caption: function($a) { return $a.next('h2').text(); },
-					overlayColor: '#2c2c2c',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a.image',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: false,
-					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-				});
+    });
 
-			});
+    function toTitleCase(str) {
+        return str.toLowerCase().split(' ').map(function (word) {
+            return (word.charAt(0).toUpperCase() + word.slice(1));
+        }).join(' ');
+    }
+
+    $('#mountsBtn').on('click', function() {
+        $('#mounts').toggleClass('hidden');
+
+        $('#inputParams').on('submit', function() {
+            // const client_id = process.env.CLIENT_ID;
+            // const client_secret = process.env.CLIENT_SECRET;
+            //
+            // var region = $('#region').val() ? $('#region').val() : 'us';
+            // var namespace = $('#namespace').val() ? $('#namespace').val() : 'profile-us';
+            // var locale = $('#locale').val() ? $('#locale').val() : 'en_US';
+            //
+            // let realm1 = $('#realm1').val().trim().toLowerCase();
+            // let toon1 = $('#toon1').val().trim().toLowerCase();
+            // let realm2 = $('#realm2').val().trim().toLowerCase();
+            // let toon2 = $('#toon2').val().trim().toLowerCase();
+            var realm1 = 'doomhammer'
+            var toon1 = 'atmiste';
+            var realm2 = 'doomhammer'
+            var toon2 = 'mordoq';
+
+            var exclude_mounts = [
+                'Acherus Deathcharger', // death knight
+                'Alabaster Stormtalon', // store
+                'Alabaster Thunderwing', // store
+                'Armored Bloodwing', // store
+                'Ban-Lu, Grandmaster\'s Companion', // monk
+                'Celestial Steed', // store
+                'Charger', // paladin
+                'Deathlord\'s Vilebrood Vanquisher', // death knight
+                'Dreadsteed', // warlock
+                'Enchanted Fey Dragon', // store
+                'Farseer\'s Raging Tempest', // shaman
+                'Felsaber', // demon hunter
+                'Felsteed', // warlock
+                'Gilded Ravasaur', // collector's edition
+                'Grinning Reaver', // store
+                'Heart of the Aspects', // store
+                'Hogrus, Swine of Good Fortune', // store
+                'Illidari Felstalker', // collector's edition
+                'Imperial Quilen', // collector's edition
+                'Iron Skyreaver', // store
+                'Lucky Yun', // store
+                'Luminous Starseeker', // store
+                'Mystic Runesaber', // store
+                'Netherlord\'s Accursed Wrathsteed', // warlock
+                'Netherlord\'s Brimstone Wrathsteed', // warlock
+                'Netherlord\'s Chaotic Wrathsteed', // warlock
+                'Obsidian Nightwing', // recruit-a-friend
+                'Sapphire Skyblazer', // promotion
+                'Seabraid Stallion', // collector's edition
+                'Shu-Zen, the Divine Sentinel', // store
+                'Squeakers, the Trickster', // store
+                'Steamscale Incinerator', // store
+                'Swift Windsteed', // store
+                'Sylverian Dreamer', // store
+                'The Dreadwake', // store
+                'Vulpine Familiar', // store
+                'Warforged Nightmare', // store
+                'Warhorse', // paladin
+                'Wen Lo, the River\'s Edge', // store
+                'Winged Guardian', // store
+                'Winged Steed of the Ebon Blade', // death knight
+                'X-53 Touring Rocket', // recruit-a-friend
+            ];
+
+            // get token
+            function start() {
+                var request = $.ajax({
+                    method: 'POST',
+                    url: 'https://' + region + '.battle.net/oauth/token',
+                    data: {
+                        client_id: client_id,
+                        client_secret: client_secret,
+                        grant_type: 'client_credentials',
+                    },
+                    success: function(token) {
+                        getAMounts(token);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            }
+
+            // get A mounts
+            function getAMounts(token, store_mounts) {
+                var request = $.ajax({
+                    method: 'GET',
+                    url: 'https://' + region + '.api.blizzard.com/profile/wow/character/' + realm1 + '/' + toon1 + '/collections/mounts',
+                    data: {
+                        namespace: 'profile-us',
+                        locale: 'en_US',
+                        access_token: token.access_token,
+                    },
+                    success: function(data) {
+                        getBMounts(token, data);
+                        console.log(data);
+                    },
+                    error: function(error, token) {
+                        console.log(error);
+                    }
+                });
+            }
+
+            // get B mounts
+            function getBMounts(token, store_mounts, a_mounts) {
+                var request = $.ajax({
+                    method: 'GET',
+                    url: 'https://' + region + '.api.blizzard.com/profile/wow/character/' + realm2 + '/' + toon2 + '/collections/mounts',
+                    data: {
+                        namespace: 'profile-us',
+                        locale: 'en_US',
+                        access_token: token.access_token,
+                    },
+                    success: function(data) {
+                        parseMounts(a_mounts, data);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            }
+
+            function parseMounts(a_mounts, b_mounts) {
+                a_mounts = a_mounts['mounts'].filter(function(mount) {
+                    return !!mount['is_useable'] && !exclude_mounts.includes(mount['mount']['name']);
+                });
+                b_mounts = b_mounts['mounts'].filter(function(mount) {
+                    return !!mount['is_useable'] && !exclude_mounts.includes(mount['mount']['name']);
+                });
+
+                var a_favs = [];
+                for (let i = 0; i < a_mounts.length; i++) {
+                    let dup = false;
+                    for (let j = 0; j < b_mounts.length; j ++) {
+                        if (a_mounts[i]['mount']['name'] === b_mounts[j]['mount']['name']) {
+                            dup = true;
+                        }
+                    }
+                    if (!dup) {
+                        a_favs.push(a_mounts[i]['mount']['name']);
+                    }
+                }
+
+                var b_favs = [];
+                for (let k = 0; k < b_mounts.length; k++) {
+                    let dup = false;
+                    for (let m = 0; m < a_mounts.length; m ++) {
+                        if (b_mounts[k]['mount']['name'] === a_mounts[m]['mount']['name']) {
+                            dup = true;
+                        }
+                    }
+                    if (!dup) {
+                        b_favs.push(b_mounts[k]['mount']['name']);
+                    }
+                }
+
+                var a_list = '<ol>';
+                for (let n = 0; n < a_favs.length; n++) {
+                    a_list += '<li>' + a_favs[n] + '</li>';
+                }
+                a_list += '</ol>';
+
+                var b_list = '<ol>';
+                for (let p = 0; p < b_favs.length; p++) {
+                    b_list += '<li>' + b_favs[p] + '</li>';
+                }
+                b_list += '</ol>';
+
+                var mounts = '<table><thead><tr>';
+                mounts += '<th style="width: 50%;">' + toTitleCase(toon1) + '\'s Cheesy Poofs</th>';
+                mounts += '<th style="width: 50%;">' + toTitleCase(toon2) + '\'s Cheesy Poofs</th>';
+                mounts += '</tr></thead><tbody><tr>';
+                mounts += '<td style="vertical-align: top;">' + a_list + '</td>';
+                mounts += '<td style="vertical-align: top;">' + b_list + '</td>';
+                mounts += '</tr></tbody></table>';
+
+                $('#lists').html(mounts);
+            }
+
+            start();
+        });
+    });
 
 })(jQuery);
