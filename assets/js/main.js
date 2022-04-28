@@ -238,7 +238,6 @@
                     },
                     success: function(data) {
                         getBMounts(token, data);
-                        console.log(data);
                     },
                     error: function(error, token) {
                         console.log(error);
@@ -266,6 +265,7 @@
             }
 
             function parseMounts(a_mounts, b_mounts) {
+                debugger;
                 a_mounts = a_mounts['mounts'].filter(function(mount) {
                     return !!mount['is_useable'] && !exclude_mounts.includes(mount['mount']['name']);
                 });
