@@ -238,7 +238,6 @@
             }
 
             function parseMounts(a_mounts, b_mounts) {
-
                 a_mounts = a_mounts['mounts'].filter(function(mount) {
                     return !!mount['is_useable'] && !exclude_mounts.includes(mount['mount']['name']);
                 });
