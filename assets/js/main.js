@@ -298,6 +298,9 @@
                     }
                 }
 
+                a_favs.sort();
+                b_favs.sort();
+
                 var a_list = '<ol>';
                 for (let n = 0; n < a_favs.length; n++) {
                     a_list += '<li>' + a_favs[n] + '</li>';
