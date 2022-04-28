@@ -122,21 +122,17 @@
         $('#mounts').toggleClass('hidden');
 
         $('#inputParams').on('submit', function() {
-            // const client_id = process.env.CLIENT_ID;
-            // const client_secret = process.env.CLIENT_SECRET;
-            //
-            // var region = $('#region').val() ? $('#region').val() : 'us';
-            // var namespace = $('#namespace').val() ? $('#namespace').val() : 'profile-us';
-            // var locale = $('#locale').val() ? $('#locale').val() : 'en_US';
-            //
-            // let realm1 = $('#realm1').val().trim().toLowerCase();
-            // let toon1 = $('#toon1').val().trim().toLowerCase();
-            // let realm2 = $('#realm2').val().trim().toLowerCase();
-            // let toon2 = $('#toon2').val().trim().toLowerCase();
-            var realm1 = 'doomhammer'
-            var toon1 = 'atmiste';
-            var realm2 = 'doomhammer'
-            var toon2 = 'mordoq';
+            const client_id = process.env.CLIENT_ID;
+            const client_secret = process.env.CLIENT_SECRET;
+
+            var region = $('#region').val() ? $('#region').val() : 'us';
+            var namespace = $('#namespace').val() ? $('#namespace').val() : 'profile-us';
+            var locale = $('#locale').val() ? $('#locale').val() : 'en_US';
+
+            let realm1 = $('#realm1').val().trim().toLowerCase();
+            let toon1 = $('#toon1').val().trim().toLowerCase();
+            let realm2 = $('#realm2').val().trim().toLowerCase();
+            let toon2 = $('#toon2').val().trim().toLowerCase();
 
             var exclude_mounts = [
                 'Acherus Deathcharger', // death knight
