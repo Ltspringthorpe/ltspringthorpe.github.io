@@ -121,7 +121,7 @@
     $('#mountsBtn').on('click', function() {
         $('#mounts').toggleClass('hidden');
 
-        $('#inputParams').on('submit', function() {
+        $('#go').on('click', function() {
             const client_id = process.env.REACT_APP_CLIENT_ID;
             const client_secret = process.env.REACT_APP_CLIENT_SECRET;
 
@@ -133,6 +133,28 @@
             let toon1 = $('#toon1').val().trim().toLowerCase();
             let realm2 = $('#realm2').val().trim().toLowerCase();
             let toon2 = $('#toon2').val().trim().toLowerCase();
+
+            $('#realm1, #toon1, #realm2, #toon2').css('border-color', 'transparent');
+
+            if (!realm1) {
+                $('#realm1').css('border-color', 'red');
+            }
+
+            if (!toon1) {
+                $('#toon1').css('border-color', 'red');
+            }
+
+            if (!realm2) {
+                $('#realm2').css('border-color', 'red');
+            }
+
+            if (!toon2) {
+                $('#toon2').css('border-color', 'red');
+            }
+
+            if (!realm1 || !toon1 || !realm2 || !toon2) {
+                return;
+            }
 
             var exclude_mounts = [
                 'Acherus Deathcharger', // death knight
