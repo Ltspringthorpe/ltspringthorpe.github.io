@@ -125,7 +125,7 @@
     }
 
     $('#mountsBtn').on('click', function() {
-        $('#mounts').toggleClass('hidden');
+        $('#mountsContainer').toggleClass('hidden');
 
         $('#go').on('click', function() {
             $('#lists').empty();
