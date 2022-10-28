@@ -204,6 +204,7 @@
                 'Steamscale Incinerator', // store
                 'Swift Windsteed', // store
                 'Sylverian Dreamer', // store
+                'Tangled Dreamweaver', // collector's edition
                 'The Dreadwake', // store
                 'Vulpine Familiar', // store
                 'Warforged Nightmare', // store
