@@ -96,7 +96,7 @@
     // Lightbox gallery.
     $window.on('load', function() {
 
-        $('#two').poptrox({
+        $('#projects').poptrox({
             caption: function($a) { return $a.next('h2').text(); },
             overlayColor: '#2c2c2c',
             overlayOpacity: 0.85,
@@ -106,7 +106,7 @@
             usePopupCaption: true,
             usePopupDefaultStyling: false,
             usePopupEasyClose: false,
-            usePopupNav: true,
+            usePopupNav: false,
             windowMargin: (breakpoints.active('<=small') ? 0 : 50)
         });
 

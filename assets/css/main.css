@@ -2782,11 +2782,11 @@ input[type="button"]:disabled,
     -ms-box-sizing: content-box;
     box-sizing: content-box;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    background: #fff;
+    background: rgb(211, 211, 211);
     border-radius: 0.35em;
     box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    padding-bottom: 3em;
+    padding-bottom: 43px;
 }
 
 .poptrox-popup .loader {
