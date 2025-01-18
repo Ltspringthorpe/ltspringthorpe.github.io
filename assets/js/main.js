@@ -118,20 +118,26 @@
         }).join(' ');
     }
 
+    function charify(str) {
+        return str.split('').map(function(ltr) {
+            return ltr.charCodeAt(0);
+        }).join('-');
+    }
+
     function decharify(ascii) {
         return ascii.split('-').map(function (ltr) {
-            return (String.fromCharCode(ltr));
+            return String.fromCharCode(ltr);
         }).join('');
     }
+
+    const client_id = '54-50-98-100-99-52-56-51-97-56-53-49-52-98-54-55-97-97-101-52-98-51-48-102-97-54-54-98-50-98-48-56';
+    const client_secret = '55-97-67-66-72-72-121-105-110-106-55-113-79-52-78-76-109-66-119-99-70-53-70-79-85-107-50-111-111-79-83-77';
 
     $('#mountsBtn').on('click', function() {
         $('#mountsContainer').toggleClass('hidden');
 
         $('#go').on('click', function() {
             $('#lists').empty();
-
-            const client_id = '54-50-98-100-99-52-56-51-97-56-53-49-52-98-54-55-97-97-101-52-98-51-48-102-97-54-54-98-50-98-48-56';
-            const client_secret = '66-105-117-56-122-106-81-104-97-79-107-74-82-87-79-53-48-82-115-117-72-49-90-99-121-78-82-103-109-85-99-114';
 
             var region = $('#region').val() ? $('#region').val() : 'us';
             var namespace = $('#namespace').val() ? $('#namespace').val() : 'profile-us';
@@ -219,7 +225,8 @@
             function start() {
                 var request = $.ajax({
                     method: 'POST',
-                    url: 'https://' + region + '.battle.net/oauth/token',
+                    // url: 'https://' + region + '.battle.net/oauth/token',
+                    url: 'https://oauth.battle.net/token',
                     data: {
                         client_id: decharify(client_id),
                         client_secret: decharify(client_secret),
@@ -239,15 +246,17 @@
                 var request = $.ajax({
                     method: 'GET',
                     url: 'https://' + region + '.api.blizzard.com/profile/wow/character/' + realm1 + '/' + toon1 + '/collections/mounts',
+                    headers: {
+                        'Authorization': 'Bearer ' + token.access_token,
+                    },
                     data: {
-                        namespace: 'profile-us',
+                        namespace: namespace,
                         locale: 'en_US',
-                        access_token: token.access_token,
                     },
                     success: function(data) {
                         getBMounts(token, data);
                     },
-                    error: function(error, token) {
+                    error: function(error) {
                         console.log(error);
                     }
                 });
@@ -258,10 +267,12 @@
                 var request = $.ajax({
                     method: 'GET',
                     url: 'https://' + region + '.api.blizzard.com/profile/wow/character/' + realm2 + '/' + toon2 + '/collections/mounts',
+                    headers: {
+                        'Authorization': 'Bearer ' + token.access_token,
+                    },
                     data: {
-                        namespace: 'profile-us',
+                        namespace: namespace,
                         locale: 'en_US',
-                        access_token: token.access_token,
                     },
                     success: function(data) {
                         parseMounts(a_mounts, data);
