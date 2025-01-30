@@ -253,12 +253,6 @@
                 notes: '',
             },
             {
-                name: 'The Balance',
-                filename: 'TheBalance',
-                keywords: '',
-                notes: '',
-            },
-            {
                 name: 'Between The Conduits',
                 filename: 'BetweenTheConduits',
                 keywords: '',
