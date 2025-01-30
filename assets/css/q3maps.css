@@ -1,37 +1,38 @@
-#q3mapsTable td,
-#q3mapsTable th {
-    vertical-align: top;
-    width: 50%;
-    padding: 20px;
-}
-
-#q3mapsTable td h2,
-#q3mapsTable td div {
-    vertical-align: top;
-}
-
-#q3mapsTable tbody tr {
+#q3mapsTableBody .row {
     border-top: solid 1px;
 }
 
+#q3maps .row {
+    width: 100%;
+}
+
 #keywordSearch {
-    width: calc(100% - 140px);
-    display: inline;
     height: unset;
     color: gray;
 }
 
 #q3maps label {
-    display: inline;
     color: gray;
     font-size: 16px;
     padding-right: 9px;
+    margin-bottom: 0;
 }
 
-#q3maps body {
-    margin: 50px;
+#q3maps img {
+    width: 100%;
+    height: auto;
 }
 
-#q3maps thead {
-    border-bottom: none;
+#q3maps .col-6 {
+    padding: 8px 20px;
+}
+
+#q3maps form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+#q3mapsTableBody * {
+    vertical-align: top;
 }
