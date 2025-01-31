@@ -21,6 +21,7 @@
 #q3maps img {
     width: 100%;
     height: auto;
+    max-width: 320px;
 }
 
 #q3maps .col-6 {
@@ -35,4 +36,8 @@
 
 #q3mapsTableBody * {
     vertical-align: top;
+}
+
+#q3mapsTableBody {
+    width: fit-content;
 }
