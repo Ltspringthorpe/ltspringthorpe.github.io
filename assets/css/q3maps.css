@@ -1,5 +1,5 @@
 #q3mapsTableBody .row {
-    border-top: solid 1px;
+    border-top: solid 1px rgb(88, 88, 88);
 }
 
 #q3maps .row {
@@ -8,14 +8,19 @@
 
 #keywordSearch {
     height: unset;
-    color: gray;
+    color: rgb(88, 88, 88);
 }
 
 #q3maps label {
-    color: gray;
+    color: rgb(88, 88, 88);
     font-size: 16px;
     padding-right: 9px;
     margin-bottom: 0;
+}
+
+#q3maps h3 {
+    color: rgb(88, 88, 88);
+    margin-bottom: 8px;
 }
 
 #q3maps img {
