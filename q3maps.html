@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html style="background-color: #121212;">
+<html style="background-color: #121212; overflow-y: scroll;">
     <head>
         <title>Leanne Springthorpe</title>
         <meta charset="utf-8" />
@@ -13,18 +13,78 @@
 
         <!-- Q3Maps -->
         <section id="q3maps">
+
+            <!-- Search -->
             <div class="row" style="padding-bottom: 20px;">
-                <div class="col-6 col-12-xsmall">
-                    <form>
-                        <label for="keywordSearch">Search By Keyword</label>
-                        <div style="flex: 1; min-width: 150px;">
-                            <input name="keyword_search" id="keywordSearch" type="text" />
-                        </div>
-                    </form>
+                <div class="col-6 col-12-xsmall" style="padding-left: 0; position: relative;">
+                    <label for="search">Search By Name or ID</label>
+                    <input name="search" id="search" type="text" />
+                    <span class="clear-search" alt="Clear Search Input">x</span>
                 </div>
-                <div class="col-6 col-12-xsmall" style="color: rgb(224, 224, 224);">&#8592; Not working yet</div>
             </div>
 
+            <!-- Filter -->
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-12 col-12-xsmall filter-list include" style="padding-left: 0;">
+                    <label>Must Include <span class="caret">&#9662;</span></label>
+                    <div class="filter-items">
+                        <a><img src="images/icons/iconw_shotgun.svg" alt="Shotgun" title="Filter by Shotgun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_grenade.svg" alt="Grenade Launcher" title="Filter by Grenade Launcher" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_rocket.svg" alt="Rocket Launcher" title="Filter by Rocket Launcher" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_lightning.svg" alt="Lightning Gun" title="Filter by Lightning Gun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_railgun.svg" alt="Railgun" title="Filter by Railgun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_plasma.svg" alt="Plasma Gun" title="Filter by Plasma Gun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_BFG.svg" alt="BFG" title="Filter by BFG" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_grapple.svg" alt="Grappling Hook" title="Filter by Grappling Hook" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_chaingun.svg" alt="Chain Gun" title="Filter by Chain Gun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_nailgun.svg" alt="Nailgun" title="Filter by Nailgun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_proxmine.svg" alt="Prox Mine" title="Filter by Prox Mine" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconr_red.svg" alt="Red Armor" title="Filter by Red Armor" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconr_yellow.svg" alt="Yellow Armor" title="Filter by Yellow Armor" height="25" width="25" /></a>
+                        <a><img src="images/icons/envirosuit.svg" alt="Battle Suit" title="Filter by Battle Suit" height="25" width="25" /></a>
+                        <a><img src="images/icons/haste.svg" alt="Haste" title="Filter by Haste" height="25" width="25" /></a>
+                        <a><img src="images/icons/flight.svg" alt="Wings" title="Filter by Wings" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconh_mega.svg" alt="Megahealth" title="Filter by Megahealth" height="25" width="25" /></a>
+                        <a><img src="images/icons/invis.svg" alt="Invisibility" title="Filter by Invisibility" height="25" width="25" /></a>
+                        <a><img src="images/icons/quad.svg" alt="Quad Damage" title="Filter by Quad Damage" height="25" width="25" /></a>
+                        <a><img src="images/icons/regen.svg" alt="Regeneration" title="Filter by Regeneration" height="25" width="25" /></a>
+                        <a><img src="images/icons/medkit.svg" alt="Medkit" title="Filter by Medkit" height="25" width="25" /></a>
+                        <a><img src="images/icons/teleporter.svg" alt="Teleporter" title="Filter by Teleporter" height="25" width="25" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-12 col-12-xsmall filter-list exclude" style="padding-left: 0;">
+                    <label style="margin-bottom: 4px;">Must Exclude <span class="caret">&#9662;</span></label>
+                    <div class="filter-items">
+                        <a><img src="images/icons/iconw_shotgun.svg" alt="Shotgun" title="Filter by NO Shotgun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_grenade.svg" alt="Grenade Launcher" title="Filter by NO Grenade Launcher" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_rocket.svg" alt="Rocket Launcher" title="Filter by NO Rocket Launcher" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_lightning.svg" alt="Lightning Gun" title="Filter by NO Lightning Gun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_railgun.svg" alt="Railgun" title="Filter by NO Railgun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_plasma.svg" alt="Plasma Gun" title="Filter by NO Plasma Gun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_BFG.svg" alt="BFG" title="Filter by NO BFG" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_grapple.svg" alt="Grappling Hook" title="Filter by NO Grappling Hook" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_chaingun.svg" alt="Chain Gun" title="Filter by NO Chain Gun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_nailgun.svg" alt="Nailgun" title="Filter by NO Nailgun" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconw_proxmine.svg" alt="Prox Mine" title="Filter by NO Prox Mine" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconr_red.svg" alt="Red Armor" title="Filter by NO Red Armor" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconr_yellow.svg" alt="Yellow Armor" title="Filter by NO Yellow Armor" height="25" width="25" /></a>
+                        <a><img src="images/icons/envirosuit.svg" alt="Battle Suit" title="Filter by NO Battle Suit" height="25" width="25" /></a>
+                        <a><img src="images/icons/haste.svg" alt="Haste" title="Filter by NO Haste" height="25" width="25" /></a>
+                        <a><img src="images/icons/flight.svg" alt="Wings" title="Filter by NO Wings" height="25" width="25" /></a>
+                        <a><img src="images/icons/iconh_mega.svg" alt="Megahealth" title="Filter by NO Megahealth" height="25" width="25" /></a>
+                        <a><img src="images/icons/invis.svg" alt="Invisibility" title="Filter by NO Invisibility" height="25" width="25" /></a>
+                        <a><img src="images/icons/quad.svg" alt="Quad Damage" title="Filter by NO Quad Damage" height="25" width="25" /></a>
+                        <a><img src="images/icons/regen.svg" alt="Regeneration" title="Filter by NO Regeneration" height="25" width="25" /></a>
+                        <a><img src="images/icons/medkit.svg" alt="Medkit" title="Filter by NO Medkit" height="25" width="25" /></a>
+                        <a><img src="images/icons/teleporter.svg" alt="Teleporter" title="Filter by NO Teleporter" height="25" width="25" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maps -->
             <div id="q3mapsTableBody"></div>
         </section>
     </body>
