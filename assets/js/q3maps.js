@@ -319,43 +319,43 @@
                 notes: '',
             },
             {
-                id: '',
+                id: 'q31dm1',
                 name: 'Place Of Two Deaths',
                 keywords: '',
                 notes: '',
             },
             {
-                id: '',
-                name: 'Platipus',
+                id: 'platypus',
+                name: 'Platypus',
                 keywords: '',
                 notes: '',
             },
             {
-                id: '',
+                id: 'platform6',
                 name: 'Platform6',
                 keywords: '',
                 notes: '',
             },
             {
-                id: '',
+                id: 'pjw3dm1',
                 name: 'Kiss The Sky',
                 keywords: '',
                 notes: '',
             },
             {
-                id: '',
+                id: 'mrcq3dm5',
                 name: 'Abusive Intentions',
                 keywords: '',
                 notes: '',
             },
             {
-                id: '',
+                id: 'mkexp',
                 name: 'Industrial Experience',
                 keywords: '',
                 notes: '',
             },
             {
-                id: '',
+                id: 'mkbase',
                 name: 'Feel The Base',
                 keywords: '',
                 notes: '',
@@ -367,13 +367,13 @@
                 notes: '',
             },
             {
-                id: '',
+                id: 'maxx',
                 name: 'Maxx Aggression',
                 keywords: '',
                 notes: '',
             },
             {
-                id: '',
+                id: 'sg_2box4',
                 name: '2box4',
                 keywords: '',
                 notes: '',
@@ -583,7 +583,7 @@
             tableRows += '<div class="row">';
 
             tableRows += '<div class="col-6 col-12-xsmall">';
-            tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '.jpg" />';
+            tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '.jpg" height="384" width="512" />';
             tableRows += '</div>';
 
             tableRows += '<div class="col-6 col-12-xsmall">';
