@@ -19,6 +19,7 @@
 #q3maps label {
     color: rgb(250, 250, 250);
     font-size: 16px;
+    display: inline-block;
     padding-right: 9px;
     margin-bottom: 0;
 }
@@ -31,6 +32,12 @@
 #q3maps img {
     width: 100%;
     height: auto;
+}
+
+#q3maps a {
+    text-decoration: none;
+    border-bottom-color: transparent;
+    border-bottom-style: none;
 }
 
 #q3maps .col-4 {
@@ -58,7 +65,7 @@
 }
 
 #q3mapsTableBody * {
-    color: rgb(224, 224, 224);
+    color: rgb(215, 215, 215);
     vertical-align: top;
 }
 
@@ -71,7 +78,7 @@
 }
 
 #q3maps .keywords img,
-#q3maps .filter-list img {
+#q3maps .filter-items img {
     height: 25px;
     width: 25px;
     margin: 5px;
@@ -80,11 +87,12 @@
     z-index: 1;
 }
 
-#q3maps .filter-list img {
+#q3maps .filter-items a,
+#q3maps .filter-items img {
     cursor: pointer;
 }
 
-#q3maps .filter-list a {
+#q3maps .filter-items a {
     display: inline-block;
     position: relative;
     height: 35px;
@@ -92,31 +100,25 @@
     margin: 7px;
     text-decoration: none;
     border-bottom-color: transparent;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transform-style: preserve-3d;
 }
 
-#q3maps .filter-list a:hover {
+#q3maps .filter-items a:hover {
     transform: scale(1.2);
     outline: 2px solid gray;
 }
 
-#q3maps .filter-list a.selected {
+#q3maps .filter-items a.selected {
     background: darkslategray;
     outline: 2px solid gray;
 }
 
-#q3maps .filter-list a.disabled,
-#q3maps .filter-list a.disabled img,
-#q3maps .filter-list a.disabled:before {
-    opacity: 0.5;
-    pointer-events: none !important;
-    cursor: not-allowed !important;
-}
-
-#q3maps .filter-list a.selected:before {
+#q3maps .filter-items a.selected:before {
     opacity: 0.5;
 }
 
-#q3maps .filter-list.exclude a:before {
+#q3maps .filter-list.exclude .filter-items a:before {
     content: '\2298';
     position: absolute;
     height: 100%;
@@ -126,11 +128,11 @@
     font-size: 60px;
     left: 5px;
     top: 0;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 #q3maps input[type="text"] {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(215, 215, 215);
     color: rgb(18, 18, 18);
 }
 
@@ -149,8 +151,18 @@
 #q3maps .caret {
     transition: transform 0.2s ease-in-out;
     display: inline-block;
+    cursor: pointer;
 }
 
 #q3maps .caret.closed {
     transform: rotate(-180deg);
+}
+
+#q3maps .clear-filters {
+    color: darkgray;
+    font-size: 12px;
+    float: right;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 7px;
 }

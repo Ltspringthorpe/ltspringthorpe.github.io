@@ -599,25 +599,41 @@
 
     $(window).on('load', function() {
 
-        $(window).on('click', function(e) {
-            console.log(e.target);
-        });
-
         // set up listener for filter carets
         $('.caret').on('click', function() {
             $(this).toggleClass('closed');
             $(this).closest('.filter-list').find('.filter-items').toggleClass('hidden');
         });
 
-        // set up listener for filter buttons
+        // set up listeners for filter buttons
         $('.filter-list a').on('click', function() {
             $(this).toggleClass('selected');
+
+            // don't allow two conflicting filters
+            var key = $(this).find('img').attr('alt');
+            if ($(this).closest('.include').length) {
+                $('.exclude img[alt="' + key + '"]').closest('a').removeClass('selected');
+            } else if ($(this).closest('.exclude').length) {
+                $('.include img[alt="' + key + '"]').closest('a').removeClass('selected');
+            }
+
             filters_include = $('.filter-list.include .selected img').map(function(idx, item) {
                 return $(item).attr('alt');
             });
             filters_exclude = $('.filter-list.exclude .selected img').map(function(idx, item) {
                 return $(item).attr('alt');
             });
+            loadMaps(searchTerm, filters_include, filters_exclude);
+        });
+
+        // set up listeners for clear filter buttons
+        $('.clear-filters').on('click', function() {
+            $(this).closest('.filter-list').find('.filter-items a').removeClass('selected');
+            if ($(this).closest('.include').length) {
+                filters_include = [];
+            } else if ($(this).closest('.exclude').length) {
+                filters_exclude = [];
+            }
             loadMaps(searchTerm, filters_include, filters_exclude);
         });
 
@@ -634,6 +650,8 @@
         // set up listener to clear search terms
         $('.clear-search').on('click', function() {
             $('#search').val('');
+            searchInput = null;
+            searchTerm = null;
             loadMaps(null, filters_include, filters_exclude);
         });
 
