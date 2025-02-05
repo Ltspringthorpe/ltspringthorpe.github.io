@@ -4,19 +4,19 @@
         {
             id: 'q3dm1',
             name: 'Arena Gate',
-            keywords: 'Shotgun,Rocket Launcher,Plasma Gun',
+            keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Red Armor',
             notes: 'Did you really mean to call this map?',
         },
         {
             id: 'q3dm2',
             name: 'House Of Pain',
-            keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Haste',
+            keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Red Armor,Yellow Armor,Haste',
             notes: '',
         },
         {
             id: 'q3dm3',
             name: 'Arena Of Death',
-            keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun',
+            keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,Red Armor',
             notes: '',
         },
         {
