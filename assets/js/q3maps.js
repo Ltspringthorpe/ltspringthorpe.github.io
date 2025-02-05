@@ -530,7 +530,7 @@
             notes: '',
         },
         {
-            id: 'BFGdm2',
+            id: 'bfgdm2',
             name: 'Breakthru',
             keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth',
             notes: '',
