@@ -90,7 +90,6 @@
     margin: 5px;
     display: inline;
     position: relative;
-    z-index: 1;
 }
 
 #q3maps .filter-items a,
@@ -125,16 +124,14 @@
 }
 
 #q3maps .filter-list.exclude .filter-items a:before {
-    content: '\2298';
+    content: url('../../images/icons/icon_slashed_circle.svg');
     position: absolute;
-    height: 100%;
-    width: 100%;
-    color: red;
-    transform: scaleX(-1);
-    font-size: 60px;
-    left: 5px;
+    height: 35px;
+    width: 35px;
+    left: 0;
     top: 0;
     pointer-events: none;
+    z-index: 1;
 }
 
 #q3maps input[type="text"] {
