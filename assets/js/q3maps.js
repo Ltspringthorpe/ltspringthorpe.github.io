@@ -65,7 +65,8 @@
 
         // set up listener for sort dropdown
         $('#sort').on('change', function() {
-            loadMaps(searchTerm, this.value, filters_include, filters_exclude);
+            sortOrder = this.value;
+            loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
         });
 
         loadMaps();
