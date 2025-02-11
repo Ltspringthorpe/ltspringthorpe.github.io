@@ -33,8 +33,19 @@
     right: 20px;
     color: darkgray;
     font-size: 12px;
+    padding: 0 6px 0 8px;
     text-transform: uppercase;
     z-index: 2;
+}
+
+#q3maps .back-to-top:after {
+    content: '';
+    background: rgba(255, 255, 255, 0.3);
+    height: 32px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
 }
 
 #keywordSearch {
