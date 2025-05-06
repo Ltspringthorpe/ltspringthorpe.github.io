@@ -174,6 +174,12 @@ const NATIVE_ORDER = [
         notes: '',
     },
     {
+        id: 'unitooldm3_beta',
+        name: 'Cosmik Debris',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Megahealth,Quad Damage,Teleporter',
+        notes: 'The one that used to have the dog thumbnail',
+    },
+    {
         id: 'ztn3dm2',
         name: 'Beatbox',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth',
@@ -327,7 +333,7 @@ const NATIVE_ORDER = [
         id: 'pjw3dm1',
         name: 'Kiss The Sky',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit',
-        notes: '',
+        notes: 'Impossible BFG',
     },
     {
         id: 'mrcq3dm5',
@@ -382,12 +388,6 @@ const NATIVE_ORDER = [
         name: 'Willpower',
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Yellow Armor,Megahealth',
         notes: '',
-    },
-    {
-        id: 'unitooldm3_beta',
-        name: 'Cosmik Debris',
-        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Megahealth,Quad Damage,Teleporter',
-        notes: 'The one with the dog thumbnail',
     },
     {
         id: 'rqm3arena2',
@@ -495,7 +495,7 @@ const NATIVE_ORDER = [
         id: 'dungogt',
         name: 'The Dungeons Of Gvatter Tod',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Invisibility,Quad Damage,Regeneration,Teleporter',
-        notes: '',
+        notes: 'Impossible BFG',
     },
     {
         id: 'esq3dm1',
@@ -563,6 +563,108 @@ const NATIVE_ORDER = [
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Megahealth',
         notes: '',
     },
+    {
+        id: "'own'arama",
+        name: 'Flying Frogs',
+        keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Megahealth,Quad Damage,Medkit,Teleporter',
+        notes: '',
+    },
+    {
+        id: 'bath1',
+        name: 'Frog Bath',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        notes: 'Impossible Quad',
+    },
+    {
+        id: 'brickhouse',
+        name: 'Brick House',
+        keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Yellow Armor,Haste,Invisibility',
+        notes: '',
+    },
+    {
+        id: 'butchershouse',
+        name: 'Butchers House',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit',
+        notes: '',
+    },
+    {
+        id: 'charondm1',
+        name: 'A Shadow Lost',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Regeneration',
+        notes: '',
+    },
+    {
+        id: 'coc',
+        name: 'Clash of Colors',
+        keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Megahealth,Quad Damage',
+        notes: '',
+    },
+    {
+        id: 'coldq3dm1',
+        name: 'Grenade Perch',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Quad Damage',
+        notes: '',
+    },
+    {
+        id: 'hub3dm1',
+        name: 'Dismemberment',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Yellow Armor',
+        notes: '',
+    },
+    {
+        id: 'mpteam9',
+        name: 'Beyond Reality II',
+        keywords: 'Rocket Launcher,Railgun,Chain Gun,Nailgun,BFG,Yellow Armor,Quad Damage,Teleporter,Kamikaze,Invulnerability',
+        notes: 'Similar to The Very End Of You, but with a third platform.',
+    },
+    {
+        id: 'q3notdm1',
+        name: 'Frag Kingdom',
+        keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Quad Damage',
+        notes: '',
+    },
+    {
+        id: 'q3_q2dm1',
+        name: 'Q2 Fav',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Megahealth',
+        notes: 'aka The Edge',
+    },
+    {
+        id: 'quartzdm1',
+        name: 'Frog Red Carpet',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Yellow Armor',
+        notes: 'aka The Final Hour',
+    },
+    {
+        id: 'satan',
+        name: 'Satan\'s Playground',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Quad Damage,Teleporter',
+        notes: 'Has a trap that squishes folks, and a viewing window to watch!',
+    },
+    {
+        id: 'sdmrail',
+        name: 'Longest Yard - Rail',
+        keywords: 'Railgun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Regeneration',
+        notes: 'aka The Rail Yard. The Longest Yard but with railguns! And a BFG I guess.',
+    },
+    {
+        id: 'senndm1',
+        name: 'Agony & Ecstasy',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Quad Damage',
+        notes: '',
+    },
+    {
+        id: 'vanish',
+        name: 'Vanishing Hope',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun',
+        notes: '',
+    },
+    {
+        id: 'zGRcult2z2',
+        name: 'Revolt II',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun',
+        notes: 'Mysterious columns that go up and down',
+    },
 ];
 
 var mapsArray = NATIVE_ORDER.slice();
@@ -590,4 +692,6 @@ var keywordFilenames = {
     "Regeneration": 'regen',
     "Medkit": 'medkit',
     "Teleporter": 'teleporter',
+    "Kamikaze": 'kamikaze',
+    "Invulnerability": 'invulnerability',
 };
