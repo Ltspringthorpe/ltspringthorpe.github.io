@@ -1,11 +1,11 @@
 (function($) {
-    var searchInput = null;
-    var searchTerm = null;
-    var sortOrder = 'native';
-    var filters_include = [];
-    var filters_exclude = [];
 
-    $(window).on('load', function() {
+    function init() {
+        var searchInput = null;
+        var searchTerm = null;
+        var sortOrder = 'native';
+        var filters_include = [];
+        var filters_exclude = [];
 
         // set up listener for filter carets
         $('.caret').on('click', function() {
@@ -32,6 +32,7 @@
                 return $(item).attr('alt');
             });
             loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+            loadLightbox();
         });
 
         // set up listeners for clear filter buttons
@@ -43,6 +44,7 @@
                 filters_exclude = [];
             }
             loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+            loadLightbox();
         });
 
         // set up listener for search field
@@ -52,6 +54,7 @@
                 searchInput = searchInput.replace(/[-\\.,_*+?^$[\](){}!=|]/ig, '\\$&');
                 searchTerm = new RegExp(searchInput, 'i');
                 loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+                loadLightbox();
             }
         });
 
@@ -61,16 +64,19 @@
             searchInput = null;
             searchTerm = null;
             loadMaps(null, sortOrder, filters_include, filters_exclude);
+            loadLightbox();
         });
 
         // set up listener for sort dropdown
         $('#sort').on('change', function() {
             sortOrder = this.value;
             loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+            loadLightbox();
         });
 
         loadMaps();
-    });
+        loadLightbox();
+    };
 
     function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
         var tableRows = [];
@@ -116,9 +122,21 @@
             tableRows += '<div class="row">';
 
             // image
-            tableRows += '<div class="col-4 col-12-xsmall">';
+            tableRows += '<a href="images/q3maps/' + mapsArray[i].id + '.jpg" class="col-4 col-12-xsmall image-container">';
             tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '.jpg" height="384" width="512" alt="' + mapsArray[i].name + '" title="' + mapsArray[i].name + '" />';
-            tableRows += '</div>';
+            for (let n = 1; n < 4; n++) {
+                let filename = 'images/q3maps/' + mapsArray[i].id + '-' + n + '.jpg';
+                fetch(filename, {
+                    method: 'HEAD',
+                }).then((res) => {
+                    if (res.ok) {
+                        tableRows += '<img src="' + filename + '" height="384" width="512" alt="' + mapsArray[i].name + '" title="' + mapsArray[i].name + '" />';
+                    } else {
+                        return;
+                    }
+                });
+            }
+            tableRows += '</a>';
 
             // name and id
             tableRows += '<div class="col-8 col-12-xsmall">';
@@ -147,4 +165,25 @@
 
         $('#q3mapsTableBody').html(tableRows);
     };
+
+    // Lightbox gallery.
+    function loadLightbox() {
+        $('#q3mapsTableBody').poptrox({
+            caption: function($a) { return $a.closest('.row').find('h3').text(); },
+            overlayColor: '#2c2c2c',
+            overlayOpacity: 0.85,
+            popupCloserText: '',
+            popupLoaderText: '',
+            selector: 'a.image-container',
+            usePopupCaption: true,
+            usePopupDefaultStyling: false,
+            usePopupEasyClose: false,
+            usePopupNav: true,
+            windowMargin: 50,
+        });
+    };
+
+    $(window).on('load', function() {
+        init();
+    });
 })(jQuery);
