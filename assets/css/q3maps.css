@@ -208,3 +208,12 @@
     cursor: pointer;
     margin-right: 7px;
 }
+
+#top .poptrox-popup .pic img {
+    width: 75vw !important;
+    height: auto;
+}
+
+#top .poptrox-popup .caption {
+    color: rgb(18, 18, 18);
+}
