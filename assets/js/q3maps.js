@@ -124,18 +124,6 @@
             // image
             tableRows += '<a href="images/q3maps/' + mapsArray[i].id + '.jpg" class="col-4 col-12-xsmall image-container">';
             tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '.jpg" height="384" width="512" alt="' + mapsArray[i].name + '" title="' + mapsArray[i].name + '" />';
-            for (let n = 1; n < 4; n++) {
-                let filename = 'images/q3maps/' + mapsArray[i].id + '-' + n + '.jpg';
-                fetch(filename, {
-                    method: 'HEAD',
-                }).then((res) => {
-                    if (res.ok) {
-                        tableRows += '<img src="' + filename + '" height="384" width="512" alt="' + mapsArray[i].name + '" title="' + mapsArray[i].name + '" />';
-                    } else {
-                        return;
-                    }
-                });
-            }
             tableRows += '</a>';
 
             // name and id
