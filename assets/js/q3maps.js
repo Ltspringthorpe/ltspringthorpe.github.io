@@ -76,6 +76,7 @@
 
         loadMaps();
         loadLightbox();
+        initStarListener();
     };
 
     function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
@@ -129,7 +130,7 @@
             // name and id
             tableRows += '<div class="col-8 col-12-xsmall">';
             tableRows += '<h3>' + mapsArray[i].name + '</h3>';
-            tableRows += '<div class="filter-items star-icon"><a onclick="toggleFavorite()" data-id="' + mapsArray[i].id + '"></a></div>';
+            tableRows += '<div class="filter-items star-icon"><a data-id="' + mapsArray[i].id + '"></a></div>';
             tableRows += '<div>ID: ' + mapsArray[i].id + '</div>';
 
             // keywords
@@ -190,7 +191,7 @@
 
     function setCookie(cname, cvalue, exdays) {
         const d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        d.setTime(d.getTime() + (exdays*24*60*60*400));
         let expires = "expires="+ d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
@@ -230,6 +231,23 @@
         $('#cookieConsent').addClass('hidden');
         $('body').removeClass('modal-open');
     });
+
+    function toggleFavorite(e) {
+        var cookieConsent = getCookie('cookieConsent');
+        if(!cookieConsent) return;
+
+        var id = e.target.getAttribute('data-id');
+        if (e.target.classList.contains('favorite')) {
+            setCookie(id, false, 0);
+        } else {
+            setCookie(id, true, 3650);
+        }
+        e.target.classList.toggle('favorite');
+    }
+
+    function initStarListener() {
+        $('.star-icon a').on('click', toggleFavorite);
+    }
 
     $(window).on('load', function() {
         init();
