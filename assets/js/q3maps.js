@@ -77,6 +77,7 @@
         loadMaps();
         loadLightbox();
         initStarListener();
+        getFavorites();
     };
 
     function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
@@ -210,7 +211,7 @@
             let decodedCookie = decodeURIComponent(document.cookie);
             let ca = decodedCookie.split(';');
             for (let i = 0; i < ca.length; i++) {
-                let mapId = ca[i].trim('=');
+                let mapId = ca[i].split('=true')[0].trim();
                 if ($('.star-icon a[data-id="' + mapId + '"]').lenth) {
                     $('.star-icon a[data-id="' + mapId + '"]').addClass('favorite');
                 }
@@ -252,6 +253,5 @@
     $(window).on('load', function() {
         init();
         handleModal();
-        getFavorites();
     });
 })(jQuery);
