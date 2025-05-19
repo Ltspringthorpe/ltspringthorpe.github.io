@@ -123,7 +123,7 @@
             // name and id
             tableRows += '<div class="col-8 col-12-xsmall">';
             tableRows += '<h3>' + mapsArray[i].name + '</h3>';
-            tableRows += '<div class="filter-items star-icon"><a data-id="' + mapsArray[i].id + '"></a></div>';
+            tableRows += '<div class="filter-items star-icon"><a data-id="' + mapsArray[i].id + '" title="Toggle Favorite"></a></div>';
             tableRows += '<div>ID: ' + mapsArray[i].id + '</div>';
 
             // keywords
