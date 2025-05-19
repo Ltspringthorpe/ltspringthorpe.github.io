@@ -76,6 +76,7 @@
 
         loadMaps();
         loadLightbox();
+        initStarListener();
     };
 
     function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
@@ -129,6 +130,7 @@
             // name and id
             tableRows += '<div class="col-8 col-12-xsmall">';
             tableRows += '<h3>' + mapsArray[i].name + '</h3>';
+            tableRows += '<div class="filter-items star-icon"><a data-id="' + mapsArray[i].id + '"></a></div>';
             tableRows += '<div>ID: ' + mapsArray[i].id + '</div>';
 
             // keywords
@@ -171,7 +173,85 @@
         });
     };
 
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*400));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function handleModal() {
+        var cookieConsent = getCookie('cookieConsent');
+        if (!!cookieConsent) {
+            $('#cookieConsent').addClass('hidden');
+            $('body').removeClass('modal-open');
+        }
+    }
+
+    function getFavorites() {
+        var cookieConsent = getCookie('cookieConsent');
+        if (!!cookieConsent) {
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let mapId = ca[i].trim('=');
+                if ($('.star-icon a[data-id="' + mapId + '"]').lenth) {
+                    $('.star-icon a[data-id="' + mapId + '"]').addClass('favorite');
+                }
+            }
+        }
+    }
+
+    // cookies accepted
+    $('#cookieConsent #yes').on('click', function() {
+        $('#cookieConsent').addClass('hidden');
+        $('body').removeClass('modal-open');
+
+        setCookie('cookieConsent', true, 3650);
+    });
+
+    // cookied denied
+    $('#cookieConsent #no, #cookieConsent .closer').on('click', function() {
+        $('#cookieConsent').addClass('hidden');
+        $('body').removeClass('modal-open');
+    });
+
+    function toggleFavorite(e) {
+        var cookieConsent = getCookie('cookieConsent');
+        if(!cookieConsent) return;
+
+        var id = e.target.getAttribute('data-id');
+        if (e.target.classList.contains('favorite')) {
+            setCookie(id, false, 0);
+        } else {
+            setCookie(id, true, 3650);
+        }
+        e.target.classList.toggle('favorite');
+    }
+
+    function initStarListener() {
+        $('.star-icon a').on('click', toggleFavorite);
+    }
+
     $(window).on('load', function() {
         init();
+        handleModal();
+        getFavorites();
     });
 })(jQuery);
