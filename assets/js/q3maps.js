@@ -32,7 +32,6 @@
                 return $(item).attr('alt');
             });
             loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
         });
 
         // set up listeners for clear filter buttons
@@ -44,7 +43,6 @@
                 filters_exclude = [];
             }
             loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
         });
 
         // set up listener for search field
@@ -54,7 +52,6 @@
                 searchInput = searchInput.replace(/[-\\.,_*+?^$[\](){}!=|]/ig, '\\$&');
                 searchTerm = new RegExp(searchInput, 'i');
                 loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-                loadLightbox();
             }
         });
 
@@ -64,20 +61,15 @@
             searchInput = null;
             searchTerm = null;
             loadMaps(null, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
         });
 
         // set up listener for sort dropdown
         $('#sort').on('change', function() {
             sortOrder = this.value;
             loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
         });
 
         loadMaps();
-        loadLightbox();
-        initStarListener();
-        getFavorites();
     };
 
     function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
@@ -155,6 +147,10 @@
         }
 
         $('#q3mapsTableBody').html(tableRows);
+
+        loadLightbox();
+        initStarListener();
+        getFavorites();
     };
 
     // Lightbox gallery.

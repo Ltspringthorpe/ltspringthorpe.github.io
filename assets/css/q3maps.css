@@ -253,6 +253,14 @@
     font-size: 18px;
 }
 
+#top .modal ul {
+    padding-left: 0;
+    list-style: inside;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 2em;
+}
+
 #top .modal .row {
     width: calc(100% + 8px);
     margin-left: 0;
@@ -264,6 +272,7 @@
     margin-top: 20px;
     padding: 8px;
     width: 48%;
+    cursor: pointer;
 }
 
 #top .modal .closer {
@@ -273,6 +282,10 @@
     height: 16px;
     width: 16px;
     cursor: pointer;
+}
+
+#top .modal .closer svg {
+    position: absolute;
 }
 
 @media screen and (max-width: 480px) {
