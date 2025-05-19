@@ -199,9 +199,9 @@
 
     function handleModal() {
         var cookieConsent = getCookie('cookieConsent');
-        if (!!cookieConsent) {
-            $('#cookieConsent').addClass('hidden');
-            $('body').removeClass('modal-open');
+        if (!cookieConsent) {
+            $('#cookieConsent').removeClass('hidden');
+            $('body').addClass('modal-open');
         }
     }
 
@@ -212,7 +212,7 @@
             let ca = decodedCookie.split(';');
             for (let i = 0; i < ca.length; i++) {
                 let mapId = ca[i].split('=true')[0].trim();
-                if ($('.star-icon a[data-id="' + mapId + '"]').lenth) {
+                if ($('.star-icon a[data-id="' + mapId + '"]').length) {
                     $('.star-icon a[data-id="' + mapId + '"]').addClass('favorite');
                 }
             }
