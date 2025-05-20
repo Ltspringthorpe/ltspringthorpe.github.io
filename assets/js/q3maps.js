@@ -78,7 +78,7 @@
 
             // is there a sort order?
             if (sortOrder === 'native') {
-                mapsArray = NATIVE_ORDER.slice();
+                mapsArray = nativeOrder.slice();
             } else if (sortOrder === 'name') {
                 mapsArray = mapsArray.sort(function(a, b) {
                     return (a.name < b.name ? -1 : 1);
@@ -123,7 +123,10 @@
             // name and id
             tableRows += '<div class="col-8 col-12-xsmall">';
             tableRows += '<h3>' + mapsArray[i].name + '</h3>';
-            tableRows += '<div class="filter-items star-icon"><a data-id="' + mapsArray[i].id + '" title="Toggle Favorite"></a></div>';
+
+            let favorite = mapsArray[i].favorite ? 'favorite' : '';
+            let title = mapsArray[i].favorite ? 'Remove Favorite' : 'Add Favorite';
+            tableRows += '<div class="filter-items star-icon"><a class="' + favorite + '" data-id="' + mapsArray[i].id + '" title="' + title + '"></a></div>';
             tableRows += '<div>ID: ' + mapsArray[i].id + '</div>';
 
             // keywords
@@ -150,7 +153,6 @@
 
         loadLightbox();
         initStarListener();
-        getFavorites();
     };
 
     // Lightbox gallery.
@@ -220,7 +222,7 @@
         $('#cookieConsent').addClass('hidden');
         $('body').removeClass('modal-open');
 
-        setCookie('cookieConsent', true, 3650);
+        setCookie('cookieConsent', true, 400);
     });
 
     // cookied denied
@@ -236,8 +238,12 @@
         var id = e.target.getAttribute('data-id');
         if (e.target.classList.contains('favorite')) {
             setCookie(id, false, 0);
+            nativeOrder[id].favorite = false;
+            mapsArray[id].favorite = false;
         } else {
-            setCookie(id, true, 3650);
+            setCookie(id, true, 400);
+            nativeOrder[id].favorite = true;
+            mapsArray[id].favorite = true;
         }
         e.target.classList.toggle('favorite');
     }
