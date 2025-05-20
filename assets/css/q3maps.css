@@ -4,6 +4,7 @@
 
 #top body {
     margin: 48px;
+    width: calc(100% - 96px);
 }
 
 #top body.modal-open {
@@ -11,15 +12,21 @@
     overflow: hidden;
 }
 
+#top body.modal-open * {
+    pointer-events: none;
+}
+
 @media screen and (max-width: 736px) {
     #top body {
         margin: 36px;
+        width: calc(100% - 72px);
     }
 }
 
 @media screen and (max-width: 480px) {
     #top body {
         margin: 20px;
+        width: calc(100% - 40px);
     }
 }
 
@@ -134,6 +141,47 @@
 
 #q3maps .keywords img {
     margin: 2px;
+}
+
+#q3maps .favorites a {
+    display: inline-block;
+    height: 35px;
+    margin: 7px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+    padding: 4px 20px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+#q3maps .favorites .star-icon,
+#q3maps .favorites .exclude-icon {
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 4px;
+}
+
+#q3maps .favorites .star-icon {
+    background-image: url('../../images/icons/star-yellow.svg');
+}
+
+#q3maps .favorites .up-arrow {
+    font-size: 20px;
+    margin-right: 4px;
+    color: #ffff01;
+    vertical-align: bottom;
+    position: relative;
+    bottom: 2px;
+}
+
+#q3maps .favorites .exclude-icon {
+    background-image: url('../../images/icons/icon_slashed_circle.svg');
 }
 
 #q3maps .keywords img,
@@ -251,6 +299,10 @@
     background-color: rgb(239, 239, 239);
     color: rgb(18, 18, 18);
     font-size: 18px;
+}
+#top .modal,
+#top .modal * {
+    pointer-events: all !important;
 }
 
 #top .modal ul {
