@@ -73,22 +73,21 @@
     };
 
     function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
+        // is there a sort order?
+        if (sortOrder === 'native') {
+            mapsArray = Object.values(mapsObject);
+        } else if (sortOrder === 'name') {
+            mapsArray = mapsArray.sort(function(a, b) {
+                return (a.name < b.name ? -1 : 1);
+            });
+        } else if (sortOrder === 'id') {
+            mapsArray = mapsArray.sort(function(a, b) {
+                return (a.id < b.id ? -1 : 1);
+            });
+        }
+
         var tableRows = [];
         for (let i = 0; i < mapsArray.length; i++) {
-
-            // is there a sort order?
-            if (sortOrder === 'native') {
-                mapsArray = nativeOrder.slice();
-            } else if (sortOrder === 'name') {
-                mapsArray = mapsArray.sort(function(a, b) {
-                    return (a.name < b.name ? -1 : 1);
-                });
-            } else if (sortOrder === 'id') {
-                mapsArray = mapsArray.sort(function(a, b) {
-                    return (a.id < b.id ? -1 : 1);
-                });
-            }
-
             // is there a search term?
             if (searchTerm && !searchTerm.test(mapsArray[i].name) && !searchTerm.test(mapsArray[i].id)) {
                 continue;
@@ -203,20 +202,6 @@
         }
     }
 
-    function getFavorites() {
-        var cookieConsent = getCookie('cookieConsent');
-        if (!!cookieConsent) {
-            let decodedCookie = decodeURIComponent(document.cookie);
-            let ca = decodedCookie.split(';');
-            for (let i = 0; i < ca.length; i++) {
-                let mapId = ca[i].split('=true')[0].trim();
-                if ($('.star-icon a[data-id="' + mapId + '"]').length) {
-                    $('.star-icon a[data-id="' + mapId + '"]').addClass('favorite');
-                }
-            }
-        }
-    }
-
     // cookies accepted
     $('#cookieConsent #yes').on('click', function() {
         $('#cookieConsent').addClass('hidden');
@@ -239,11 +224,11 @@
         if (e.target.classList.contains('favorite')) {
             setCookie(id, false, 0);
             nativeOrder[id].favorite = false;
-            mapsArray[id].favorite = false;
+            mapsObject[id].favorite = false;
         } else {
             setCookie(id, true, 400);
             nativeOrder[id].favorite = true;
-            mapsArray[id].favorite = true;
+            mapsObject[id].favorite = true;
         }
         e.target.classList.toggle('favorite');
     }
