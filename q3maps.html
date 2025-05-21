@@ -43,22 +43,18 @@
             <div class="filter-list" style="padding-bottom: 20px;">
                 <div class="label">Favorites <span class="caret">&#9662;</span></div>
                 <div class="row favorites">
-                    <a class="col-12-small" title="Show Only Favorites">
+                    <a id="onlyFav" class="col-12-xsmall" title="Show Only Favorites">
                         <span class="star-icon favorite"></span>
                         Show Only Favorites
                     </a>
-                    <a class="col-12-small" title="Sort Favorites on Top">
+                    <a id="topFav" class="col-12-xsmall" title="Sort Favorites on Top">
                         <span class="up-arrow">&#8593;</span>
                         Sort Favorites on Top
-                    </a>
-                    <a class="col-12-small" title="Unset">
-                        <span class="exclude-icon"></span>
-                        Unset
                     </a>
                 </div>
             </div>
 
-            <!-- Filter -->
+            <!-- Filter: Include -->
             <div class="row" style="padding-bottom: 20px;">
                 <div class="col-12 col-12-xsmall filter-list include" style="padding-left: 0;">
                     <div class="label">Must Include <span class="caret">&#9662;</span></div>
@@ -90,6 +86,7 @@
                 </div>
             </div>
 
+            <!-- Filter: Exclude -->
             <div class="row" style="padding-bottom: 20px;">
                 <div class="col-12 col-12-xsmall filter-list exclude" style="padding-left: 0;">
                     <div class="label">Must Exclude <span class="caret">&#9662;</span></div>

@@ -82,6 +82,12 @@
     top: -3px;
 }
 
+@media screen and (max-width: 736px) {
+    #q3maps .filter-items.star-icon {
+        top: -6px;
+    }
+}
+
 #q3maps .filter-items.star-icon a {
     background-image: url('../../images/icons/star.svg');
     background-repeat: no-repeat;
@@ -144,7 +150,9 @@
 }
 
 #q3maps .favorites a {
-    display: inline-block;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
     height: 35px;
     margin: 7px;
     font-size: 14px;
@@ -157,14 +165,16 @@
     border-radius: 4px;
 }
 
+#q3maps .favorites a.selected {
+    background: darkslategray;
+    outline: 2px solid gray;
+}
+
 #q3maps .favorites .star-icon,
 #q3maps .favorites .exclude-icon {
     background-size: contain;
     height: 18px;
     width: 18px;
-    display: inline-block;
-    vertical-align: text-top;
-    margin-right: 4px;
 }
 
 #q3maps .favorites .star-icon {
@@ -178,10 +188,6 @@
     vertical-align: bottom;
     position: relative;
     bottom: 2px;
-}
-
-#q3maps .favorites .exclude-icon {
-    background-image: url('../../images/icons/icon_slashed_circle.svg');
 }
 
 #q3maps .keywords img,
@@ -289,7 +295,7 @@
 #top .modal {
     position: fixed;
     width: 50%;
-    min-width: 300px;
+    min-width: 350px;
     margin: auto;
     height: auto;
     padding: 40px;

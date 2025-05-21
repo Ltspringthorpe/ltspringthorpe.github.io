@@ -4,6 +4,7 @@
         var searchInput = null;
         var searchTerm = null;
         var sortOrder = 'native';
+        var sortFavorites = 'unset';
         var filters_include = [];
         var filters_exclude = [];
 
@@ -14,7 +15,7 @@
         });
 
         // set up listeners for filter buttons
-        $('.filter-list a').on('click', function() {
+        $('.filter-list.include a, .filter-list.exclude a').on('click', function() {
             $(this).toggleClass('selected');
 
             // don't allow two conflicting filters
@@ -31,7 +32,7 @@
             filters_exclude = $('.filter-list.exclude .selected img').map(function(idx, item) {
                 return $(item).attr('alt');
             });
-            loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         // set up listeners for clear filter buttons
@@ -42,7 +43,7 @@
             } else if ($(this).closest('.exclude').length) {
                 filters_exclude = [];
             }
-            loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         // set up listener for search field
@@ -51,7 +52,7 @@
                 searchInput = this.value.trim();
                 searchInput = searchInput.replace(/[-\\.,_*+?^$[\](){}!=|]/ig, '\\$&');
                 searchTerm = new RegExp(searchInput, 'i');
-                loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+                loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
             }
         });
 
@@ -60,19 +61,32 @@
             $('#search').val('');
             searchInput = null;
             searchTerm = null;
-            loadMaps(null, sortOrder, filters_include, filters_exclude);
+            loadMaps(null, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         // set up listener for sort dropdown
         $('#sort').on('change', function() {
             sortOrder = this.value;
-            loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
+        });
+
+        // set up listener for favorites sort options
+        $('.favorites a').on('click', function() {
+            if ($(this).hasClass('selected')) {
+                sortFavorites = 'unset';
+                $('.favorites a').removeClass('selected');
+            } else {
+                sortFavorites = this.id;
+                $('.favorites a').removeClass('selected');
+                $(this).addClass('selected');
+            }
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         loadMaps();
     };
 
-    function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
+    function loadMaps(searchTerm = null, sortOrder = 'native', sortFavorites = 'unset', filters_include = [], filters_exclude =[]) {
         // is there a sort order?
         if (sortOrder === 'native') {
             mapsArray = Object.values(mapsObject);
@@ -86,10 +100,22 @@
             });
         }
 
+        // are favorites sorted on top?
+        if (sortFavorites === 'topFav') {
+            mapsArray = mapsArray.sort(function(a,b) {
+                return (a.favorite === b.favorite ? 0 : (a.favorite < b.favorite ? -1 : 1));
+            });
+        }
+
         var tableRows = [];
         for (let i = 0; i < mapsArray.length; i++) {
             // is there a search term?
             if (searchTerm && !searchTerm.test(mapsArray[i].name) && !searchTerm.test(mapsArray[i].id)) {
+                continue;
+            }
+
+            // is it set to show only favorites?
+            if (sortFavorites === 'onlyFav' && !mapsArray[i].favorite) {
                 continue;
             }
 
