@@ -92,11 +92,11 @@
             mapsArray = Object.values(mapsObject);
         } else if (sortOrder === 'name') {
             mapsArray = mapsArray.sort(function(a, b) {
-                return (a.name < b.name ? -1 : 1);
+                return (a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
             });
         } else if (sortOrder === 'id') {
             mapsArray = mapsArray.sort(function(a, b) {
-                return (a.id < b.id ? -1 : 1);
+                return (a.id.toLowerCase() < b.id.toLowerCase() ? -1 : 1);
             });
         }
 
