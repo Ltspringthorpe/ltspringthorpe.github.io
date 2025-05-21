@@ -103,7 +103,7 @@
         // are favorites sorted on top?
         if (sortFavorites === 'topFav') {
             mapsArray = mapsArray.sort(function(a,b) {
-                return (a.favorite === b.favorite ? 0 : (a.favorite < b.favorite ? -1 : 1));
+                return (a.favorite === b.favorite ? 0 : (a.favorite < b.favorite ? 1 : -1));
             });
         }
 
