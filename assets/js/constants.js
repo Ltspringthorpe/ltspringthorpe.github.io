@@ -1,651 +1,796 @@
-const NATIVE_ORDER = [
-    {
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+var nativeOrder = {
+    'q3dm1': {
         id: 'q3dm1',
         name: 'Arena Gate',
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Red Armor',
+        favorite: getCookie('q3dm1'),
         notes: 'Did you really mean to call this map?',
         images: 3,
     },
-    {
+    'q3dm2': {
         id: 'q3dm2',
         name: 'House Of Pain',
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Red Armor,Yellow Armor,Haste',
+        favorite: getCookie('q3dm2'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm3': {
         id: 'q3dm3',
         name: 'Arena Of Death',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,Red Armor',
+        favorite: getCookie('q3dm3'),
         notes: '',
         images: 3,
     },
-    {
+    'q3tourney1': {
         id: 'q3tourney1',
         name: 'Powerstation 0218',
         keywords: 'Shotgun,Rocket Launcher,Yellow Armor,Quad Damage,Regeneration',
+        favorite: getCookie('q3tourney1'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm4': {
         id: 'q3dm4',
         name: 'The Place Of Many Deaths',
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Red Armor,Quad Damage',
+        favorite: getCookie('q3dm4'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm5': {
         id: 'q3dm5',
         name: 'The Forgotten Place',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,Red Armor,Yellow Armor',
+        favorite: getCookie('q3dm5'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm6': {
         id: 'q3dm6',
         name: 'The Camping Grounds',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('q3dm6'),
         notes: '',
         images: 3,
     },
-    {
+    'q3tourney2': {
         id: 'q3tourney2',
         name: 'The Proving Grounds',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Yellow Armor',
+        favorite: getCookie('q3tourney2'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm7': {
         id: 'q3dm7',
         name: 'Temple Of Retribution',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('q3dm7'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm8': {
         id: 'q3dm8',
         name: 'Brimstone Abbey',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Invisibility,Quad Damage',
+        favorite: getCookie('q3dm8'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm9': {
         id: 'q3dm9',
         name: 'Hero\'s Keep',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('q3dm9'),
         notes: 'In! Out!',
         images: 3,
     },
-    {
+    'q3tourney3': {
         id: 'q3tourney3',
         name: 'Hell\'s Gate',
         keywords: 'Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit',
+        favorite: getCookie('q3tourney3'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm10': {
         id: 'q3dm10',
         name: 'The Nameless Place',
         keywords: 'Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Invisibility,Quad Damage,Regeneration',
+        favorite: getCookie('q3dm10'),
         notes: 'Recharging platform',
         images: 3,
     },
-    {
+    'q3dm11': {
         id: 'q3dm11',
         name: 'Deva Station',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Haste,Megahealth,Quad Damage,Medkit',
+        favorite: getCookie('q3dm11'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm12': {
         id: 'q3dm12',
         name: 'The Dredwerkz',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Regeneration,Teleporter',
+        favorite: getCookie('q3dm12'),
         notes: '',
         images: 3,
     },
-    {
+    'q3tourney4': {
         id: 'q3tourney4',
         name: 'Vertical Vengeance',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Megahealth',
+        favorite: getCookie('q3tourney4'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm13': {
         id: 'q3dm13',
         name: 'Lost World',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit',
+        favorite: getCookie('q3dm13'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm14': {
         id: 'q3dm14',
         name: 'Grim Dungeons',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('q3dm14'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm15': {
         id: 'q3dm15',
         name: 'Demon Keep',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Battle Suit,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('q3dm15'),
         notes: '',
         images: 3,
     },
-    {
+    'q3tourney5': {
         id: 'q3tourney5',
         name: 'Fatal Instinct',
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Yellow Armor,Quad Damage',
+        favorite: getCookie('q3tourney5'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm16': {
         id: 'q3dm16',
         name: 'The Bouncy Map',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor',
+        favorite: getCookie('q3dm16'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm17': {
         id: 'q3dm17',
         name: 'The Longest Yard',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('q3dm17'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm18': {
         id: 'q3dm18',
         name: 'Space Chamber',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Yellow Armor,Quad Damage,Teleporter',
+        favorite: getCookie('q3dm18'),
         notes: '',
         images: 3,
     },
-    {
+    'q3dm19': {
         id: 'q3dm19',
         name: 'Apocalypse Void',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Wings,Quad Damage,Teleporter',
+        favorite: getCookie('q3dm19'),
         notes: '',
         images: 1,
     },
-    {
+    'q3tourney6': {
         id: 'q3tourney6',
         name: 'The Very End Of You',
         keywords: 'Rocket Launcher,Railgun,BFG,Red Armor,Yellow Armor,Megahealth,Teleporter',
+        favorite: getCookie('q3tourney6'),
         notes: '',
         images: 1,
     },
-    {
+    'mptourney1': {
         id: 'mptourney1',
-        name: 'The House Of Decay',
+        name: 'The House of Decay',
         keywords: 'Rocket Launcher,Lightning Gun,Plasma Gun,Yellow Armor',
+        favorite: getCookie('mptourney1'),
         notes: '',
         images: 1,
     },
-    {
+    'mptourney2': {
         id: 'mptourney2',
         name: 'Death Factory',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Yellow Armor,Medkit',
+        favorite: getCookie('mptourney2'),
         notes: '',
         images: 1,
     },
-    {
+    'mptourney3': {
         id: 'mptourney3',
-        name: 'Temple Of Pain',
+        name: 'Temple of Pain',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Nailgun,Yellow Armor',
+        favorite: getCookie('mptourney3'),
         notes: '',
         images: 1,
     },
-    {
+    'mptourney4': {
         id: 'mptourney4',
         name: 'Evil Playground',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor',
+        favorite: getCookie('mptourney4'),
         notes: '',
         images: 1,
     },
-    {
+    'ztn3dm2': {
         id: 'ztn3dm2',
         name: 'Beatbox',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('ztn3dm2'),
         notes: '',
         images: 1,
     },
-    {
+    'zGRcult2z3': {
         id: 'zGRcult2z3',
         name: 'Revolt III',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('zGRcult2z3'),
         notes: '',
         images: 1,
     },
-    {
+    'zGRcult2z2': {
         id: 'zGRcult2z2',
         name: 'Revolt II',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Quad Damage',
+        favorite: getCookie('zGRcult2z2'),
         notes: 'Mysterious columns that go up and down',
         images: 1,
     },
-    {
+    'woa': {
         id: 'woa',
         name: 'War of Angels (woa)',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit,Teleporter',
+        favorite: getCookie('woa'),
         notes: '',
         images: 1,
     },
-    {
+    'vanish': {
         id: 'vanish',
-        name: 'Vanishing Hope',
+        name: 'Vanish / Vanishing Hope',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun',
+        favorite: getCookie('vanish'),
         notes: '',
         images: 1,
     },
-    {
+    'stei8a': {
         id: 'stei8a',
-        name: 'Between The Conduits',
+        name: 'between the conduits',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('stei8a'),
         notes: '',
         images: 1,
     },
-    {
+    'spacedm1': {
         id: 'spacedm1',
         name: '$p@cE\'s $hrine',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('spacedm1'),
         notes: '',
         images: 1,
     },
-    {
+    'senndm1': {
         id: 'senndm1',
         name: 'Gothic Frog Den / Agony & Ecstasy',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Quad Damage',
+        favorite: getCookie('senndm1'),
         notes: '',
         images: 1,
     },
-    {
+    'semper01q3': {
         id: 'semper01q3',
         name: 'Crewel Lye',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Haste',
+        favorite: getCookie('semper01q3'),
         notes: '',
         images: 1,
     },
-    {
+    'sdmrail': {
         id: 'sdmrail',
         name: 'Longest Yard - Rail / The Rail Yard',
         keywords: 'Railgun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Regeneration',
+        favorite: getCookie('sdmrail'),
         notes: 'The Longest Yard but with railguns! And a BFG I guess.',
         images: 1,
     },
-    {
+    'satan': {
         id: 'satan',
-        name: 'Satan\'s Playground',
+        name: 'Satan / Satan\'s Playground',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Quad Damage,Teleporter',
+        favorite: getCookie('satan'),
         notes: 'Has a trap that squishes folks, and a viewing window to watch!',
         images: 1,
     },
-    {
+    'sabbac': {
         id: 'sabbac',
         name: 'Sabbac\'s Revenge',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor',
+        favorite: getCookie('sabbac'),
         notes: '',
         images: 1,
     },
-    {
+    'rene1q3': {
         id: 'rene1q3',
-        name: 'Blaze Of Glory',
+        name: 'Blaze of Glory',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('rene1q3'),
         notes: '',
         images: 1,
     },
-    {
+    'qbee': {
         id: 'qbee',
         name: 'qbee',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor',
+        favorite: getCookie('qbee'),
         notes: '',
         images: 1,
     },
-    {
+    'qdolphin': {
         id: 'qdolphin',
         name: 'qdolphin',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Megahealth,Teleporter',
+        favorite: getCookie('qdolphin'),
         notes: 'No',
         images: 1,
     },
-    {
+    'qbeast': {
         id: 'qbeast',
         name: 'qbeast',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Megahealth',
+        favorite: getCookie('qbeast'),
         notes: '',
         images: 1,
     },
-    {
+    'q3_q2dm1': {
         id: 'q3_q2dm1',
         name: 'Q2 Fav / The Edge',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Megahealth',
+        favorite: getCookie('q3_q2dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'q3zvendm1': {
         id: 'q3zvendm1',
         name: 'Stairway To Heaven',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Quad Damage',
+        favorite: getCookie('q3zvendm1'),
         notes: 'Corners!',
         images: 1,
     },
-    {
+    'q3notdm1': {
         id: 'q3notdm1',
         name: 'Not DM1 / Frag Kingdom',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Quad Damage',
+        favorite: getCookie('q3notdm1'),
         notes: '',
         images: 1,
     },
-    {
+    'q3monsto4': {
         id: 'q3monsto4',
-        name: '15 Days To BoilerMaker',
+        name: '15 Days to BoilerMaker',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,Yellow Armor,Battle Suit,Haste,Megahealth',
+        favorite: getCookie('q3monsto4'),
         notes: '"A tiny village"',
         images: 1,
     },
-    {
+    'gork': {
         id: 'gork',
-        name: 'Gork',
+        name: 'Gork by claudec',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Quad Damage',
+        favorite: getCookie('gork'),
         notes: '',
         images: 1,
     },
-    {
+    'q31dm1': {
         id: 'q31dm1',
-        name: 'Place Of Two Deaths',
+        name: 'PLACE_OF_TWO_DEATHS',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,BFG,Red Armor,Megahealth,Invisibility',
+        favorite: getCookie('q31dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'platypus': {
         id: 'platypus',
-        name: 'Platypus',
+        name: 'platipus',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('platypus'),
         notes: '',
         images: 1,
     },
-    {
+    'platform6': {
         id: 'platform6',
-        name: 'Platform6',
+        name: 'Platform6 by Cyben',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Invisibility,Quad Damage,Regeneration',
+        favorite: getCookie('platform6'),
         notes: '',
         images: 1,
     },
-    {
+    'pjw3dm1': {
         id: 'pjw3dm1',
-        name: 'Kiss The Sky',
+        name: 'Kiss the Sky',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit',
+        favorite: getCookie('pjw3dm1'),
         notes: 'Impossible BFG',
         images: 1,
     },
-    {
+    'pro-q3tourney2': {
+        id: 'pro-q3tourney2',
+        name: 'The Proving Grounds II',
+        keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor',
+        favorite: getCookie('pro-q3tourney2'),
+        notes: '',
+    },
+    'pro-q3tourney4': {
+        id: 'pro-q3tourney4',
+        name: 'Vertical Vengeance II',
+        keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Megahealth',
+        favorite: getCookie('pro-q3tourney4'),
+        notes: '',
+    },
+    'pro-q3dm6': {
+        id: 'pro-q3dm6',
+        name: 'The Campgrounds II',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('pro-q3dm6'),
+        notes: '',
+    },
+    'pro-q3dm13': {
+        id: 'pro-q3dm13',
+        name: 'Lost World II',
+        keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('pro-q3dm13'),
+        notes: '',
+    },
+    'mrcq3dm5': {
         id: 'mrcq3dm5',
         name: 'Abusive Intentions',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Megahealth,Quad Damage',
+        favorite: getCookie('mrcq3dm5'),
         notes: '',
         images: 1,
     },
-    {
+    'pro-q3dm17': {
+        id: 'pro-q3dm17',
+        name: 'The Longest Yard II',
+        keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('pro-q3dm17'),
+        notes: '',
+    },
+    'mkexp': {
         id: 'mkexp',
         name: 'Industrial Experience',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth,Quad Damage',
+        favorite: getCookie('mkexp'),
         notes: '',
         images: 1,
     },
-    {
+    'mfspacedm3': {
         id: 'mfspacedm3',
         name: 'Lost Cause',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Megahealth,Invisibility,Quad Damage',
+        favorite: getCookie('mfspacedm3'),
         notes: '',
         images: 1,
     },
-    {
+    'maxx': {
         id: 'maxx',
-        name: 'Maxx Aggression',
+        name: 'Maxx Aggression by Dlord8',
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Yellow Armor,Megahealth',
+        favorite: getCookie('maxx'),
         notes: '',
         images: 1,
     },
-    {
+    'nalq1ta6': {
         id: 'nalq1ta6',
-        name: 'Sinister Zone',
+        name: 'Sinister Zone for Q3TA',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Chain Gun,Nailgun,Red Armor,Yellow Armor,Invisibility,Medkit',
+        favorite: getCookie('nalq1ta6'),
         notes: '',
         images: 1,
     },
-    {
+    'hate': {
         id: 'hate',
         name: 'Burning Hate',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('hate'),
         notes: '',
         images: 1,
     },
-    {
+    'willpower': {
         id: 'willpower',
-        name: 'Willpower',
+        name: 'Willpower -M.R-',
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Yellow Armor,Megahealth',
+        favorite: getCookie('willpower'),
         notes: '',
         images: 1,
     },
-    {
+    'unitooldm3_beta': {
         id: 'unitooldm3_beta',
-        name: 'Offically Dead / Cosmik Debris',
+        name: 'Officially Dead / Cosmik Debris',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('unitooldm3_beta'),
         notes: 'The one that used to have the dog thumbnail',
         images: 1,
     },
-    {
+    'rqm3arena2': {
         id: 'rqm3arena2',
         name: 'A Cold Wind',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor',
+        favorite: getCookie('rqm3arena2'),
         notes: '',
         images: 1,
     },
-    {
+    'mrl1dm1': {
         id: 'mrl1dm1',
-        name: 'LuNaTiC',
+        name: 'LuNaTiC - By Mr.LyCon',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Haste,Megahealth,Quad Damage',
+        favorite: getCookie('mrl1dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'dmmtp': {
         id: 'dmmtp',
-        name: 'Temple At Full Moon',
+        name: 'Temple at Full Moon',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Megahealth,Invisibility,Quad Damage,Regeneration',
+        favorite: getCookie('dmmtp'),
         notes: '',
         images: 1,
     },
-    {
+    'charon3dm13': {
         id: 'charon3dm13',
         name: '5quid',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('charon3dm13'),
         notes: '',
         images: 1,
     },
-    {
+    'kmldm1': {
         id: 'kmldm1',
-        name: 'Ministry Of Death',
+        name: 'Ministry of Death',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Haste,Megahealth,Quad Damage,Regeneration,Medkit,Teleporter',
+        favorite: getCookie('kmldm1'),
         notes: '',
         images: 1,
     },
-    {
+    'klhights': {
         id: 'klhights',
-        name: 'Kleskonian Hights',
+        name: 'kleskonian hights',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('klhights'),
         notes: '',
         images: 1,
     },
-    {
+    'klcurves_small': {
         id: 'klcurves_small',
         name: 'Kleskonian Curves',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Regeneration',
+        favorite: getCookie('klcurves_small'),
         notes: '',
         images: 1,
     },
-    {
+    'kaos': {
         id: 'kaos',
         name: 'Khaooohs',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth,Invisibility,Quad Damage,Teleporter',
+        favorite: getCookie('kaos'),
         notes: '',
         images: 1,
     },
-    {
+    'jaxdm8': {
         id: 'jaxdm8',
-        name: 'Iron And Stone',
+        name: 'Iron and Stone',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('jaxdm8'),
         notes: '',
         images: 1,
     },
-    {
+    'hub3dm1': {
         id: 'hub3dm1',
         name: 'Dismemberment',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Yellow Armor',
+        favorite: getCookie('hub3dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'gon2': {
         id: 'gon2',
-        name: 'Gon2',
+        name: 'gon2',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Yellow Armor,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('gon2'),
         notes: '',
         images: 1,
     },
-    {
+    'geo-core': {
         id: 'geo-core',
-        name: 'The Geo Core',
+        name: '- The Geo Core - by Q',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Wings,Megahealth',
+        favorite: getCookie('geo-core'),
         notes: '',
         images: 1,
     },
-    {
+    'geit3dm3': {
         id: 'geit3dm3',
-        name: 'And When Death Descends',
+        name: 'And when death descends...',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('geit3dm3'),
         notes: 'Mark, the Rocket Launcher is right there. You can see it in the screenshot.',
         images: 1,
     },
-    {
+    'geit3dm1': {
         id: 'geit3dm1',
         name: 'Slingshot',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Quad Damage',
+        favorite: getCookie('geit3dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'dungogt': {
         id: 'dungogt',
-        name: 'The Dungeons Of Gvatter Tod',
+        name: 'The Dungeons of Gvatter Tod',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Invisibility,Quad Damage,Regeneration,Teleporter',
+        favorite: getCookie('dungogt'),
         notes: 'Impossible BFG',
         images: 1,
     },
-    {
+    'esq3dm1': {
         id: 'esq3dm1',
         name: 'Frog Trap',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('esq3dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'coldq3dm1': {
         id: 'coldq3dm1',
         name: 'Grenade Perch',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Quad Damage',
+        favorite: getCookie('coldq3dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'charondm1': {
         id: 'charondm1',
         name: 'A Shadow Lost',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Regeneration',
+        favorite: getCookie('charondm1'),
         notes: '',
         images: 1,
     },
-    {
+    'butchershouse': {
         id: 'butchershouse',
         name: 'Butchers House',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit',
+        favorite: getCookie('butchershouse'),
         notes: '',
         images: 1,
     },
-    {
+    'brickhouse': {
         id: 'brickhouse',
         name: 'Brick House',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Yellow Armor,Haste,Invisibility',
+        favorite: getCookie('brickhouse'),
         notes: '',
         images: 1,
     },
-    {
+    'billdm17': {
         id: 'billdm17',
         name: 'Forbidden Palace',
         keywords: 'Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Invisibility,Quad Damage,Medkit,Teleporter',
+        favorite: getCookie('billdm17'),
         notes: '',
         images: 1,
     },
-    {
+    'bfgdm2': {
         id: 'bfgdm2',
         name: 'Breakthru',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth',
+        favorite: getCookie('bfgdm2'),
         notes: '',
         images: 1,
     },
-    {
+    'bath1': {
         id: 'bath1',
         name: 'Frog Bath / BloodBath',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
+        favorite: getCookie('bath1'),
         notes: 'Impossible Quad',
         images: 1,
     },
-    {
+    'basic': {
         id: 'basic',
         name: 'Basic Instincts',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,Yellow Armor,Haste,Megahealth',
+        favorite: getCookie('basic'),
         notes: '',
         images: 1,
     },
-    {
+    'auh3dm2': {
         id: 'auh3dm2',
         name: 'The BackStab',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Haste,Quad Damage',
+        favorite: getCookie('auh3dm2'),
         notes: '',
         images: 1,
     },
-    {
+    'auh3dm1': {
         id: 'auh3dm1',
         name: 'OverWhelming HostiLity',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Megahealth',
+        favorite: getCookie('auh3dm1'),
         notes: '',
         images: 1,
     },
-    {
+    'altarbeta': {
         id: 'altarbeta',
         name: 'AltarBeta',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Yellow Armor,Megahealth,Regeneration',
+        favorite: getCookie('altarbeta'),
         notes: '',
         images: 1,
     },
-    {
+    'alkdm11': {
         id: 'alkdm11',
         name: 'Early Settlers',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Megahealth',
+        favorite: getCookie('alkdm11'),
         notes: '',
         images: 1,
     },
-    {
+    "'own'arama": {
         id: "'own'arama",
         name: 'Flying Frogs / \'own\'arama',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Megahealth,Quad Damage,Medkit,Teleporter',
+        favorite: getCookie("'own'arama"),
         notes: '',
         images: 1,
     },
-    {
+    'mpteam9': {
         id: 'mpteam9',
         name: 'Beyond Reality II',
         keywords: 'Rocket Launcher,Railgun,Chain Gun,Nailgun,BFG,Yellow Armor,Quad Damage,Teleporter,Kamikaze,Invulnerability',
+        favorite: getCookie('mpteam9'),
         notes: 'Similar to The Very End Of You, but with a third platform.',
         images: 1,
     },
-];
+};
 
-var mapsArray = NATIVE_ORDER.slice();
+// var mapsArray = nativeOrder.slice();
+var mapsObject = structuredClone(nativeOrder);
+var mapsArray = Object.values(mapsObject);
 
 var keywordFilenames = {
     "Shotgun": 'iconw_shotgun',

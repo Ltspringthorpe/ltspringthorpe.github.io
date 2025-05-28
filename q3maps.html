@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html id="top" style="background-color: #121212; overflow-y: scroll;">
     <head>
-        <title>Leanne Springthorpe</title>
+        <title>Quake 3 Maps</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -13,7 +13,7 @@
 
         <!-- Q3Maps -->
         <section id="q3maps">
-            <a href="#top" class="back-to-top" title="Back to Top">Back to Top <span style="font-size: 18px">&#8593;</span></a>
+            <a href="#top" class="back-to-top" title="Back to Top">Back to Top <span style="font-size: 18px; margin-bottom: 4px;">&#8593;</span></a>
 
             <div class="row" style="padding-bottom: 20px; column-gap: 12px;">
 
@@ -39,7 +39,22 @@
                 </div>
             </div>
 
-            <!-- Filter -->
+            <!-- Favorites -->
+            <div class="filter-list" style="padding-bottom: 20px;">
+                <div class="label">Favorites <span class="caret">&#9662;</span></div>
+                <div class="row favorites">
+                    <a id="onlyFav" class="col-12-xsmall" title="Show Only Favorites">
+                        <span class="star-icon favorite"></span>
+                        Show Only Favorites
+                    </a>
+                    <a id="topFav" class="col-12-xsmall" title="Sort Favorites on Top">
+                        <span class="up-arrow">&#8593;</span>
+                        Sort Favorites on Top
+                    </a>
+                </div>
+            </div>
+
+            <!-- Filter: Include -->
             <div class="row" style="padding-bottom: 20px;">
                 <div class="col-12 col-12-xsmall filter-list include" style="padding-left: 0;">
                     <div class="label">Must Include <span class="caret">&#9662;</span></div>
@@ -71,6 +86,7 @@
                 </div>
             </div>
 
+            <!-- Filter: Exclude -->
             <div class="row" style="padding-bottom: 20px;">
                 <div class="col-12 col-12-xsmall filter-list exclude" style="padding-left: 0;">
                     <div class="label">Must Exclude <span class="caret">&#9662;</span></div>
@@ -105,6 +121,22 @@
             <!-- Maps -->
             <div id="q3mapsTableBody"></div>
         </section>
+
+        <modal id="cookieConsent" class="modal hidden">
+            <div class="closer">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#121212"></path></g></svg>
+            </div>
+            <div style="margin-bottom: 8px;">Yo assholes, this new "Favorite" feature uses cookies. Is that cool?</div>
+            <ul>Warning:
+                <li>Your favorites are local to this device only.</li>
+                <li>Clearing cookies from this site will erase your favorites.</li>
+            </ul>
+            <div class="row">
+                <button id="no">Not my cookies!</button>
+                <button id="yes">Ugh. Fine.</button>
+            </div>
+        </modal>
+
     </body>
 
     <script src="assets/js/jquery.min.js"></script>

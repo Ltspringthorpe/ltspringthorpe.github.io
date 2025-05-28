@@ -4,17 +4,18 @@
         var searchInput = null;
         var searchTerm = null;
         var sortOrder = 'native';
+        var sortFavorites = 'unset';
         var filters_include = [];
         var filters_exclude = [];
 
         // set up listener for filter carets
         $('.caret').on('click', function() {
             $(this).toggleClass('closed');
-            $(this).closest('.filter-list').find('.filter-items').toggleClass('hidden');
+            $(this).closest('.filter-list').find('.filter-items, .favorites').toggleClass('hidden');
         });
 
         // set up listeners for filter buttons
-        $('.filter-list a').on('click', function() {
+        $('.filter-list.include a, .filter-list.exclude a').on('click', function() {
             $(this).toggleClass('selected');
 
             // don't allow two conflicting filters
@@ -31,8 +32,7 @@
             filters_exclude = $('.filter-list.exclude .selected img').map(function(idx, item) {
                 return $(item).attr('alt');
             });
-            loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         // set up listeners for clear filter buttons
@@ -43,8 +43,7 @@
             } else if ($(this).closest('.exclude').length) {
                 filters_exclude = [];
             }
-            loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         // set up listener for search field
@@ -53,8 +52,7 @@
                 searchInput = this.value.trim();
                 searchInput = searchInput.replace(/[-\\.,_*+?^$[\](){}!=|]/ig, '\\$&');
                 searchTerm = new RegExp(searchInput, 'i');
-                loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-                loadLightbox();
+                loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
             }
         });
 
@@ -63,40 +61,61 @@
             $('#search').val('');
             searchInput = null;
             searchTerm = null;
-            loadMaps(null, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
+            loadMaps(null, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         // set up listener for sort dropdown
         $('#sort').on('change', function() {
             sortOrder = this.value;
-            loadMaps(searchTerm, sortOrder, filters_include, filters_exclude);
-            loadLightbox();
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
+        });
+
+        // set up listener for favorites sort options
+        $('.favorites a').on('click', function() {
+            if ($(this).hasClass('selected')) {
+                sortFavorites = 'unset';
+                $('.favorites a').removeClass('selected');
+            } else {
+                sortFavorites = this.id;
+                $('.favorites a').removeClass('selected');
+                $(this).addClass('selected');
+            }
+            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
         });
 
         loadMaps();
-        loadLightbox();
     };
 
-    async function loadMaps(searchTerm = null, sortOrder = 'native', filters_include = [], filters_exclude =[]) {
+    function loadMaps(searchTerm = null, sortOrder = 'native', sortFavorites = 'unset', filters_include = [], filters_exclude =[]) {
+        // is there a sort order?
+        if (sortOrder === 'native') {
+            mapsArray = Object.values(mapsObject);
+        } else if (sortOrder === 'name') {
+            mapsArray = mapsArray.sort(function(a, b) {
+                return (a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
+            });
+        } else if (sortOrder === 'id') {
+            mapsArray = mapsArray.sort(function(a, b) {
+                return (a.id.toLowerCase() < b.id.toLowerCase() ? -1 : 1);
+            });
+        }
+
+        // are favorites sorted on top?
+        if (sortFavorites === 'topFav') {
+            mapsArray = mapsArray.sort(function(a,b) {
+                return (a.favorite === b.favorite ? 0 : (a.favorite < b.favorite ? 1 : -1));
+            });
+        }
+
         var tableRows = [];
         for (let i = 0; i < mapsArray.length; i++) {
-
-            // is there a sort order?
-            if (sortOrder === 'native') {
-                mapsArray = NATIVE_ORDER.slice();
-            } else if (sortOrder === 'name') {
-                mapsArray = mapsArray.sort(function(a, b) {
-                    return (a.name < b.name ? -1 : 1);
-                });
-            } else if (sortOrder === 'id') {
-                mapsArray = mapsArray.sort(function(a, b) {
-                    return (a.id < b.id ? -1 : 1);
-                });
-            }
-
             // is there a search term?
             if (searchTerm && !searchTerm.test(mapsArray[i].name) && !searchTerm.test(mapsArray[i].id)) {
+                continue;
+            }
+
+            // is it set to show only favorites?
+            if (sortFavorites === 'onlyFav' && !mapsArray[i].favorite) {
                 continue;
             }
 
@@ -138,6 +157,10 @@
             // name and id
             tableRows += '<div class="col-4 col-12-small info-container">';
             tableRows += '<h3>' + mapsArray[i].name + '</h3>';
+
+            let favorite = mapsArray[i].favorite ? 'favorite' : '';
+            let title = mapsArray[i].favorite ? 'Remove Favorite' : 'Add Favorite';
+            tableRows += '<div class="filter-items star-icon"><a class="' + favorite + '" data-id="' + mapsArray[i].id + '" title="' + title + '"></a></div>';
             tableRows += '<div>ID: ' + mapsArray[i].id + '</div>';
 
             // keywords
@@ -160,6 +183,9 @@
         }
 
         $('#q3mapsTableBody').html(tableRows);
+
+        loadLightbox();
+        initStarListener();
     };
 
     // Lightbox gallery.
@@ -179,7 +205,74 @@
         });
     };
 
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*400));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function handleModal() {
+        var cookieConsent = getCookie('cookieConsent');
+        if (!cookieConsent) {
+            $('#cookieConsent').removeClass('hidden');
+            $('body').addClass('modal-open');
+        }
+    }
+
+    // cookies accepted
+    $('#cookieConsent #yes').on('click', function() {
+        $('#cookieConsent').addClass('hidden');
+        $('body').removeClass('modal-open');
+
+        setCookie('cookieConsent', true, 400);
+    });
+
+    // cookied denied
+    $('#cookieConsent #no, #cookieConsent .closer').on('click', function() {
+        $('#cookieConsent').addClass('hidden');
+        $('body').removeClass('modal-open');
+    });
+
+    function toggleFavorite(e) {
+        var cookieConsent = getCookie('cookieConsent');
+        if(!cookieConsent) return;
+
+        var id = e.target.getAttribute('data-id');
+        if (e.target.classList.contains('favorite')) {
+            setCookie(id, false, 0);
+            nativeOrder[id].favorite = false;
+            mapsObject[id].favorite = false;
+        } else {
+            setCookie(id, true, 400);
+            nativeOrder[id].favorite = true;
+            mapsObject[id].favorite = true;
+        }
+        e.target.classList.toggle('favorite');
+    }
+
+    function initStarListener() {
+        $('.star-icon a').on('click', toggleFavorite);
+    }
+
     $(window).on('load', function() {
         init();
+        handleModal();
     });
 })(jQuery);
