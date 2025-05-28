@@ -127,7 +127,7 @@
             tableRows += '</a>';
 
             tableRows += '<div class="col-2 col-4-small col-12-xsmall">';
-            for (let n = 1; n < 3; n++) {
+            for (let n = 1; n < mapsArray[i].images; n++) {
                 let filename = 'images/q3maps/' + mapsArray[i].id + '-' + n + '.jpg';
                 tableRows += '<a href="' + filename + '" class="image-container">';
                 tableRows += '<img src="' + filename + '"  height="192" width="256" alt="' + mapsArray[i].name + ' image ' + Number(n+1) + '" title="' + mapsArray[i].name + ' image ' + Number(n+1) +'" />';
