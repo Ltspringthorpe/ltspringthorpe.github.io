@@ -317,15 +317,15 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Haste',
         favorite: getCookie('semper01q3'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'sdmrail': {
         id: 'sdmrail',
         name: 'Longest Yard - Rail / The Rail Yard',
         keywords: 'Railgun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Regeneration',
         favorite: getCookie('sdmrail'),
-        notes: 'The Longest Yard but with railguns! And a BFG I guess.',
-        images: 1,
+        notes: 'The Longest Yard but with railguns! And secret BFGs.',
+        images: 3,
     },
     'satan': {
         id: 'satan',
@@ -333,7 +333,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Quad Damage,Teleporter',
         favorite: getCookie('satan'),
         notes: 'Has a trap that squishes folks, and a viewing window to watch!',
-        images: 1,
+        images: 3,
     },
     'sabbac': {
         id: 'sabbac',
@@ -341,7 +341,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor',
         favorite: getCookie('sabbac'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'rene1q3': {
         id: 'rene1q3',
@@ -349,7 +349,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage',
         favorite: getCookie('rene1q3'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'qbee': {
         id: 'qbee',
@@ -357,7 +357,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor',
         favorite: getCookie('qbee'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'qdolphin': {
         id: 'qdolphin',
@@ -365,7 +365,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Megahealth,Teleporter',
         favorite: getCookie('qdolphin'),
         notes: 'No',
-        images: 1,
+        images: 3,
     },
     'qbeast': {
         id: 'qbeast',
