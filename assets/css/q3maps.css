@@ -70,14 +70,15 @@
 
 #q3maps h3 {
     color: rgb(250, 250, 250);
-    margin: 8px 0;
+    margin: 0;
     display: inline-block;
 }
 
 #q3maps .filter-items.star-icon {
     display: inline-block;
     padding-top: 0;
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 @media screen and (max-width: 1800px) {
     #q3maps .filter-items.star-icon {
@@ -117,11 +118,11 @@
 }
 
 #q3maps .col-2 {
-    padding: 8px;
+    padding: 8px 0 8px 8px;
 }
 
 #q3maps .col-2 .image-container:first-child {
-    padding-bottom: 18px;
+    padding-bottom: 6px;
 }
 
 @media screen and (max-width: 480px) {
@@ -146,6 +147,7 @@
 
 #q3maps .col-4.info-container {
     padding-left: 16px;
+    position: relative;
 }
 
 @media screen and (max-width: 736px) {

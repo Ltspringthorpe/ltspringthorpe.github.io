@@ -205,7 +205,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Wings,Quad Damage,Teleporter',
         favorite: getCookie('q3dm19'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'q3tourney6': {
         id: 'q3tourney6',
@@ -213,7 +213,7 @@ var nativeOrder = {
         keywords: 'Rocket Launcher,Railgun,BFG,Red Armor,Yellow Armor,Megahealth,Teleporter',
         favorite: getCookie('q3tourney6'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'mptourney1': {
         id: 'mptourney1',
@@ -221,7 +221,7 @@ var nativeOrder = {
         keywords: 'Rocket Launcher,Lightning Gun,Plasma Gun,Yellow Armor',
         favorite: getCookie('mptourney1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'mptourney2': {
         id: 'mptourney2',
@@ -229,7 +229,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Yellow Armor,Medkit',
         favorite: getCookie('mptourney2'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'mptourney3': {
         id: 'mptourney3',
@@ -237,7 +237,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Nailgun,Yellow Armor',
         favorite: getCookie('mptourney3'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'mptourney4': {
         id: 'mptourney4',
@@ -245,7 +245,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor',
         favorite: getCookie('mptourney4'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'ztn3dm2': {
         id: 'ztn3dm2',
@@ -253,23 +253,23 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth',
         favorite: getCookie('ztn3dm2'),
         notes: '',
-        images: 1,
+        images: 3,
     },
-    'zGRcult2z3': {
-        id: 'zGRcult2z3',
+    'q3debello': {
+        id: 'q3debello',
         name: 'Revolt III',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
         favorite: getCookie('zGRcult2z3'),
         notes: '',
-        images: 1,
+        images: 3,
     },
-    'zGRcult2z2': {
-        id: 'zGRcult2z2',
+    'q3chthon': {
+        id: 'q3chthon',
         name: 'Revolt II',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Quad Damage',
         favorite: getCookie('zGRcult2z2'),
         notes: 'Mysterious columns that go up and down',
-        images: 1,
+        images: 3,
     },
     'woa': {
         id: 'woa',
@@ -277,7 +277,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit,Teleporter',
         favorite: getCookie('woa'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'vanish': {
         id: 'vanish',
@@ -285,7 +285,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun',
         favorite: getCookie('vanish'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'stei8a': {
         id: 'stei8a',
@@ -293,7 +293,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Teleporter',
         favorite: getCookie('stei8a'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'spacedm1': {
         id: 'spacedm1',
@@ -301,7 +301,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
         favorite: getCookie('spacedm1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'senndm1': {
         id: 'senndm1',
@@ -309,7 +309,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Quad Damage',
         favorite: getCookie('senndm1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'semper01q3': {
         id: 'semper01q3',
