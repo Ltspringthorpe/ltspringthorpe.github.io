@@ -373,7 +373,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Megahealth',
         favorite: getCookie('qbeast'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'q3_q2dm1': {
         id: 'q3_q2dm1',
@@ -381,7 +381,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Megahealth',
         favorite: getCookie('q3_q2dm1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'q3zvendm1': {
         id: 'q3zvendm1',
@@ -389,7 +389,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Quad Damage',
         favorite: getCookie('q3zvendm1'),
         notes: 'Corners!',
-        images: 1,
+        images: 3,
     },
     'q3notdm1': {
         id: 'q3notdm1',
@@ -397,7 +397,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Quad Damage',
         favorite: getCookie('q3notdm1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'q3monsto4': {
         id: 'q3monsto4',
@@ -405,7 +405,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,Yellow Armor,Battle Suit,Haste,Megahealth',
         favorite: getCookie('q3monsto4'),
         notes: '"A tiny village"',
-        images: 1,
+        images: 3,
     },
     'gork': {
         id: 'gork',
@@ -413,7 +413,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Quad Damage',
         favorite: getCookie('gork'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'q31dm1': {
         id: 'q31dm1',
@@ -421,7 +421,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Plasma Gun,BFG,Red Armor,Megahealth,Invisibility',
         favorite: getCookie('q31dm1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'platypus': {
         id: 'platypus',
@@ -429,7 +429,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Yellow Armor,Megahealth',
         favorite: getCookie('platypus'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'platform6': {
         id: 'platform6',
@@ -437,7 +437,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Invisibility,Quad Damage,Regeneration',
         favorite: getCookie('platform6'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'pjw3dm1': {
         id: 'pjw3dm1',
@@ -445,7 +445,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit',
         favorite: getCookie('pjw3dm1'),
         notes: 'Impossible BFG',
-        images: 1,
+        images: 3,
     },
     'pro-q3tourney2': {
         id: 'pro-q3tourney2',
@@ -453,6 +453,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor',
         favorite: getCookie('pro-q3tourney2'),
         notes: '',
+        images: 3,
     },
     'pro-q3tourney4': {
         id: 'pro-q3tourney4',
@@ -460,6 +461,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor,Megahealth',
         favorite: getCookie('pro-q3tourney4'),
         notes: '',
+        images: 3,
     },
     'pro-q3dm6': {
         id: 'pro-q3dm6',
@@ -467,6 +469,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
         favorite: getCookie('pro-q3dm6'),
         notes: '',
+        images: 3,
     },
     'pro-q3dm13': {
         id: 'pro-q3dm13',
@@ -474,6 +477,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Red Armor,Yellow Armor,Megahealth',
         favorite: getCookie('pro-q3dm13'),
         notes: '',
+        images: 3,
     },
     'mrcq3dm5': {
         id: 'mrcq3dm5',
@@ -489,6 +493,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
         favorite: getCookie('pro-q3dm17'),
         notes: '',
+        images: 1,
     },
     'mkexp': {
         id: 'mkexp',
