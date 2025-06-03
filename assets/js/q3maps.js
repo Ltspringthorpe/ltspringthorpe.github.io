@@ -142,14 +142,14 @@
 
             // image
             tableRows += '<a href="images/q3maps/' + mapsArray[i].id + '-0.jpg" class="col-4 col-8-small col-12-xsmall image-container">';
-            tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '-0.jpg" height="384" width="512" alt="' + mapsArray[i].name + ' 1" title="' + mapsArray[i].name + ' 1" />';
+            tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '-0.jpg" height="384" width="512" alt="' + mapsArray[i].name + ' (1)" title="' + mapsArray[i].name + ' (1)" />';
             tableRows += '</a>';
 
             tableRows += '<div class="col-2 col-4-small col-12-xsmall">';
             for (let n = 1; n < mapsArray[i].images; n++) {
                 let filename = 'images/q3maps/' + mapsArray[i].id + '-' + n + '.jpg';
                 tableRows += '<a href="' + filename + '" class="image-container">';
-                tableRows += '<img src="' + filename + '"  height="192" width="256" alt="' + mapsArray[i].name + ' ' + Number(n+1) + '" title="' + mapsArray[i].name + ' ' + Number(n+1) +'" />';
+                tableRows += '<img src="' + filename + '"  height="192" width="256" alt="' + mapsArray[i].name + ' (' + Number(n+1) + ')" title="' + mapsArray[i].name + ' (' + Number(n+1) + ')" />';
                 tableRows += '</a>';
             }
             tableRows += '</div>';

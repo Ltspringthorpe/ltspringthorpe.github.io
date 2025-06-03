@@ -485,15 +485,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Megahealth,Quad Damage',
         favorite: getCookie('mrcq3dm5'),
         notes: '',
-        images: 1,
-    },
-    'pro-q3dm17': {
-        id: 'pro-q3dm17',
-        name: 'The Longest Yard II',
-        keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
-        favorite: getCookie('pro-q3dm17'),
-        notes: '',
-        images: 1,
+        images: 3,
     },
     'mkexp': {
         id: 'mkexp',
@@ -501,7 +493,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth,Quad Damage',
         favorite: getCookie('mkexp'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'mfspacedm3': {
         id: 'mfspacedm3',
@@ -509,7 +501,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Megahealth,Invisibility,Quad Damage',
         favorite: getCookie('mfspacedm3'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'maxx': {
         id: 'maxx',
@@ -517,7 +509,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Yellow Armor,Megahealth',
         favorite: getCookie('maxx'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'nalq1ta6': {
         id: 'nalq1ta6',
@@ -525,7 +517,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Chain Gun,Nailgun,Red Armor,Yellow Armor,Invisibility,Medkit',
         favorite: getCookie('nalq1ta6'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'hate': {
         id: 'hate',
@@ -533,7 +525,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
         favorite: getCookie('hate'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'willpower': {
         id: 'willpower',
@@ -541,7 +533,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Plasma Gun,Yellow Armor,Megahealth',
         favorite: getCookie('willpower'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'unitooldm3_beta': {
         id: 'unitooldm3_beta',
@@ -549,7 +541,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Megahealth,Quad Damage,Teleporter',
         favorite: getCookie('unitooldm3_beta'),
         notes: 'The one that used to have the dog thumbnail',
-        images: 1,
+        images: 3,
     },
     'rqm3arena2': {
         id: 'rqm3arena2',
@@ -557,7 +549,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor',
         favorite: getCookie('rqm3arena2'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'mrl1dm1': {
         id: 'mrl1dm1',
@@ -565,7 +557,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Haste,Megahealth,Quad Damage',
         favorite: getCookie('mrl1dm1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'dmmtp': {
         id: 'dmmtp',
@@ -573,7 +565,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Plasma Gun,Red Armor,Megahealth,Invisibility,Quad Damage,Regeneration',
         favorite: getCookie('dmmtp'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'charon3dm13': {
         id: 'charon3dm13',
@@ -581,7 +573,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth',
         favorite: getCookie('charon3dm13'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'kmldm1': {
         id: 'kmldm1',
@@ -589,7 +581,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Haste,Megahealth,Quad Damage,Regeneration,Medkit,Teleporter',
         favorite: getCookie('kmldm1'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'klhights': {
         id: 'klhights',
@@ -597,7 +589,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Red Armor,Yellow Armor,Megahealth,Quad Damage',
         favorite: getCookie('klhights'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'klcurves_small': {
         id: 'klcurves_small',
@@ -605,7 +597,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Regeneration',
         favorite: getCookie('klcurves_small'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'kaos': {
         id: 'kaos',
@@ -613,7 +605,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth,Invisibility,Quad Damage,Teleporter',
         favorite: getCookie('kaos'),
         notes: '',
-        images: 1,
+        images: 3,
     },
     'jaxdm8': {
         id: 'jaxdm8',
@@ -789,7 +781,7 @@ var nativeOrder = {
         keywords: 'Rocket Launcher,Railgun,Chain Gun,Nailgun,BFG,Yellow Armor,Quad Damage,Teleporter,Kamikaze,Invulnerability',
         favorite: getCookie('mpteam9'),
         notes: 'Similar to The Very End Of You, but with a third platform.',
-        images: 1,
+        images: 3,
     },
 };
 

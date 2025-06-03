@@ -113,4 +113,10 @@ var oldMaps = [
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Yellow Armor',
         notes: '',
     },
+    {
+        id: 'pro-q3dm17',
+        name: 'The Longest Yard II',
+        keywords: 'Rocket Launcher,Red Armor,Yellow Armor,Megahealth',
+        notes: '',
+    },
 ];
