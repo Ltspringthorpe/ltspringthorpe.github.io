@@ -1,122 +1,165 @@
-var oldMaps = [
-    {
+var oldMaps = {
+    'trampoleen': {
         id: 'trampoleen',
         name: 'Trampoleen',
         keywords: 'Shotgun,Rocket Launcher,Railgun,BFG,Red Armor,Wings,Megahealth,Quad Damage',
+        favorite: getCookie('trampoleen'),
         notes: '',
+        images: 1,
     },
-    {
+    'tig_qubert': {
         id: 'tig_qubert',
         name: 'April Fool\'s',
         keywords: 'Railgun,Quad Damage',
+        favorite: getCookie('tig_qubert'),
         notes: '',
+        images: 1,
     },
-    {
+    'teqdm2': {
         id: 'teqdm2',
         name: 'Propaganda',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth,Quad Damage,Medkit',
+        favorite: getCookie('teqdm2'),
         notes: '',
+        images: 1,
     },
-    {
+    'karena1': {
         id: 'karena1',
         name: 'Krusty Arena One',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor',
+        favorite: getCookie('karena1'),
         notes: '',
+        images: 1,
     },
-    {
+    'karena2': {
         id: 'karena2',
         name: 'Krusty Arena Two',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Yellow Armor',
+        favorite: getCookie('karena2'),
         notes: '',
+        images: 1,
     },
-    {
+    'karena3': {
         id: 'karena3',
         name: 'Krusty Arena Three',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Megahealth,Invisibility',
+        favorite: getCookie('karena3'),
         notes: '',
+        images: 1,
     },
-    {
+    'arcarena': {
         id: 'arcarena',
         name: 'The Balance',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth',
+        favorite: getCookie('arcarena'),
         notes: '',
+        images: 1,
     },
-    {
+    'rfwq3dm2': {
         id: 'rfwq3dm2',
         name: 'Climbing Up The Walls',
         keywords: 'Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Regeneration,Teleporter',
+        favorite: getCookie('rfwq3dm2'),
         notes: '',
+        images: 1,
     },
-    {
+    'mq3dm1': {
         id: 'mq3dm1',
         name: 'Brogan',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Haste,Megahealth,Quad Damage',
+        favorite: getCookie('mq3dm1'),
         notes: '',
+        images: 1,
     },
-    {
+    'charon3dm11v2': {
         id: 'charon3dm11v2',
         name: 'Liquid Carbon',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Megahealth,Teleporter',
+        favorite: getCookie('charon3dm11v2'),
         notes: '',
+        images: 1,
     },
-    {
+    '20kdm1': {
         id: '20kdm1',
         name: 'Tempered Graveyard',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Megahealth,Teleporter',
+        favorite: getCookie('20kdm1'),
         notes: '',
+        images: 1,
     },
-    {
+    'delirium': {
         id: 'delirium',
         name: 'Delirium',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Yellow Armor,Megahealth',
+        favorite: getCookie('delirium'),
         notes: 'There\'s one portal that will trap you. Not sure if it\'s a bug or a feature.',
+        images: 1,
     },
-    {
+    'blackforest': {
         id: 'blackforest',
         name: 'Black Forest',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Battle Suit,Wings,Megahealth,Quad Damage,Teleporter',
+        favorite: getCookie('blackforest'),
         notes: 'Don\'t stand still after spawning!',
+        images: 1,
     },
-    {
+    'vault': {
         id: 'vault',
         name: 'The Vault',
         keywords: 'Shotgun,Grenade Launcher,Plasma Gun,Red Armor',
+        favorite: getCookie('vault'),
         notes: '',
+        images: 1,
     },
-    {
+    'q3_via_arena': {
         id: 'q3_via_arena',
         name: 'Q3 Via Arena',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,BFG,Red Armor,Yellow Armor,Haste,Megahealth,Invisibility,Quad Damage,Regeneration,Medkit,Teleporter',
+        favorite: getCookie('q3_via_arena'),
         notes: 'Too big',
+        images: 1,
     },
-    {
+    'mkbase': {
         id: 'mkbase',
         name: 'Feel The Base',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Railgun,Plasma Gun,Red Armor,Yellow Armor,Invisibility,Regeneration',
+        favorite: getCookie('mkbase'),
         notes: '',
+        images: 1,
     },
-    {
+    'sg_2box4': {
         id: 'sg_2box4',
         name: '2box4',
         keywords: 'Railgun,Yellow Armor',
+        favorite: getCookie('sg_2box4'),
         notes: '',
+        images: 1,
     },
-    {
+    'coc': {
         id: 'coc',
         name: 'Clash of Colors',
         keywords: 'Shotgun,Rocket Launcher,Railgun,Red Armor,Megahealth,Quad Damage',
+        favorite: getCookie('coc'),
         notes: '',
+        images: 1,
     },
-    {
+    'quartzdm1': {
         id: 'quartzdm1',
         name: 'Frog Red Carpet / The Final Hour',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Plasma Gun,Yellow Armor',
+        favorite: getCookie('quartzdm1'),
         notes: '',
+        images: 1,
     },
-    {
+    'pro-q3dm17': {
         id: 'pro-q3dm17',
         name: 'The Longest Yard II',
         keywords: 'Rocket Launcher,Red Armor,Yellow Armor,Megahealth',
+        favorite: getCookie('pro-q3dm17'),
         notes: '',
+        images: 1,
     },
-];
+};
+
+var mapsObjectOld = structuredClone(oldMaps);
+var mapsArrayOld = Object.values(mapsObjectOld);

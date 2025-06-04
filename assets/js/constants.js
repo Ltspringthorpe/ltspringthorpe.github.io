@@ -785,9 +785,8 @@ var nativeOrder = {
     },
 };
 
-// var mapsArray = nativeOrder.slice();
 var mapsObject = structuredClone(nativeOrder);
-var mapsArray = Object.values(mapsObject);
+// var mapsArray = Object.values(mapsObject);
 
 var keywordFilenames = {
     "Shotgun": 'iconw_shotgun',

@@ -202,7 +202,8 @@
     margin: 2px;
 }
 
-#q3maps .favorites a {
+#q3maps .favorites a,
+#q3maps .types a {
     display: flex;
     column-gap: 8px;
     align-items: center;
@@ -218,7 +219,8 @@
     border-radius: 4px;
 }
 
-#q3maps .favorites a.selected {
+#q3maps .favorites a.selected,
+#q3maps .types a.selected {
     background: darkslategray;
     outline: 2px solid gray;
 }

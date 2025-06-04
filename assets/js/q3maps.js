@@ -5,6 +5,7 @@
         var searchTerm = null;
         var sortOrder = 'native';
         var sortFavorites = 'unset';
+        var type = 'ffa';
         var filters_include = [];
         var filters_exclude = [];
 
@@ -32,7 +33,7 @@
             filters_exclude = $('.filter-list.exclude .selected img').map(function(idx, item) {
                 return $(item).attr('alt');
             });
-            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
+            loadMaps(searchTerm, sortOrder, sortFavorites, type, filters_include, filters_exclude);
         });
 
         // set up listeners for clear filter buttons
@@ -43,7 +44,7 @@
             } else if ($(this).closest('.exclude').length) {
                 filters_exclude = [];
             }
-            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
+            loadMaps(searchTerm, sortOrder, sortFavorites, type, filters_include, filters_exclude);
         });
 
         // set up listener for search field
@@ -52,7 +53,7 @@
                 searchInput = this.value.trim();
                 searchInput = searchInput.replace(/[-\\.,_*+?^$[\](){}!=|]/ig, '\\$&');
                 searchTerm = new RegExp(searchInput, 'i');
-                loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
+                loadMaps(searchTerm, sortOrder, sortFavorites, type, filters_include, filters_exclude);
             }
         });
 
@@ -61,13 +62,13 @@
             $('#search').val('');
             searchInput = null;
             searchTerm = null;
-            loadMaps(null, sortOrder, sortFavorites, filters_include, filters_exclude);
+            loadMaps(null, sortOrder, sortFavorites, type, filters_include, filters_exclude);
         });
 
         // set up listener for sort dropdown
         $('#sort').on('change', function() {
             sortOrder = this.value;
-            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
+            loadMaps(searchTerm, sortOrder, sortFavorites, type, filters_include, filters_exclude);
         });
 
         // set up listener for favorites sort options
@@ -80,16 +81,33 @@
                 $('.favorites a').removeClass('selected');
                 $(this).addClass('selected');
             }
-            loadMaps(searchTerm, sortOrder, sortFavorites, filters_include, filters_exclude);
+            loadMaps(searchTerm, sortOrder, sortFavorites, type, filters_include, filters_exclude);
+        });
+
+        // set up listener for type buttons
+        $('.types a').on('click', function() {
+            type = this.id;
+            $('.types a').removeClass('selected');
+            $(this).addClass('selected');
+            loadMaps(searchTerm, sortOrder, sortFavorites, type, filters_include, filters_exclude);
         });
 
         loadMaps();
     };
 
-    function loadMaps(searchTerm = null, sortOrder = 'native', sortFavorites = 'unset', filters_include = [], filters_exclude =[]) {
+    function loadMaps(searchTerm = null, sortOrder = 'native', sortFavorites = 'unset', type = 'ffa', filters_include = [], filters_exclude =[]) {
+        // what type is selected?
+        if (type === 'ffa') {
+            mapsArray = Object.values(mapsObject);
+        } else if (type === 'ctf') {
+            mapsArray = Object.values(mapsObjectCTF);
+        } else if (type === 'retired') {
+            mapsArray = Object.values(mapsObjectOld);
+        }
+
         // is there a sort order?
         if (sortOrder === 'native') {
-            mapsArray = Object.values(mapsObject);
+            mapsArray = mapsArray;
         } else if (sortOrder === 'name') {
             mapsArray = mapsArray.sort(function(a, b) {
                 return (a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
