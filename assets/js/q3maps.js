@@ -275,12 +275,20 @@
         var id = e.target.getAttribute('data-id');
         if (e.target.classList.contains('favorite')) {
             setCookie(id, false, 0);
-            nativeOrder[id].favorite = false;
-            mapsObject[id].favorite = false;
+            if (nativeOrder.indexOf(id) !== -1) nativeOrder[id].favorite = false;
+            if (mapsObject.indexOf(id) !== -1) mapsObject[id].favorite = false;
+            if (ctfMaps.indexOf(id) !== -1) ctfMaps[id].favorite = false;
+            if (mapsObjectCTF.indexOf(id) !== -1) mapsObjectCTF[id].favorite = false;
+            if (oldMaps.indexOf(id) !== -1) oldMaps[id].favorite = false;
+            if (mapsObjectOld.indexOf(id) !== -1) mapsObjectOld[id].favorite = false;
         } else {
             setCookie(id, true, 400);
-            nativeOrder[id].favorite = true;
-            mapsObject[id].favorite = true;
+            if (nativeOrder.indexOf(id) !== -1) nativeOrder[id].favorite = true;
+            if (mapsObject.indexOf(id) !== -1) mapsObject[id].favorite = true;
+            if (ctfMaps.indexOf(id) !== -1) ctfMaps[id].favorite = true;
+            if (mapsObjectCTF.indexOf(id) !== -1) mapsObjectCTF[id].favorite = true;
+            if (oldMaps.indexOf(id) !== -1) oldMaps[id].favorite = true;
+            if (mapsObjectOld.indexOf(id) !== -1) mapsObjectOld[id].favorite = true;
         }
         e.target.classList.toggle('favorite');
     }

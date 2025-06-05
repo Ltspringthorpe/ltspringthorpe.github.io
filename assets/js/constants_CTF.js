@@ -170,4 +170,3 @@ var ctfMaps = {
 };
 
 var mapsObjectCTF = structuredClone(ctfMaps);
-var mapsArrayCTF = Object.values(mapsObjectCTF);

@@ -162,4 +162,3 @@ var oldMaps = {
 };
 
 var mapsObjectOld = structuredClone(oldMaps);
-var mapsArrayOld = Object.values(mapsObjectOld);
