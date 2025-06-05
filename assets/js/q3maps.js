@@ -269,7 +269,6 @@
     });
 
     function toggleFavorite(e) {
-        debugger;
         var cookieConsent = getCookie('cookieConsent');
         if(!cookieConsent) return;
 
