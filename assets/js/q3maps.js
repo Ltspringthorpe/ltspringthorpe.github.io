@@ -269,26 +269,27 @@
     });
 
     function toggleFavorite(e) {
+        debugger;
         var cookieConsent = getCookie('cookieConsent');
         if(!cookieConsent) return;
 
         var id = e.target.getAttribute('data-id');
         if (e.target.classList.contains('favorite')) {
             setCookie(id, false, 0);
-            if (nativeOrder.indexOf(id) !== -1) nativeOrder[id].favorite = false;
-            if (mapsObject.indexOf(id) !== -1) mapsObject[id].favorite = false;
-            if (ctfMaps.indexOf(id) !== -1) ctfMaps[id].favorite = false;
-            if (mapsObjectCTF.indexOf(id) !== -1) mapsObjectCTF[id].favorite = false;
-            if (oldMaps.indexOf(id) !== -1) oldMaps[id].favorite = false;
-            if (mapsObjectOld.indexOf(id) !== -1) mapsObjectOld[id].favorite = false;
+            if (!!nativeOrder[id]) nativeOrder[id].favorite = false;
+            if (!!mapsObject[id]) mapsObject[id].favorite = false;
+            if (!!ctfMaps[id]) ctfMaps[id].favorite = false;
+            if (!!mapsObjectCTF[id]) mapsObjectCTF[id].favorite = false;
+            if (!!oldMaps[id]) oldMaps[id].favorite = false;
+            if (!!mapsObjectOld[id]) mapsObjectOld[id].favorite = false;
         } else {
             setCookie(id, true, 400);
-            if (nativeOrder.indexOf(id) !== -1) nativeOrder[id].favorite = true;
-            if (mapsObject.indexOf(id) !== -1) mapsObject[id].favorite = true;
-            if (ctfMaps.indexOf(id) !== -1) ctfMaps[id].favorite = true;
-            if (mapsObjectCTF.indexOf(id) !== -1) mapsObjectCTF[id].favorite = true;
-            if (oldMaps.indexOf(id) !== -1) oldMaps[id].favorite = true;
-            if (mapsObjectOld.indexOf(id) !== -1) mapsObjectOld[id].favorite = true;
+            if (!!nativeOrder[id]) nativeOrder[id].favorite = true;
+            if (!!mapsObject[id]) mapsObject[id].favorite = true;
+            if (!!ctfMaps[id]) ctfMaps[id].favorite = true;
+            if (!!mapsObjectCTF[id]) mapsObjectCTF[id].favorite = true;
+            if (!!oldMaps[id]) oldMaps[id].favorite = true;
+            if (!!mapsObjectOld[id]) mapsObjectOld[id].favorite = true;
         }
         e.target.classList.toggle('favorite');
     }
