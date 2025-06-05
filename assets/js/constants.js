@@ -537,7 +537,7 @@ var nativeOrder = {
     },
     'unitooldm3_beta': {
         id: 'unitooldm3_beta',
-        name: 'Officially Dead / Cosmik Debris',
+        name: 'Cosmik Debris',
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Megahealth,Quad Damage,Teleporter',
         favorite: getCookie('unitooldm3_beta'),
         notes: 'The one that used to have the dog thumbnail',
