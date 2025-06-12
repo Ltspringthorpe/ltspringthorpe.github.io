@@ -12,7 +12,7 @@
         // set up listener for filter carets
         $('.caret').on('click', function() {
             $(this).toggleClass('closed');
-            $(this).closest('.filter-list').find('.filter-items, .favorites').toggleClass('hidden');
+            $(this).closest('.filter-list').find('.filter-items, .favorites, .types').toggleClass('hidden');
         });
 
         // set up listeners for filter buttons
