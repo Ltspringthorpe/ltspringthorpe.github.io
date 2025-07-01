@@ -38,6 +38,12 @@
     margin-left: 0;
 }
 
+@media screen and (max-width: 480px) {
+    #q3mapsTableBody .row {
+        padding: 12px 0 0 0;
+    }
+}
+
 #q3maps .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -162,7 +168,7 @@
 
 @media screen and (max-width: 736px) {
     #q3maps .col-4.info-container {
-        padding-left: 0;
+        padding: 0 0 16px 0;
     }
 }
 
@@ -307,6 +313,21 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 737px) {
+    #q3maps .menu {
+        display: block !important;
+    }
+}
+
+#hamburger img,
+#hamburger img *,
+#arrow img,
+#arrow img *,
+#magnifying img,
+#magnifying img * {
+    cursor: pointer;
+}
+
 #q3maps .clear-search {
     position: absolute;
     right: 10px;
@@ -317,6 +338,10 @@
 #q3maps .filter-items {
     overflow: hidden;
     padding-top: 4px;
+}
+
+#q3maps .filter-list .label {
+    cursor: pointer;
 }
 
 #q3maps .caret {

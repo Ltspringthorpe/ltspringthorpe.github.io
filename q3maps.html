@@ -15,121 +15,136 @@
         <section id="q3maps">
             <a href="#top" class="back-to-top" title="Back to Top">Back to Top <span style="font-size: 18px; margin-bottom: 4px;">&#8593;</span></a>
 
-            <div class="row" style="padding-bottom: 20px; column-gap: 12px;">
+            <div>
+                <a id="hamburger" class="visible-sm" title="Open Menu">
+                    <img src="images/icons/hamburger.svg" alt="open menu" height="24" width="24" style="height: 24px; width: 24px;" />
+                </a>
+                <a id="arrow" class="visible-sm hidden" title="Close Menu">
+                    <img src="images/icons/arrow.svg" alt="close menu" height="24" width="24" style="height: 24px; width: 24px;" />
+                </a>
+                <a id="magnifying" class="visible-sm" title="Search" style="margin-left: 8px;">
+                    <img src="images/icons/search.svg" alt="search" height="24" width="24" style="height: 24px; width: 24px;" />
+                </a>
 
-                <!-- Search -->
-                <div class="col-6 col-12-xsmall" style="padding-left: 0; position: relative;">
-                    <label class="label" for="search">Search By Name or ID</label>
-                    <input name="search" id="search" type="text" />
-                    <a class="clear-search" title="Clear Search Input">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="12" height="12" viewBox="0 0 30 30">
-                            <path fill="#808080" d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"></path>
-                        </svg>
-                    </a>
-                </div>
+                <div class="menu search-menu hidden">
+                    <div class="row" style="padding-bottom: 20px; column-gap: 12px;">
+                        <!-- Search -->
+                        <div class="col-6 col-12-xsmall" style="padding-left: 0; position: relative;">
+                            <label class="label" for="search">Search By Name or ID</label>
+                            <input name="search" id="search" type="text" />
+                            <a class="clear-search" title="Clear Search Input">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="12" height="12" viewBox="0 0 30 30">
+                                    <path fill="#808080" d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"></path>
+                                </svg>
+                            </a>
+                        </div>
 
-                <!-- Sort -->
-                <div class="col-6 col-12-xsmall" style="padding-left: 0; position: relative;">
-                    <label class="label" for="sort">Sort</label>
-                    <select name="sort" id="sort">
-                        <option value="native">Native</option>
-                        <option value="name">A-Z by Name</option>
-                        <option value="id">A-Z by ID</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Favorites -->
-            <div class="filter-list" style="padding-bottom: 20px;">
-                <div class="label">Favorites <span class="caret">&#9662;</span></div>
-                <div class="row favorites">
-                    <a id="onlyFav" class="col-12-xsmall" title="Show Only Favorites">
-                        <span class="star-icon favorite"></span>
-                        Show Only Favorites
-                    </a>
-                    <a id="topFav" class="col-12-xsmall" title="Sort Favorites on Top">
-                        <span class="up-arrow">&#8593;</span>
-                        Sort Favorites on Top
-                    </a>
-                </div>
-            </div>
-
-            <!-- Type -->
-            <div class="filter-list" style="padding-bottom: 20px;">
-                <div class="label">Map Type <span class="caret">&#9662;</span></div>
-                <div class="row types">
-                    <a id="ffa" class="col-12-xsmall selected" title="Free For All">
-                        FFA
-                    </a>
-                    <a id="ctf" class="col-12-xsmall" title="CTF">
-                        CTF
-                    </a>
-                    <a id="retired" class="col-12-xsmall" title="Retired">
-                        Retired
-                    </a>
-                </div>
-            </div>
-
-            <!-- Filter: Include -->
-            <div class="row" style="padding-bottom: 20px;">
-                <div class="col-12 col-12-xsmall filter-list include" style="padding-left: 0;">
-                    <div class="label">Must Include <span class="caret">&#9662;</span></div>
-                    <a class="clear-filters" title="Clear All &ldquo;Include&rdquo; Filters">Clear All</a>
-                    <div class="filter-items">
-                        <a><img src="images/icons/iconw_shotgun.svg" alt="Shotgun" title="Filter by Shotgun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_grenade.svg" alt="Grenade Launcher" title="Filter by Grenade Launcher" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_rocket.svg" alt="Rocket Launcher" title="Filter by Rocket Launcher" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_lightning.svg" alt="Lightning Gun" title="Filter by Lightning Gun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_railgun.svg" alt="Railgun" title="Filter by Railgun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_plasma.svg" alt="Plasma Gun" title="Filter by Plasma Gun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_bfg.svg" alt="BFG" title="Filter by BFG" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_grapple.svg" alt="Grappling Hook" title="Filter by Grappling Hook" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_chaingun.svg" alt="Chain Gun" title="Filter by Chain Gun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_nailgun.svg" alt="Nailgun" title="Filter by Nailgun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_proxmine.svg" alt="Prox Mine" title="Filter by Prox Mine" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconr_red.svg" alt="Red Armor" title="Filter by Red Armor" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconr_yellow.svg" alt="Yellow Armor" title="Filter by Yellow Armor" height="25" width="25" /></a>
-                        <a><img src="images/icons/envirosuit.svg" alt="Battle Suit" title="Filter by Battle Suit" height="25" width="25" /></a>
-                        <a><img src="images/icons/haste.svg" alt="Haste" title="Filter by Haste" height="25" width="25" /></a>
-                        <a><img src="images/icons/flight.svg" alt="Wings" title="Filter by Wings" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconh_mega.svg" alt="Megahealth" title="Filter by Megahealth" height="25" width="25" /></a>
-                        <a><img src="images/icons/invis.svg" alt="Invisibility" title="Filter by Invisibility" height="25" width="25" /></a>
-                        <a><img src="images/icons/quad.svg" alt="Quad Damage" title="Filter by Quad Damage" height="25" width="25" /></a>
-                        <a><img src="images/icons/regen.svg" alt="Regeneration" title="Filter by Regeneration" height="25" width="25" /></a>
-                        <a><img src="images/icons/medkit.svg" alt="Medkit" title="Filter by Medkit" height="25" width="25" /></a>
-                        <a><img src="images/icons/teleporter.svg" alt="Teleporter" title="Filter by Teleporter" height="25" width="25" /></a>
+                        <!-- Sort -->
+                        <div class="col-6 col-12-xsmall" style="padding-left: 0; position: relative;">
+                            <label class="label" for="sort">Sort</label>
+                            <select name="sort" id="sort">
+                                <option value="native">Native</option>
+                                <option value="name">A-Z by Name</option>
+                                <option value="id">A-Z by ID</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Filter: Exclude -->
-            <div class="row" style="padding-bottom: 20px;">
-                <div class="col-12 col-12-xsmall filter-list exclude" style="padding-left: 0;">
-                    <div class="label">Must Exclude <span class="caret">&#9662;</span></div>
-                    <a class="clear-filters" title="Clear All &ldquo;Exclude&rdquo; Filters">Clear All</a>
-                    <div class="filter-items">
-                        <a><img src="images/icons/iconw_shotgun.svg" alt="Shotgun" title="Filter by NO Shotgun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_grenade.svg" alt="Grenade Launcher" title="Filter by NO Grenade Launcher" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_rocket.svg" alt="Rocket Launcher" title="Filter by NO Rocket Launcher" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_lightning.svg" alt="Lightning Gun" title="Filter by NO Lightning Gun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_railgun.svg" alt="Railgun" title="Filter by NO Railgun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_plasma.svg" alt="Plasma Gun" title="Filter by NO Plasma Gun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_bfg.svg" alt="BFG" title="Filter by NO BFG" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_grapple.svg" alt="Grappling Hook" title="Filter by NO Grappling Hook" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_chaingun.svg" alt="Chain Gun" title="Filter by NO Chain Gun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_nailgun.svg" alt="Nailgun" title="Filter by NO Nailgun" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconw_proxmine.svg" alt="Prox Mine" title="Filter by NO Prox Mine" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconr_red.svg" alt="Red Armor" title="Filter by NO Red Armor" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconr_yellow.svg" alt="Yellow Armor" title="Filter by NO Yellow Armor" height="25" width="25" /></a>
-                        <a><img src="images/icons/envirosuit.svg" alt="Battle Suit" title="Filter by NO Battle Suit" height="25" width="25" /></a>
-                        <a><img src="images/icons/haste.svg" alt="Haste" title="Filter by NO Haste" height="25" width="25" /></a>
-                        <a><img src="images/icons/flight.svg" alt="Wings" title="Filter by NO Wings" height="25" width="25" /></a>
-                        <a><img src="images/icons/iconh_mega.svg" alt="Megahealth" title="Filter by NO Megahealth" height="25" width="25" /></a>
-                        <a><img src="images/icons/invis.svg" alt="Invisibility" title="Filter by NO Invisibility" height="25" width="25" /></a>
-                        <a><img src="images/icons/quad.svg" alt="Quad Damage" title="Filter by NO Quad Damage" height="25" width="25" /></a>
-                        <a><img src="images/icons/regen.svg" alt="Regeneration" title="Filter by NO Regeneration" height="25" width="25" /></a>
-                        <a><img src="images/icons/medkit.svg" alt="Medkit" title="Filter by NO Medkit" height="25" width="25" /></a>
-                        <a><img src="images/icons/teleporter.svg" alt="Teleporter" title="Filter by NO Teleporter" height="25" width="25" /></a>
+                <div class="menu filter-menu hidden">
+                    <!-- Favorites -->
+                    <div class="filter-list" style="padding-bottom: 12px;">
+                        <div class="label">Favorites <span class="caret">&#9662;</span></div>
+                        <div class="row favorites">
+                            <a id="onlyFav" class="col-12-xsmall" title="Show Only Favorites">
+                                <span class="star-icon favorite"></span>
+                                Show Only Favorites
+                            </a>
+                            <a id="topFav" class="col-12-xsmall" title="Sort Favorites on Top">
+                                <span class="up-arrow">&#8593;</span>
+                                Sort Favorites on Top
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Type -->
+                    <div class="filter-list" style="padding-bottom: 12px;">
+                        <div class="label">Map Type <span class="caret">&#9662;</span></div>
+                        <div class="row types">
+                            <a id="ffa" class="col-12-xsmall selected" title="Free For All">
+                                FFA
+                            </a>
+                            <a id="ctf" class="col-12-xsmall" title="CTF">
+                                CTF
+                            </a>
+                            <a id="retired" class="col-12-xsmall" title="Retired">
+                                Retired
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Filter: Include -->
+                    <div class="row" style="padding-bottom: 12px;">
+                        <div class="col-12 col-12-xsmall filter-list include" style="padding-left: 0;">
+                            <div class="label">Must Include <span class="caret">&#9662;</span></div>
+                            <a class="clear-filters" title="Clear All &ldquo;Include&rdquo; Filters">Clear All</a>
+                            <div class="filter-items">
+                                <a><img src="images/icons/iconw_shotgun.svg" alt="Shotgun" title="Filter by Shotgun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_grenade.svg" alt="Grenade Launcher" title="Filter by Grenade Launcher" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_rocket.svg" alt="Rocket Launcher" title="Filter by Rocket Launcher" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_lightning.svg" alt="Lightning Gun" title="Filter by Lightning Gun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_railgun.svg" alt="Railgun" title="Filter by Railgun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_plasma.svg" alt="Plasma Gun" title="Filter by Plasma Gun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_bfg.svg" alt="BFG" title="Filter by BFG" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_grapple.svg" alt="Grappling Hook" title="Filter by Grappling Hook" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_chaingun.svg" alt="Chain Gun" title="Filter by Chain Gun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_nailgun.svg" alt="Nailgun" title="Filter by Nailgun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_proxmine.svg" alt="Prox Mine" title="Filter by Prox Mine" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconr_red.svg" alt="Red Armor" title="Filter by Red Armor" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconr_yellow.svg" alt="Yellow Armor" title="Filter by Yellow Armor" height="25" width="25" /></a>
+                                <a><img src="images/icons/envirosuit.svg" alt="Battle Suit" title="Filter by Battle Suit" height="25" width="25" /></a>
+                                <a><img src="images/icons/haste.svg" alt="Haste" title="Filter by Haste" height="25" width="25" /></a>
+                                <a><img src="images/icons/flight.svg" alt="Wings" title="Filter by Wings" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconh_mega.svg" alt="Megahealth" title="Filter by Megahealth" height="25" width="25" /></a>
+                                <a><img src="images/icons/invis.svg" alt="Invisibility" title="Filter by Invisibility" height="25" width="25" /></a>
+                                <a><img src="images/icons/quad.svg" alt="Quad Damage" title="Filter by Quad Damage" height="25" width="25" /></a>
+                                <a><img src="images/icons/regen.svg" alt="Regeneration" title="Filter by Regeneration" height="25" width="25" /></a>
+                                <a><img src="images/icons/medkit.svg" alt="Medkit" title="Filter by Medkit" height="25" width="25" /></a>
+                                <a><img src="images/icons/teleporter.svg" alt="Teleporter" title="Filter by Teleporter" height="25" width="25" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter: Exclude -->
+                    <div class="row" style="padding-bottom: 12px;">
+                        <div class="col-12 col-12-xsmall filter-list exclude" style="padding-left: 0;">
+                            <div class="label">Must Exclude <span class="caret">&#9662;</span></div>
+                            <a class="clear-filters" title="Clear All &ldquo;Exclude&rdquo; Filters">Clear All</a>
+                            <div class="filter-items">
+                                <a><img src="images/icons/iconw_shotgun.svg" alt="Shotgun" title="Filter by NO Shotgun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_grenade.svg" alt="Grenade Launcher" title="Filter by NO Grenade Launcher" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_rocket.svg" alt="Rocket Launcher" title="Filter by NO Rocket Launcher" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_lightning.svg" alt="Lightning Gun" title="Filter by NO Lightning Gun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_railgun.svg" alt="Railgun" title="Filter by NO Railgun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_plasma.svg" alt="Plasma Gun" title="Filter by NO Plasma Gun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_bfg.svg" alt="BFG" title="Filter by NO BFG" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_grapple.svg" alt="Grappling Hook" title="Filter by NO Grappling Hook" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_chaingun.svg" alt="Chain Gun" title="Filter by NO Chain Gun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_nailgun.svg" alt="Nailgun" title="Filter by NO Nailgun" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconw_proxmine.svg" alt="Prox Mine" title="Filter by NO Prox Mine" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconr_red.svg" alt="Red Armor" title="Filter by NO Red Armor" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconr_yellow.svg" alt="Yellow Armor" title="Filter by NO Yellow Armor" height="25" width="25" /></a>
+                                <a><img src="images/icons/envirosuit.svg" alt="Battle Suit" title="Filter by NO Battle Suit" height="25" width="25" /></a>
+                                <a><img src="images/icons/haste.svg" alt="Haste" title="Filter by NO Haste" height="25" width="25" /></a>
+                                <a><img src="images/icons/flight.svg" alt="Wings" title="Filter by NO Wings" height="25" width="25" /></a>
+                                <a><img src="images/icons/iconh_mega.svg" alt="Megahealth" title="Filter by NO Megahealth" height="25" width="25" /></a>
+                                <a><img src="images/icons/invis.svg" alt="Invisibility" title="Filter by NO Invisibility" height="25" width="25" /></a>
+                                <a><img src="images/icons/quad.svg" alt="Quad Damage" title="Filter by NO Quad Damage" height="25" width="25" /></a>
+                                <a><img src="images/icons/regen.svg" alt="Regeneration" title="Filter by NO Regeneration" height="25" width="25" /></a>
+                                <a><img src="images/icons/medkit.svg" alt="Medkit" title="Filter by NO Medkit" height="25" width="25" /></a>
+                                <a><img src="images/icons/teleporter.svg" alt="Teleporter" title="Filter by NO Teleporter" height="25" width="25" /></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

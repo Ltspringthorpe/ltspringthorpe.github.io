@@ -9,9 +9,33 @@
         var filters_include = [];
         var filters_exclude = [];
 
+        // set up listener for mobile hamburger - open
+        $('#hamburger img').on('click', function() {
+            $('.filter-menu').removeClass('hidden');
+            $('.search-menu').addClass('hidden');
+            $(this).closest('a').addClass('hidden');
+            $('#arrow').removeClass('hidden');
+        });
+
+        // set up listener for mobile hamburger - close
+        $('#arrow img').on('click', function() {
+            $('.filter-menu').addClass('hidden');
+            $('.search-menu').addClass('hidden');
+            $(this).closest('a').addClass('hidden');
+            $('#hamburger').removeClass('hidden');
+        });
+
+        // set up listener for mobile search
+        $('#magnifying img').on('click', function() {
+            $('.filter-menu').addClass('hidden');
+            $('.search-menu').toggleClass('hidden');
+            $('#hamburger').removeClass('hidden');
+            $('#arrow').addClass('hidden');
+        });
+
         // set up listener for filter carets
-        $('.caret').on('click', function() {
-            $(this).toggleClass('closed');
+        $('.filter-list .label').on('click', function() {
+            $(this).find('.caret').toggleClass('closed');
             $(this).closest('.filter-list').find('.filter-items, .favorites, .types').toggleClass('hidden');
         });
 

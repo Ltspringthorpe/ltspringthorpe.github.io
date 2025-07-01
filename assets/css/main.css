@@ -266,6 +266,16 @@ pre code {
     overflow-x: auto;
 }
 
+.visible-sm {
+    display: none;
+}
+
+@media screen and (max-width: 736px) {
+    .visible-sm {
+        display: inline-block;
+    }
+}
+
 .hidden {
     display: none !important;
 }

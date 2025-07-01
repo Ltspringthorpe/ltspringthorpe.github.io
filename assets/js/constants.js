@@ -653,7 +653,7 @@ var nativeOrder = {
         keywords: 'Shotgun,Grenade Launcher,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Quad Damage',
         favorite: getCookie('geit3dm1'),
         notes: '',
-        images: 2,
+        images: 3,
     },
     'dungogt': {
         id: 'dungogt',
