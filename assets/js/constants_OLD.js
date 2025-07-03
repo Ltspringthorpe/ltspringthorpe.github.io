@@ -6,6 +6,7 @@ var oldMaps = {
         favorite: getCookie('trampoleen'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('trampoleen_played'),
     },
     'tig_qubert': {
         id: 'tig_qubert',
@@ -14,6 +15,7 @@ var oldMaps = {
         favorite: getCookie('tig_qubert'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('tig_qubert_played'),
     },
     'teqdm2': {
         id: 'teqdm2',
@@ -22,6 +24,7 @@ var oldMaps = {
         favorite: getCookie('teqdm2'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('teqdm2_played'),
     },
     'karena1': {
         id: 'karena1',
@@ -30,6 +33,7 @@ var oldMaps = {
         favorite: getCookie('karena1'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('karena1_played'),
     },
     'karena2': {
         id: 'karena2',
@@ -38,6 +42,7 @@ var oldMaps = {
         favorite: getCookie('karena2'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('karena2_played'),
     },
     'karena3': {
         id: 'karena3',
@@ -46,6 +51,7 @@ var oldMaps = {
         favorite: getCookie('karena3'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('karena3_played'),
     },
     'arcarena': {
         id: 'arcarena',
@@ -54,6 +60,7 @@ var oldMaps = {
         favorite: getCookie('arcarena'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('arcarena_played'),
     },
     'rfwq3dm2': {
         id: 'rfwq3dm2',
@@ -62,6 +69,7 @@ var oldMaps = {
         favorite: getCookie('rfwq3dm2'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('rfwq3dm2_played'),
     },
     'mq3dm1': {
         id: 'mq3dm1',
@@ -70,6 +78,7 @@ var oldMaps = {
         favorite: getCookie('mq3dm1'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('mq3dm1_played'),
     },
     'charon3dm11v2': {
         id: 'charon3dm11v2',
@@ -78,6 +87,7 @@ var oldMaps = {
         favorite: getCookie('charon3dm11v2'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('charon3dm11v2_played'),
     },
     '20kdm1': {
         id: '20kdm1',
@@ -86,6 +96,7 @@ var oldMaps = {
         favorite: getCookie('20kdm1'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('20kdm1_played'),
     },
     'delirium': {
         id: 'delirium',
@@ -94,6 +105,7 @@ var oldMaps = {
         favorite: getCookie('delirium'),
         notes: 'There\'s one portal that will trap you. Not sure if it\'s a bug or a feature.',
         images: 1,
+        playedTonight: getCookie('delirium_played'),
     },
     'blackforest': {
         id: 'blackforest',
@@ -102,6 +114,7 @@ var oldMaps = {
         favorite: getCookie('blackforest'),
         notes: 'Don\'t stand still after spawning!',
         images: 1,
+        playedTonight: getCookie('blackforest_played'),
     },
     'vault': {
         id: 'vault',
@@ -110,6 +123,7 @@ var oldMaps = {
         favorite: getCookie('vault'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('vault_played'),
     },
     'q3_via_arena': {
         id: 'q3_via_arena',
@@ -118,6 +132,7 @@ var oldMaps = {
         favorite: getCookie('q3_via_arena'),
         notes: 'Too big',
         images: 1,
+        playedTonight: getCookie('q3_via_arena_played'),
     },
     'mkbase': {
         id: 'mkbase',
@@ -126,6 +141,7 @@ var oldMaps = {
         favorite: getCookie('mkbase'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('mkbase_played'),
     },
     'sg_2box4': {
         id: 'sg_2box4',
@@ -134,6 +150,7 @@ var oldMaps = {
         favorite: getCookie('sg_2box4'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('sg_2box4_played'),
     },
     'coc': {
         id: 'coc',
@@ -142,6 +159,7 @@ var oldMaps = {
         favorite: getCookie('coc'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('coc_played'),
     },
     'quartzdm1': {
         id: 'quartzdm1',
@@ -150,6 +168,7 @@ var oldMaps = {
         favorite: getCookie('quartzdm1'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('quartzdm1_played'),
     },
     'pro-q3dm17': {
         id: 'pro-q3dm17',
@@ -158,6 +177,7 @@ var oldMaps = {
         favorite: getCookie('pro-q3dm17'),
         notes: '',
         images: 1,
+        playedTonight: getCookie('pro-q3dm17_played'),
     },
 };
 

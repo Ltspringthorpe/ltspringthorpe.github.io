@@ -319,12 +319,12 @@
     }
 }
 
-#hamburger img,
-#hamburger img *,
-#arrow img,
-#arrow img *,
-#magnifying img,
-#magnifying img * {
+.menu-icon:not(.visible-sm) {
+    display: inline-block;
+}
+
+.menu-icon,
+.menu-icon * {
     cursor: pointer;
 }
 
@@ -411,17 +411,28 @@
 }
 
 #top .modal .row {
-    width: calc(100% + 8px);
+    width: 100%;
     margin-left: 0;
-    column-gap: 8px;
+    justify-content: space-between;
 }
 
 #top .modal button {
     display: inline-block;
     margin-top: 20px;
     padding: 8px;
-    width: 48%;
     cursor: pointer;
+}
+
+#top #cookieConsent button {
+    width: 48%;
+}
+
+#top #randomMap button {
+    display: flex;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
 }
 
 #top .modal .closer {
@@ -437,12 +448,22 @@
     position: absolute;
 }
 
+#mapTitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+#mapId {
+    font-size: 18px;
+    text-align: center;
+}
+
 @media screen and (max-width: 480px) {
     #top .modal {
         padding: 20px;
     }
 
-    #top .modal button {
+    #top #cookieConsent button {
         width: 100%;
     }
 }
