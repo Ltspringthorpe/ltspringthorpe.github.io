@@ -449,13 +449,49 @@
 }
 
 #mapTitle {
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
 }
 
 #mapId {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+}
+
+#top .modal-map-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#top .modal-map-info .modal-map-image,
+#top .modal-map-info .modal-map-title {
+    width: 48%;
+}
+
+@media screen and (max-width: 480px) {
+    #top .modal-map-info .modal-map-image,
+    #top .modal-map-info .modal-map-title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #top .modal-map-info .modal-map-image {
+        padding: 12px;
+    }
+}
+
+#top .modal-map-info .modal-map-image img {
+    width: 100%;
+    height: auto;
+}
+
+#top .modal-map-info .modal-map-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
