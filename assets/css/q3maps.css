@@ -320,7 +320,19 @@
 }
 
 .menu-icon:not(.visible-sm) {
-    display: inline-block;
+    display: inline-flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.menu-icon:not(.visible-sm) span {
+    color: rgb(250, 250, 250);
+}
+
+@media screen and (max-width: 736px) {
+    .menu-icon:not(.visible-sm) span {
+        display: none;
+    }
 }
 
 .menu-icon,
