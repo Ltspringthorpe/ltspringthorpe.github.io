@@ -2,7 +2,7 @@
 
     function setCookie(cname, cvalue, exdays) {
         const d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60));
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = "expires="+ d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
@@ -54,11 +54,9 @@
         // random map accepted
         $('#randomMap #yes').on('click', function() {
             $('#randomMap').addClass('hidden');
-            $('#mapImage img').attr('src', '');
-            $('#mapTitle').html('');
-            $('#mapId').html('');
 
             var id = $('#mapId').html().trim();
+            console.log(id);
             setCookie(id + '_played', true, 1);
 
             if (!!nativeOrder[id]) nativeOrder[id].playedTonight = true;
@@ -70,6 +68,10 @@
             randomFavoriteList = randomFavoriteList.filter(function(randomFav) {
                 return randomFav.id !== id;
             });
+
+            $('#mapImage img').attr('src', '');
+            $('#mapTitle').html('');
+            $('#mapId').html('');
         });
 
         // reroll favorite maps
@@ -86,6 +88,7 @@
         $('#randomMap #played').on('click', function() {
             $(this).fadeOut('fast');
             var id = $('#mapId').html().trim();
+            console.log(id);
             setCookie(id + '_played', true, 1);
 
             if (!!nativeOrder[id]) nativeOrder[id].playedTonight = true;
