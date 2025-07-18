@@ -209,6 +209,7 @@
 }
 
 #q3maps .favorites a,
+#q3maps .random a,
 #q3maps .types a {
     display: flex;
     column-gap: 8px;
@@ -317,16 +318,6 @@
     #q3maps .menu {
         display: block !important;
     }
-}
-
-.menu-icon:not(.visible-sm) {
-    display: inline-flex;
-    column-gap: 8px;
-    align-items: center;
-}
-
-.menu-icon:not(.visible-sm) span {
-    color: rgb(250, 250, 250);
 }
 
 @media screen and (max-width: 736px) {

@@ -36,7 +36,7 @@
         // set up listener for filter carets
         $('.filter-list .label').on('click', function() {
             $(this).find('.caret').toggleClass('closed');
-            $(this).closest('.filter-list').find('.filter-items, .favorites, .types').toggleClass('hidden');
+            $(this).closest('.filter-list').find('.filter-items, .favorites, .random, .types').toggleClass('hidden');
         });
 
         // set up listeners for filter buttons

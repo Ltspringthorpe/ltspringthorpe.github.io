@@ -276,6 +276,16 @@ pre code {
     }
 }
 
+.hidden-sm {
+    display: inline-block;
+}
+
+@media screen and (max-width: 736px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+
 .hidden {
     display: none !important;
 }

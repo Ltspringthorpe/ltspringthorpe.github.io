@@ -42,12 +42,12 @@
         });
 
         // set up listener for roll random favorite
-        $('#diceStar').on('click', function() {
+        $('#diceStarMobile, #diceStar').on('click', function() {
             roll(randomFavoriteList);
         });
 
         // set up listener for roll random map
-        $('#dice').on('click', function() {
+        $('#diceMobile, #dice').on('click', function() {
             roll(randomMapList);
         });
 
