@@ -545,3 +545,31 @@
         width: 100%;
     }
 }
+
+#top #myQueue .row {
+    column-gap: 12px;
+    margin-top: 12px;
+}
+
+#top #myQueue .row > * {
+    padding-left: 0;
+}
+
+#top #myQueue .row > img {
+    width: 30%;
+    height: auto;
+}
+
+#top #myQueue .queued {
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: none;
+    height: 30px;
+    width: 30px;
+    margin-top: 4px;
+}
+
+#top #myQueue .queued img {
+    height: 100%;
+    width: 100%;
+}

@@ -18,7 +18,14 @@
         var queueHtml = '';
         if (queueList.length) {
             for (var i=0; i<queueList.length; i++) {
-                queueHtml += '<li data-id="' + queueList[i].id + '">' + queueList[i].name + '(' + queueList[i].id + ')</li>';
+                queueHtml += '<div class="row">';
+                queueHtml += '<img src="images/q3maps/' + queueList[i].id + '-0.jpg" />';
+                queueHtml += '<div style="flex: 1;">';
+                queueHtml += '<div>' + queueList[i].name + '</div>';
+                queueHtml += '<div>' + queueList[i].id + '</div>';
+                queueHtml += '</div>';
+                queueHtml += '<div><a class="queued" data-id="' + queueList[i].id + '" title="Remove from Queue"><img src="images/icons/remove-from-queue-black.svg" /></a></div>';
+                queueHtml += '</div>';
             }
         } else {
             queueHtml = 'Nothing here yet';
@@ -26,6 +33,34 @@
 
         $('#queueList').html(queueHtml);
         $('#myQueue').removeClass('hidden');
+
+        initRemoveQueueListener();
+    }
+
+    function removeQueued(e) {
+        var cookieConsent = getCookie('cookieConsent');
+        if(!cookieConsent) return;
+
+        var queueList = Object.values(mapsObject).filter(function(map) {
+            return !!map.queued;
+        });
+
+        var id = e.target.getAttribute('data-id');
+        setCookie(id + '_queued', false, 0);
+        if (!!nativeOrder[id]) nativeOrder[id].queued = false;
+        if (!!mapsObject[id]) mapsObject[id].queued = false;
+        if (!!ctfMaps[id]) ctfMaps[id].queued = false;
+        if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = false;
+        if (!!oldMaps[id]) oldMaps[id].queued = false;
+        if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = false;
+
+        $(e.target).closest('row').fadeOut('fast', function() {
+            $(e.target).closest('row').remove();
+        });
+    }
+
+    function initRemoveQueueListener() {
+        $('#myQueue .queued').on('click', removeQueued);
     }
 
     function init() {
