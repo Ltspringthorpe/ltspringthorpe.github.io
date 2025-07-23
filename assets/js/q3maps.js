@@ -285,6 +285,11 @@
         var cookieConsent = getCookie('cookieConsent');
         if(!cookieConsent) return;
 
+        var queueList = Object.values(mapsObject).filter(function(map) {
+            return !!map.queued;
+        });
+        var currentIdx = queueList.length + 1;
+
         var id = e.target.getAttribute('data-id');
         if (e.target.classList.contains('queued')) {
             setCookie(id + '_queued', false, 0);
@@ -295,7 +300,7 @@
             if (!!oldMaps[id]) oldMaps[id].queued = false;
             if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = false;
         } else {
-            setCookie(id + '_queued', true, 1);
+            setCookie(id + '_queued', currentIdx, 1);
             if (!!nativeOrder[id]) nativeOrder[id].queued = true;
             if (!!mapsObject[id]) mapsObject[id].queued = true;
             if (!!ctfMaps[id]) ctfMaps[id].queued = true;
