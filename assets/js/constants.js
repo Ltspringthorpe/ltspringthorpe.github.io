@@ -23,6 +23,7 @@ var nativeOrder = {
         notes: 'Did you really mean to call this map?',
         images: 3,
         playedTonight: getCookie('q3dm1_played'),
+        queued: getCookie('q3dm1_queued'),
     },
     'q3dm2': {
         id: 'q3dm2',
@@ -32,6 +33,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm2_played'),
+        queued: getCookie('q3dm2_queued'),
     },
     'q3dm3': {
         id: 'q3dm3',
@@ -41,6 +43,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm3_played'),
+        queued: getCookie('q3dm3_queued'),
     },
     'q3tourney1': {
         id: 'q3tourney1',
@@ -50,6 +53,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3tourney1_played'),
+        queued: getCookie('q3tourney1_queued'),
     },
     'q3dm4': {
         id: 'q3dm4',
@@ -59,6 +63,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm4_played'),
+        queued: getCookie('q3dm4_queued'),
     },
     'q3dm5': {
         id: 'q3dm5',
@@ -68,6 +73,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm5_played'),
+        queued: getCookie('q3dm5_queued'),
     },
     'q3dm6': {
         id: 'q3dm6',
@@ -77,6 +83,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm6_played'),
+        queued: getCookie('q3dm6_queued'),
     },
     'q3tourney2': {
         id: 'q3tourney2',
@@ -86,6 +93,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3tourney2_played'),
+        queued: getCookie('q3tourney2_queued'),
     },
     'q3dm7': {
         id: 'q3dm7',
@@ -95,6 +103,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm7_played'),
+        queued: getCookie('q3dm7_queued'),
     },
     'q3dm8': {
         id: 'q3dm8',
@@ -104,6 +113,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm8_played'),
+        queued: getCookie('q3dm8_queued'),
     },
     'q3dm9': {
         id: 'q3dm9',
@@ -113,6 +123,7 @@ var nativeOrder = {
         notes: 'In! Out!',
         images: 3,
         playedTonight: getCookie('q3dm9_played'),
+        queued: getCookie('q3dm9_queued'),
     },
     'q3tourney3': {
         id: 'q3tourney3',
@@ -122,6 +133,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3tourney3_played'),
+        queued: getCookie('q3tourney3_queued'),
     },
     'q3dm10': {
         id: 'q3dm10',
@@ -131,6 +143,7 @@ var nativeOrder = {
         notes: 'Recharging platform',
         images: 3,
         playedTonight: getCookie('q3dm10_played'),
+        queued: getCookie('q3dm10_queued'),
     },
     'q3dm11': {
         id: 'q3dm11',
@@ -140,6 +153,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm11_played'),
+        queued: getCookie('q3dm11_queued'),
     },
     'q3dm12': {
         id: 'q3dm12',
@@ -149,6 +163,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm12_played'),
+        queued: getCookie('q3dm12_queued'),
     },
     'q3tourney4': {
         id: 'q3tourney4',
@@ -158,6 +173,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3tourney4_played'),
+        queued: getCookie('q3tourney4_queued'),
     },
     'q3dm13': {
         id: 'q3dm13',
@@ -167,6 +183,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm13_played'),
+        queued: getCookie('q3dm13_queued'),
     },
     'q3dm14': {
         id: 'q3dm14',
@@ -176,6 +193,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm14_played'),
+        queued: getCookie('q3dm14_queued'),
     },
     'q3dm15': {
         id: 'q3dm15',
@@ -185,6 +203,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm15_played'),
+        queued: getCookie('q3dm15_queued'),
     },
     'q3tourney5': {
         id: 'q3tourney5',
@@ -194,6 +213,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3tourney5_played'),
+        queued: getCookie('q3tourney5_queued'),
     },
     'q3dm16': {
         id: 'q3dm16',
@@ -203,6 +223,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm16_played'),
+        queued: getCookie('q3dm16_queued'),
     },
     'q3dm17': {
         id: 'q3dm17',
@@ -212,6 +233,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm17_played'),
+        queued: getCookie('q3dm17_queued'),
     },
     'q3dm18': {
         id: 'q3dm18',
@@ -221,6 +243,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm18_played'),
+        queued: getCookie('q3dm18_queued'),
     },
     'q3dm19': {
         id: 'q3dm19',
@@ -230,6 +253,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3dm19_played'),
+        queued: getCookie('q3dm19_queued'),
     },
     'q3tourney6': {
         id: 'q3tourney6',
@@ -239,6 +263,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3tourney6_played'),
+        queued: getCookie('q3tourney6_queued'),
     },
     'mptourney1': {
         id: 'mptourney1',
@@ -248,6 +273,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mptourney1_played'),
+        queued: getCookie('mptourney1_queued'),
     },
     'mptourney2': {
         id: 'mptourney2',
@@ -257,6 +283,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mptourney2_played'),
+        queued: getCookie('mptourney2_queued'),
     },
     'mptourney3': {
         id: 'mptourney3',
@@ -266,6 +293,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mptourney3_played'),
+        queued: getCookie('mptourney3_queued'),
     },
     'mptourney4': {
         id: 'mptourney4',
@@ -275,6 +303,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mptourney4_played'),
+        queued: getCookie('mptourney4_queued'),
     },
     'ztn3dm2': {
         id: 'ztn3dm2',
@@ -284,6 +313,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('ztn3dm2_played'),
+        queued: getCookie('ztn3dm2_queued'),
     },
     'q3debello': {
         id: 'q3debello',
@@ -293,6 +323,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3debello_played'),
+        queued: getCookie('zGRcult2z3_queued'),
     },
     'q3chthon': {
         id: 'q3chthon',
@@ -302,6 +333,7 @@ var nativeOrder = {
         notes: 'Mysterious columns that go up and down',
         images: 3,
         playedTonight: getCookie('q3chthon_played'),
+        queued: getCookie('zGRcult2z2_queued'),
     },
     'woa': {
         id: 'woa',
@@ -311,6 +343,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('woa_played'),
+        queued: getCookie('woa_queued'),
     },
     'vanish': {
         id: 'vanish',
@@ -320,6 +353,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('vanish_played'),
+        queued: getCookie('vanish_queued'),
     },
     'stei8a': {
         id: 'stei8a',
@@ -329,6 +363,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('stei8a_played'),
+        queued: getCookie('stei8a_queued'),
     },
     'spacedm1': {
         id: 'spacedm1',
@@ -338,6 +373,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('spacedm1_played'),
+        queued: getCookie('spacedm1_queued'),
     },
     'senndm1': {
         id: 'senndm1',
@@ -347,6 +383,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('senndm1_played'),
+        queued: getCookie('senndm1_queued'),
     },
     'semper01q3': {
         id: 'semper01q3',
@@ -356,6 +393,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('semper01q3_played'),
+        queued: getCookie('semper01q3_queued'),
     },
     'sdmrail': {
         id: 'sdmrail',
@@ -365,6 +403,7 @@ var nativeOrder = {
         notes: 'The Longest Yard but with railguns! And secret BFGs.',
         images: 3,
         playedTonight: getCookie('sdmrail_played'),
+        queued: getCookie('sdmrail_queued'),
     },
     'satan': {
         id: 'satan',
@@ -374,6 +413,7 @@ var nativeOrder = {
         notes: 'Has a trap that squishes folks, and a viewing window to watch!',
         images: 3,
         playedTonight: getCookie('satan_played'),
+        queued: getCookie('satan_queued'),
     },
     'sabbac': {
         id: 'sabbac',
@@ -383,6 +423,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('sabbac_played'),
+        queued: getCookie('sabbac_queued'),
     },
     'rene1q3': {
         id: 'rene1q3',
@@ -392,6 +433,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('rene1q3_played'),
+        queued: getCookie('rene1q3_queued'),
     },
     'qbee': {
         id: 'qbee',
@@ -401,6 +443,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('qbee_played'),
+        queued: getCookie('qbee_queued'),
     },
     'qdolphin': {
         id: 'qdolphin',
@@ -410,6 +453,7 @@ var nativeOrder = {
         notes: 'No',
         images: 3,
         playedTonight: getCookie('qdolphin_played'),
+        queued: getCookie('qdolphin_queued'),
     },
     'qbeast': {
         id: 'qbeast',
@@ -419,6 +463,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('qbeast_played'),
+        queued: getCookie('qbeast_queued'),
     },
     'q3_q2dm1': {
         id: 'q3_q2dm1',
@@ -428,6 +473,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3_q2dm1_played'),
+        queued: getCookie('q3_q2dm1_queued'),
     },
     'q3zvendm1': {
         id: 'q3zvendm1',
@@ -437,6 +483,7 @@ var nativeOrder = {
         notes: 'Corners!',
         images: 3,
         playedTonight: getCookie('q3zvendm1_played'),
+        queued: getCookie('q3zvendm1_queued'),
     },
     'q3notdm1': {
         id: 'q3notdm1',
@@ -446,6 +493,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q3notdm1_played'),
+        queued: getCookie('q3notdm1_queued'),
     },
     'q3monsto4': {
         id: 'q3monsto4',
@@ -455,6 +503,7 @@ var nativeOrder = {
         notes: '"A tiny village"',
         images: 3,
         playedTonight: getCookie('q3monsto4_played'),
+        queued: getCookie('q3monsto4_queued'),
     },
     'gork': {
         id: 'gork',
@@ -464,6 +513,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('gork_played'),
+        queued: getCookie('gork_queued'),
     },
     'q31dm1': {
         id: 'q31dm1',
@@ -473,6 +523,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('q31dm1_played'),
+        queued: getCookie('q31dm1_queued'),
     },
     'platypus': {
         id: 'platypus',
@@ -482,6 +533,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('platypus_played'),
+        queued: getCookie('platypus_queued'),
     },
     'platform6': {
         id: 'platform6',
@@ -491,6 +543,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('platform6_played'),
+        queued: getCookie('platform6_queued'),
     },
     'pjw3dm1': {
         id: 'pjw3dm1',
@@ -500,6 +553,7 @@ var nativeOrder = {
         notes: 'Impossible BFG',
         images: 3,
         playedTonight: getCookie('pjw3dm1_played'),
+        queued: getCookie('pjw3dm1_queued'),
     },
     'pro-q3tourney2': {
         id: 'pro-q3tourney2',
@@ -509,6 +563,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('pro-q3tourney2_played'),
+        queued: getCookie('pro-q3tourney2_queued'),
     },
     'pro-q3tourney4': {
         id: 'pro-q3tourney4',
@@ -518,6 +573,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('pro-q3tourney4_played'),
+        queued: getCookie('pro-q3tourney4_queued'),
     },
     'pro-q3dm6': {
         id: 'pro-q3dm6',
@@ -527,6 +583,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('pro-q3dm6_played'),
+        queued: getCookie('pro-q3dm6_queued'),
     },
     'pro-q3dm13': {
         id: 'pro-q3dm13',
@@ -536,6 +593,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('pro-q3dm13_played'),
+        queued: getCookie('pro-q3dm13_queued'),
     },
     'mrcq3dm5': {
         id: 'mrcq3dm5',
@@ -545,6 +603,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mrcq3dm5_played'),
+        queued: getCookie('mrcq3dm5_queued'),
     },
     'mkexp': {
         id: 'mkexp',
@@ -554,6 +613,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mkexp_played'),
+        queued: getCookie('mkexp_queued'),
     },
     'mfspacedm3': {
         id: 'mfspacedm3',
@@ -563,6 +623,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mfspacedm3_played'),
+        queued: getCookie('mfspacedm3_queued'),
     },
     'maxx': {
         id: 'maxx',
@@ -572,6 +633,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('maxx_played'),
+        queued: getCookie('maxx_queued'),
     },
     'nalq1ta6': {
         id: 'nalq1ta6',
@@ -581,6 +643,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('nalq1ta6_played'),
+        queued: getCookie('nalq1ta6_queued'),
     },
     'hate': {
         id: 'hate',
@@ -590,6 +653,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('hate_played'),
+        queued: getCookie('hate_queued'),
     },
     'willpower': {
         id: 'willpower',
@@ -599,6 +663,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('willpower_played'),
+        queued: getCookie('willpower_queued'),
     },
     'unitooldm3_beta': {
         id: 'unitooldm3_beta',
@@ -608,6 +673,7 @@ var nativeOrder = {
         notes: 'The one that used to have the dog thumbnail',
         images: 3,
         playedTonight: getCookie('unitooldm3_beta_played'),
+        queued: getCookie('unitooldm3_beta_queued'),
     },
     'rqm3arena2': {
         id: 'rqm3arena2',
@@ -617,6 +683,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('rqm3arena2_played'),
+        queued: getCookie('rqm3arena2_queued'),
     },
     'mrl1dm1': {
         id: 'mrl1dm1',
@@ -626,6 +693,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('mrl1dm1_played'),
+        queued: getCookie('mrl1dm1_queued'),
     },
     'dmmtp': {
         id: 'dmmtp',
@@ -635,6 +703,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('dmmtp_played'),
+        queued: getCookie('dmmtp_queued'),
     },
     'charon3dm13': {
         id: 'charon3dm13',
@@ -644,6 +713,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('charon3dm13_played'),
+        queued: getCookie('charon3dm13_queued'),
     },
     'kmldm1': {
         id: 'kmldm1',
@@ -653,6 +723,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('kmldm1_played'),
+        queued: getCookie('kmldm1_queued'),
     },
     'klhights': {
         id: 'klhights',
@@ -662,6 +733,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('klhights_played'),
+        queued: getCookie('klhights_queued'),
     },
     'klcurves_small': {
         id: 'klcurves_small',
@@ -671,6 +743,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('klcurves_small_played'),
+        queued: getCookie('klcurves_small_queued'),
     },
     'kaos': {
         id: 'kaos',
@@ -680,6 +753,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('kaos_played'),
+        queued: getCookie('kaos_queued'),
     },
     'jaxdm8': {
         id: 'jaxdm8',
@@ -689,6 +763,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('jaxdm8_played'),
+        queued: getCookie('jaxdm8_queued'),
     },
     'hub3dm1': {
         id: 'hub3dm1',
@@ -698,6 +773,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('hub3dm1_played'),
+        queued: getCookie('hub3dm1_queued'),
     },
     'gon2': {
         id: 'gon2',
@@ -707,6 +783,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('gon2_played'),
+        queued: getCookie('gon2_queued'),
     },
     'geo-core': {
         id: 'geo-core',
@@ -716,6 +793,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('geo-core_played'),
+        queued: getCookie('geo-core_queued'),
     },
     'geit3dm3': {
         id: 'geit3dm3',
@@ -725,6 +803,7 @@ var nativeOrder = {
         notes: 'Mark, the Rocket Launcher is right there. You can see it in the screenshot.',
         images: 3,
         playedTonight: getCookie('geit3dm3_played'),
+        queued: getCookie('geit3dm3_queued'),
     },
     'geit3dm1': {
         id: 'geit3dm1',
@@ -734,6 +813,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('geit3dm1_played'),
+        queued: getCookie('geit3dm1_queued'),
     },
     'dungogt': {
         id: 'dungogt',
@@ -743,6 +823,7 @@ var nativeOrder = {
         notes: 'Impossible BFG',
         images: 3,
         playedTonight: getCookie('dungogt_played'),
+        queued: getCookie('dungogt_queued'),
     },
     'esq3dm1': {
         id: 'esq3dm1',
@@ -752,6 +833,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('esq3dm1_played'),
+        queued: getCookie('esq3dm1_queued'),
     },
     'coldq3dm1': {
         id: 'coldq3dm1',
@@ -761,6 +843,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('coldq3dm1_played'),
+        queued: getCookie('coldq3dm1_queued'),
     },
     'charondm1': {
         id: 'charondm1',
@@ -770,6 +853,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('charondm1_played'),
+        queued: getCookie('charondm1_queued'),
     },
     'butchershouse': {
         id: 'butchershouse',
@@ -779,6 +863,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('butchershouse_played'),
+        queued: getCookie('butchershouse_queued'),
     },
     'brickhouse': {
         id: 'brickhouse',
@@ -788,6 +873,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('brickhouse_played'),
+        queued: getCookie('brickhouse_queued'),
     },
     'billdm17': {
         id: 'billdm17',
@@ -797,6 +883,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('billdm17_played'),
+        queued: getCookie('billdm17_queued'),
     },
     'bfgdm2': {
         id: 'bfgdm2',
@@ -806,6 +893,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('bfgdm2_played'),
+        queued: getCookie('bfgdm2_queued'),
     },
     'bath1': {
         id: 'bath1',
@@ -815,6 +903,7 @@ var nativeOrder = {
         notes: 'Impossible Quad',
         images: 3,
         playedTonight: getCookie('bath1_played'),
+        queued: getCookie('bath1_queued'),
     },
     'basic': {
         id: 'basic',
@@ -824,6 +913,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('basic_played'),
+        queued: getCookie('basic_queued'),
     },
     'auh3dm2': {
         id: 'auh3dm2',
@@ -833,6 +923,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('auh3dm2_played'),
+        queued: getCookie('auh3dm2_queued'),
     },
     'auh3dm1': {
         id: 'auh3dm1',
@@ -842,6 +933,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('auh3dm1_played'),
+        queued: getCookie('auh3dm1_queued'),
     },
     'altarbeta': {
         id: 'altarbeta',
@@ -851,6 +943,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('altarbeta_played'),
+        queued: getCookie('altarbeta_queued'),
     },
     'alkdm11': {
         id: 'alkdm11',
@@ -860,6 +953,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie('alkdm11_played'),
+        queued: getCookie('alkdm11_queued'),
     },
     "'own'arama": {
         id: "'own'arama",
@@ -869,6 +963,7 @@ var nativeOrder = {
         notes: '',
         images: 3,
         playedTonight: getCookie("'own'arama_played"),
+        queued: getCookie("'own'arama_queued"),
     },
     'mpteam9': {
         id: 'mpteam9',
@@ -878,6 +973,7 @@ var nativeOrder = {
         notes: 'Similar to The Very End Of You, but with a third platform.',
         images: 3,
         playedTonight: getCookie('mpteam9_played'),
+        queued: getCookie('mpteam9_queued'),
     },
 };
 

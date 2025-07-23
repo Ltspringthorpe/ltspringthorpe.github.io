@@ -7,6 +7,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('trampoleen_played'),
+        queued: getCookie('trampoleen_queued'),
     },
     'tig_qubert': {
         id: 'tig_qubert',
@@ -16,6 +17,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('tig_qubert_played'),
+        queued: getCookie('tig_qubert_queued'),
     },
     'teqdm2': {
         id: 'teqdm2',
@@ -25,6 +27,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('teqdm2_played'),
+        queued: getCookie('teqdm2_queued'),
     },
     'karena1': {
         id: 'karena1',
@@ -34,6 +37,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('karena1_played'),
+        queued: getCookie('karena1_queued'),
     },
     'karena2': {
         id: 'karena2',
@@ -43,6 +47,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('karena2_played'),
+        queued: getCookie('karena2_queued'),
     },
     'karena3': {
         id: 'karena3',
@@ -52,6 +57,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('karena3_played'),
+        queued: getCookie('karena3_queued'),
     },
     'arcarena': {
         id: 'arcarena',
@@ -61,6 +67,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('arcarena_played'),
+        queued: getCookie('arcarena_queued'),
     },
     'rfwq3dm2': {
         id: 'rfwq3dm2',
@@ -70,6 +77,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('rfwq3dm2_played'),
+        queued: getCookie('rfwq3dm2_queued'),
     },
     'mq3dm1': {
         id: 'mq3dm1',
@@ -79,6 +87,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mq3dm1_played'),
+        queued: getCookie('mq3dm1_queued'),
     },
     'charon3dm11v2': {
         id: 'charon3dm11v2',
@@ -88,6 +97,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('charon3dm11v2_played'),
+        queued: getCookie('charon3dm11v2_queued'),
     },
     '20kdm1': {
         id: '20kdm1',
@@ -97,6 +107,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('20kdm1_played'),
+        queued: getCookie('20kdm1_queued'),
     },
     'delirium': {
         id: 'delirium',
@@ -106,6 +117,7 @@ var oldMaps = {
         notes: 'There\'s one portal that will trap you. Not sure if it\'s a bug or a feature.',
         images: 1,
         playedTonight: getCookie('delirium_played'),
+        queued: getCookie('delirium_queued'),
     },
     'blackforest': {
         id: 'blackforest',
@@ -115,6 +127,7 @@ var oldMaps = {
         notes: 'Don\'t stand still after spawning!',
         images: 1,
         playedTonight: getCookie('blackforest_played'),
+        queued: getCookie('blackforest_queued'),
     },
     'vault': {
         id: 'vault',
@@ -124,6 +137,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('vault_played'),
+        queued: getCookie('vault_queued'),
     },
     'q3_via_arena': {
         id: 'q3_via_arena',
@@ -133,6 +147,7 @@ var oldMaps = {
         notes: 'Too big',
         images: 1,
         playedTonight: getCookie('q3_via_arena_played'),
+        queued: getCookie('q3_via_arena_queued'),
     },
     'mkbase': {
         id: 'mkbase',
@@ -142,6 +157,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mkbase_played'),
+        queued: getCookie('mkbase_queued'),
     },
     'sg_2box4': {
         id: 'sg_2box4',
@@ -151,6 +167,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('sg_2box4_played'),
+        queued: getCookie('sg_2box4_queued'),
     },
     'coc': {
         id: 'coc',
@@ -160,6 +177,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('coc_played'),
+        queued: getCookie('coc_queued'),
     },
     'quartzdm1': {
         id: 'quartzdm1',
@@ -169,6 +187,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('quartzdm1_played'),
+        queued: getCookie('quartzdm1_queued'),
     },
     'pro-q3dm17': {
         id: 'pro-q3dm17',
@@ -178,6 +197,7 @@ var oldMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('pro-q3dm17_played'),
+        queued: getCookie('pro-q3dm17_queued'),
     },
 };
 

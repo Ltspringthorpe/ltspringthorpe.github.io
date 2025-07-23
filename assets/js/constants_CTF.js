@@ -7,6 +7,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('q3ctf1_played'),
+        queued: getCookie('q3ctf1_queued'),
     },
     'q3ctf2': {
         id: 'q3ctf2',
@@ -16,6 +17,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('q3ctf2_played'),
+        queued: getCookie('q3ctf2_queued'),
     },
     'q3ctf3': {
         id: 'q3ctf3',
@@ -25,6 +27,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('q3ctf3_played'),
+        queued: getCookie('q3ctf3_queued'),
     },
     'q3ctf4': {
         id: 'q3ctf4',
@@ -34,6 +37,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('q3ctf4_played'),
+        queued: getCookie('q3ctf4_queued'),
     },
     'mpterra1': {
         id: 'mpterra1',
@@ -43,6 +47,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpterra1_played'),
+        queued: getCookie('mpterra1_queued'),
     },
     'mpterra2': {
         id: 'mpterra2',
@@ -52,6 +57,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpterra2_played'),
+        queued: getCookie('mpterra2_queued'),
     },
     'mpterra3': {
         id: 'mpterra3',
@@ -61,6 +67,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpterra3_played'),
+        queued: getCookie('mpterra3_queued'),
     },
     'mpq3tourney6': {
         id: 'mpq3tourney6',
@@ -70,6 +77,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpq3tourney6_played'),
+        queued: getCookie('mpq3tourney6_queued'),
     },
     'mpteam1': {
         id: 'mpteam1',
@@ -79,6 +87,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam1_played'),
+        queued: getCookie('mpteam1_queued'),
     },
     'mpteam2': {
         id: 'mpteam2',
@@ -88,6 +97,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam2_played'),
+        queued: getCookie('mpteam2_queued'),
     },
     'mpteam3': {
         id: 'mpteam3',
@@ -97,6 +107,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam3_played'),
+        queued: getCookie('mpteam3_queued'),
     },
     'mpteam4': {
         id: 'mpteam4',
@@ -106,6 +117,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam4_played'),
+        queued: getCookie('mpteam4_queued'),
     },
     'mpteam5': {
         id: 'mpteam5',
@@ -115,6 +127,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam5_played'),
+        queued: getCookie('mpteam5_queued'),
     },
     'mpteam6': {
         id: 'mpteam6',
@@ -124,6 +137,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam6_played'),
+        queued: getCookie('mpteam6_queued'),
     },
     'mpteam7': {
         id: 'mpteam7',
@@ -133,6 +147,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam7_played'),
+        queued: getCookie('mpteam7_queued'),
     },
     'mpteam8': {
         id: 'mpteam8',
@@ -142,6 +157,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpteam8_played'),
+        queued: getCookie('mpteam8_queued'),
     },
     'mpq3ctf1': {
         id: 'mpq3ctf1',
@@ -151,6 +167,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpq3ctf1_played'),
+        queued: getCookie('mpq3ctf1_queued'),
     },
     'mpq3ctf2': {
         id: 'mpq3ctf2',
@@ -160,6 +177,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpq3ctf2_played'),
+        queued: getCookie('mpq3ctf2_queued'),
     },
     'mpq3ctf3': {
         id: 'mpq3ctf3',
@@ -169,6 +187,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpq3ctf3_played'),
+        queued: getCookie('mpq3ctf3_queued'),
     },
     'mpq3ctf4': {
         id: 'mpq3ctf4',
@@ -178,6 +197,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('mpq3ctf4_played'),
+        queued: getCookie('mpq3ctf4_queued'),
     },
     'q3tourney6_ctf': {
         id: 'q3tourney6_ctf',
@@ -187,6 +207,7 @@ var ctfMaps = {
         notes: '',
         images: 1,
         playedTonight: getCookie('q3tourney6_ctf_played'),
+        queued: getCookie('q3tourney6_ctf_queued'),
     },
 };
 

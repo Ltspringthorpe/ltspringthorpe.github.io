@@ -10,7 +10,7 @@
         var filters_exclude = [];
 
         // set up listener for mobile hamburger - open
-        $('#hamburger img').on('click', function() {
+        $('filter img').on('click', function() {
             $('.filter-menu').removeClass('hidden');
             $('.search-menu').addClass('hidden');
             $(this).closest('a').addClass('hidden');
@@ -22,14 +22,14 @@
             $('.filter-menu').addClass('hidden');
             $('.search-menu').addClass('hidden');
             $(this).closest('a').addClass('hidden');
-            $('#hamburger').removeClass('hidden');
+            $('filter').removeClass('hidden');
         });
 
         // set up listener for mobile search
         $('#magnifying img').on('click', function() {
             $('.filter-menu').addClass('hidden');
             $('.search-menu').toggleClass('hidden');
-            $('#hamburger').removeClass('hidden');
+            $('filter').removeClass('hidden');
             $('#arrow').addClass('hidden');
         });
 
@@ -149,7 +149,7 @@
             });
         }
 
-        var tableRows = [];
+        var tableRows = '';
         for (let i = 0; i < mapsArray.length; i++) {
             // is there a search term?
             if (searchTerm && !searchTerm.test(mapsArray[i].name) && !searchTerm.test(mapsArray[i].id)) {
@@ -196,13 +196,21 @@
             }
             tableRows += '</div>';
 
-            // name and id
-            tableRows += '<div class="col-4 col-12-small info-container">';
+            // name
+            tableRows += '<div class="col-6 col-12-small info-container">';
             tableRows += '<h3>' + mapsArray[i].name + '</h3>';
 
+            // add/remove favorite
             let favorite = mapsArray[i].favorite ? 'favorite' : '';
             let title = mapsArray[i].favorite ? 'Remove Favorite' : 'Add Favorite';
             tableRows += '<div class="filter-items star-icon"><a class="' + favorite + '" data-id="' + mapsArray[i].id + '" title="' + title + '"></a></div>';
+
+            // add to queue / remove from queue
+            let queued = mapsArray[i].queued ? 'queued' : '';
+            let queueTitle = mapsArray[i].queued ? 'Remove from Queue' : 'Add to Queue';
+            tableRows += '<div class="filter-items add-to-queue-icon"><a class="' + queued + '" data-id="' + mapsArray[i].id + '" title="' + queueTitle + '"></a></div>';
+
+            // id
             tableRows += '<div>ID: ' + mapsArray[i].id + '</div>';
 
             // keywords
@@ -228,6 +236,7 @@
 
         loadLightbox();
         initStarListener();
+        initQueueListener();
     };
 
     // Lightbox gallery.
@@ -272,8 +281,43 @@
         e.target.classList.toggle('favorite');
     }
 
+    function toggleQueue(e) {
+        var cookieConsent = getCookie('cookieConsent');
+        if(!cookieConsent) return;
+
+        var id = e.target.getAttribute('data-id');
+        if (e.target.classList.contains('queued')) {
+            setCookie(id + '_queued', false, 0);
+            if (!!nativeOrder[id]) nativeOrder[id].queued = false;
+            if (!!mapsObject[id]) mapsObject[id].queued = false;
+            if (!!ctfMaps[id]) ctfMaps[id].queued = false;
+            if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = false;
+            if (!!oldMaps[id]) oldMaps[id].queued = false;
+            if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = false;
+        } else {
+            setCookie(id + '_queued', true, 1);
+            if (!!nativeOrder[id]) nativeOrder[id].queued = true;
+            if (!!mapsObject[id]) mapsObject[id].queued = true;
+            if (!!ctfMaps[id]) ctfMaps[id].queued = true;
+            if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = true;
+            if (!!oldMaps[id]) oldMaps[id].queued = true;
+            if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = true;
+        }
+
+        $(e.target).fadeOut('fast', function() {
+            e.target.classList.toggle('queued');
+            $(e.target).fadeIn('fast');
+        });
+
+        var myQueue = '';
+    }
+
     function initStarListener() {
         $('.star-icon a').on('click', toggleFavorite);
+    }
+
+    function initQueueListener() {
+        $('.add-to-queue-icon a').on('click', toggleQueue);
     }
 
     function setCookie(cname, cvalue, exdays) {
