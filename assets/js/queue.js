@@ -45,7 +45,7 @@
             return !!map.queued;
         });
 
-        var id = e.target.getAttribute('data-id');
+        var id = e.target.closest('.queued').getAttribute('data-id');
         setCookie(id + '_queued', false, 0);
         if (!!nativeOrder[id]) nativeOrder[id].queued = false;
         if (!!mapsObject[id]) mapsObject[id].queued = false;
@@ -54,8 +54,9 @@
         if (!!oldMaps[id]) oldMaps[id].queued = false;
         if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = false;
 
-        $(e.target).closest('row').fadeOut('fast', function() {
-            $(e.target).closest('row').remove();
+        $(e.target).closest('.row').fadeOut('fast', function() {
+            $(e.target).closest('.row').remove();
+            if (!$('#queueList .row').length) $('#queueList').html('Nothing here yet');
         });
     }
 
