@@ -12,7 +12,7 @@
             return !!map.queued;
         });
         queueList = queueList.sort(function(a, b) {
-            return (a.queued < b.queued ? -1 : 1);
+            return (a.queued < b.queued ? 1 : -1);
         });
 
         var queueHtml = '';

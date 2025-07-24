@@ -2,6 +2,7 @@
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
     <g id="SVGRepo_tracerCarrier"></g>
     <g id="SVGRepo_iconCarrier">
-        <path d="M17 19V11M3 11H13M3 7H13M3 15H9M13 15H21" stroke="#fafafa" stroke-width="0.75"></path>
+        <path d="M3 11H13M3 7H13M3 15H9" stroke="#fafafa" stroke-width="0.75"></path>
+        <path d="M17 19V11M13 15H21" stroke="green" stroke-width="0.75"></path>
     </g>
 </svg>
