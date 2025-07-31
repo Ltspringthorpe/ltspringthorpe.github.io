@@ -107,6 +107,9 @@
             randomFavoriteList = randomFavoriteList.filter(function(randomFav) {
                 return randomFav.id !== id;
             });
+            randomMapList = randomMapList.filter(function(randomMap) {
+                return randomMap.id !== id;
+            });
             roll(randomFavoriteList);
         });
 
@@ -114,6 +117,9 @@
         $('#randomMap #rerollRandom').on('click', function() {
             $('#randomMap button').prop('disabled', true);
             var id = $('#mapId').html().trim();
+            randomFavoriteList = randomFavoriteList.filter(function(randomFav) {
+                return randomFav.id !== id;
+            });
             randomMapList = randomMapList.filter(function(randomMap) {
                 return randomMap.id !== id;
             });
