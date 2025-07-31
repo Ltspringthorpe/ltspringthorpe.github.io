@@ -287,13 +287,14 @@
             if (!!oldMaps[id]) oldMaps[id].queued = false;
             if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = false;
         } else {
-            setCookie(id + '_queued', (new Date()).getTime(), 1);
-            if (!!nativeOrder[id]) nativeOrder[id].queued = true;
-            if (!!mapsObject[id]) mapsObject[id].queued = true;
-            if (!!ctfMaps[id]) ctfMaps[id].queued = true;
-            if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = true;
-            if (!!oldMaps[id]) oldMaps[id].queued = true;
-            if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = true;
+            var timestamp = (new Date()).getTime();
+            setCookie(id + '_queued', timestamp, 1);
+            if (!!nativeOrder[id]) nativeOrder[id].queued = timestamp.toString();
+            if (!!mapsObject[id]) mapsObject[id].queued = timestamp.toString();
+            if (!!ctfMaps[id]) ctfMaps[id].queued = timestamp.toString();
+            if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = timestamp.toString();
+            if (!!oldMaps[id]) oldMaps[id].queued = timestamp.toString();
+            if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = timestamp.toString();
         }
 
         $(e.target).fadeOut('fast', function() {
