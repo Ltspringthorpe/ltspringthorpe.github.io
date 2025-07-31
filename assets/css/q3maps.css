@@ -545,6 +545,10 @@
     justify-content: center;
 }
 
+#top #randomMap button:disabled img {
+    opacity: 0.3;
+}
+
 @media screen and (max-width: 480px) {
     #top .modal {
         padding: 20px;

@@ -15,13 +15,9 @@
 
     function roll(list) {
         if (list.length === 0) {
+            $('#randomMap button').prop('disabled', false);
             return alert('There are no more maps to choose from.');
         }
-
-        $('.modal').addClass('hidden');
-        $('#randomMap').removeClass('hidden');
-        $('body').addClass('modal-open');
-        $('#played').fadeIn('fast');
 
         var idx = getRandomInt(0, list.length);
         var chosenMap = list[idx];
@@ -30,8 +26,9 @@
             $('#mapImage img').attr('src', 'images/q3maps/' + chosenMap.id + '-0.jpg');
             $('#mapTitle').html(chosenMap.name);
             $('#mapId').html(chosenMap.id);
+            $('#randomMap button').prop('disabled', false);
+            $('#mapImage, #mapTitle, #mapId').fadeIn('fast');
         });
-        $('#mapImage, #mapTitle, #mapId').fadeIn('fast');
     }
 
     function init() {
@@ -45,11 +42,38 @@
 
         // set up listener for roll random favorite
         $('#diceStarMobile, #diceStar').on('click', function() {
+            // reset the lists
+            randomMapList = Object.values(mapsObject).filter(function(randomMap) {
+                return !randomMap.playedTonight;
+            });
+            randomFavoriteList = randomMapList.filter(function(randomFav) {
+                return !!randomFav.favorite;
+            });
+
+            if (randomFavoriteList.length) {
+                $('.modal').addClass('hidden');
+                $('#randomMap').removeClass('hidden');
+                $('body').addClass('modal-open');
+                $('#played').fadeIn('fast');
+            }
+
             roll(randomFavoriteList);
         });
 
         // set up listener for roll random map
         $('#diceMobile, #dice').on('click', function() {
+            $('.modal').addClass('hidden');
+            $('#randomMap').removeClass('hidden');
+            $('body').addClass('modal-open');
+            $('#played').fadeIn('fast');
+
+            // reset the lists
+            randomMapList = Object.values(mapsObject).filter(function(randomMap) {
+                return !randomMap.playedTonight;
+            });
+            randomFavoriteList = randomMapList.filter(function(randomFav) {
+                return !!randomFav.favorite;
+            });
             roll(randomMapList);
         });
 
@@ -78,11 +102,21 @@
 
         // reroll favorite maps
         $('#randomMap #rerollFav').on('click', function() {
+            $('#randomMap button').prop('disabled', true);
+            var id = $('#mapId').html().trim();
+            randomFavoriteList = randomFavoriteList.filter(function(randomFav) {
+                return randomFav.id !== id;
+            });
             roll(randomFavoriteList);
         });
 
         // reroll all maps
         $('#randomMap #rerollRandom').on('click', function() {
+            $('#randomMap button').prop('disabled', true);
+            var id = $('#mapId').html().trim();
+            randomMapList = randomMapList.filter(function(randomMap) {
+                return randomMap.id !== id;
+            });
             roll(randomMapList);
         });
 
