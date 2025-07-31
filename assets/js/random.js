@@ -18,7 +18,9 @@
             return alert('There are no more maps to choose from.');
         }
 
+        $('.modal').addClass('hidden');
         $('#randomMap').removeClass('hidden');
+        $('body').addClass('modal-open');
         $('#played').fadeIn('fast');
 
         var idx = getRandomInt(0, list.length);
@@ -54,9 +56,9 @@
         // random map accepted
         $('#randomMap #yes').on('click', function() {
             $('#randomMap').addClass('hidden');
+            $('body').removeClass('modal-open');
 
             var id = $('#mapId').html().trim();
-            console.log(id);
             setCookie(id + '_played', true, 1);
 
             if (!!nativeOrder[id]) nativeOrder[id].playedTonight = true;
@@ -88,7 +90,6 @@
         $('#randomMap #played').on('click', function() {
             $(this).fadeOut('fast');
             var id = $('#mapId').html().trim();
-            console.log(id);
             setCookie(id + '_played', true, 1);
 
             if (!!nativeOrder[id]) nativeOrder[id].playedTonight = true;
@@ -107,6 +108,8 @@
         // random map modal closed
         $('#randomMap .closer').on('click', function() {
             $('#randomMap').addClass('hidden');
+            $('body').removeClass('modal-open');
+
             $('#mapImage img').attr('src', '');
             $('#mapTitle').html('');
             $('#mapId').html('');

@@ -9,28 +9,16 @@
         var filters_include = [];
         var filters_exclude = [];
 
-        // set up listener for mobile hamburger - open
-        $('filter img').on('click', function() {
-            $('.filter-menu').removeClass('hidden');
+        // set up listener for mobile filter - open
+        $('#filter img').on('click', function() {
+            $('.filter-menu').toggleClass('hidden');
             $('.search-menu').addClass('hidden');
-            $(this).closest('a').addClass('hidden');
-            $('#arrow').removeClass('hidden');
-        });
-
-        // set up listener for mobile hamburger - close
-        $('#arrow img').on('click', function() {
-            $('.filter-menu').addClass('hidden');
-            $('.search-menu').addClass('hidden');
-            $(this).closest('a').addClass('hidden');
-            $('filter').removeClass('hidden');
         });
 
         // set up listener for mobile search
         $('#magnifying img').on('click', function() {
             $('.filter-menu').addClass('hidden');
             $('.search-menu').toggleClass('hidden');
-            $('filter').removeClass('hidden');
-            $('#arrow').addClass('hidden');
         });
 
         // set up listener for filter carets

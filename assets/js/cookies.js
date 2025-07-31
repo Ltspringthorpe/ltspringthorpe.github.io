@@ -26,6 +26,7 @@
     function handleModal() {
         var cookieConsent = getCookie('cookieConsent');
         if (!cookieConsent) {
+            $('.modal').addClass('hidden');
             $('#cookieConsent').removeClass('hidden');
             $('body').addClass('modal-open');
         }

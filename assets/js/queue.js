@@ -12,7 +12,7 @@
             return !!map.queued;
         });
         queueList = queueList.sort(function(a, b) {
-            return (a.queued < b.queued ? 1 : -1);
+            return (parseInt(a.queued) < parseInt(b.queued) ? -1 : 1);
         });
 
         var queueHtml = '';
@@ -32,7 +32,9 @@
         }
 
         $('#queueList').html(queueHtml);
+        $('.modal').addClass('hidden');
         $('#myQueue').removeClass('hidden');
+        $('body').addClass('modal-open');
 
         initRemoveQueueListener();
     }
@@ -73,6 +75,7 @@
         // queue modal closed
         $('#myQueue .closer').on('click', function() {
             $('#myQueue').addClass('hidden');
+            $('body').removeClass('modal-open');
         });
     }
 
