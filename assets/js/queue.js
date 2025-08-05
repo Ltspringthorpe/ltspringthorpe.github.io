@@ -53,8 +53,8 @@
         if (!!mapsObject[id]) mapsObject[id].queued = false;
         if (!!ctfMaps[id]) ctfMaps[id].queued = false;
         if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = false;
-        if (!!oldMaps[id]) oldMaps[id].queued = false;
-        if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = false;
+        if (!!retiredMaps[id]) retiredMaps[id].queued = false;
+        if (!!mapsObjectRetired[id]) mapsObjectRetired[id].queued = false;
 
         $(e.target).closest('.row').fadeOut('fast', function() {
             $(e.target).closest('.row').remove();

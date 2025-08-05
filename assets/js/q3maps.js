@@ -114,7 +114,13 @@
         } else if (type === 'ctf') {
             mapsArray = Object.values(mapsObjectCTF);
         } else if (type === 'retired') {
-            mapsArray = Object.values(mapsObjectOld);
+            mapsArray = Object.values(mapsObjectRetired);
+        } else if (type === 'big') {
+            mapsArray = Object.values(mapsObjectBig);
+        } else if (type === 'small') {
+            mapsArray = Object.values(mapsObjectSmall);
+        } else if (type === 'all') {
+            mapsArray = Object.values(mapsObject).concat(Object.values(mapsObjectRetired), Object.values(mapsObjectBig), Object.values(mapsObjectSmall));
         }
 
         // is there a sort order?
@@ -171,9 +177,13 @@
             tableRows += '<div class="row">';
 
             // image
-            tableRows += '<a href="images/q3maps/' + mapsArray[i].id + '-0.jpg" class="col-4 col-8-small col-12-xsmall image-container">';
-            tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '-0.jpg" height="384" width="512" alt="' + mapsArray[i].name + ' (1)" title="' + mapsArray[i].name + ' (1)" />';
-            tableRows += '</a>';
+            if (!!mapsArray[i].images) {
+                tableRows += '<a href="images/q3maps/' + mapsArray[i].id + '-0.jpg" class="col-4 col-8-small col-12-xsmall image-container">';
+                tableRows += '<img src="images/q3maps/' + mapsArray[i].id + '-0.jpg" height="384" width="512" alt="' + mapsArray[i].name + ' (1)" title="' + mapsArray[i].name + ' (1)" />';
+                tableRows += '</a>';
+            } else {
+                tableRows += '<div class="col-4 col-8-small col-12-xsmall image-container"><img height="384" width="512" /></div>';
+            }
 
             tableRows += '<div class="col-2 col-4-small col-12-xsmall">';
             for (let n = 1; n < mapsArray[i].images; n++) {
@@ -200,6 +210,10 @@
 
             // id
             tableRows += '<div>ID: ' + mapsArray[i].id + '</div>';
+
+            // mod
+            if (mapsArray[i].hasOwnProperty('mod'))
+            tableRows += '<div>Mod: ' + mapsArray[i].mod + '</div>';
 
             // keywords
             if (mapsArray[i].keywords) {
@@ -255,16 +269,24 @@
             if (!!mapsObject[id]) mapsObject[id].favorite = false;
             if (!!ctfMaps[id]) ctfMaps[id].favorite = false;
             if (!!mapsObjectCTF[id]) mapsObjectCTF[id].favorite = false;
-            if (!!oldMaps[id]) oldMaps[id].favorite = false;
-            if (!!mapsObjectOld[id]) mapsObjectOld[id].favorite = false;
+            if (!!retiredMaps[id]) retiredMaps[id].favorite = false;
+            if (!!mapsObjectRetired[id]) mapsObjectRetired[id].favorite = false;
+            if (!!bigMaps[id]) bigMaps[id].favorite = false;
+            if (!!mapsObjectBig[id]) mapsObjectBig[id].favorite = false;
+            if (!!smallMaps[id]) smallMaps[id].favorite = false;
+            if (!!mapsObjectSmall[id]) mapsObjectSmall[id].favorite = false;
         } else {
             setCookie(id, true, 400);
             if (!!nativeOrder[id]) nativeOrder[id].favorite = true;
             if (!!mapsObject[id]) mapsObject[id].favorite = true;
             if (!!ctfMaps[id]) ctfMaps[id].favorite = true;
             if (!!mapsObjectCTF[id]) mapsObjectCTF[id].favorite = true;
-            if (!!oldMaps[id]) oldMaps[id].favorite = true;
-            if (!!mapsObjectOld[id]) mapsObjectOld[id].favorite = true;
+            if (!!retiredMaps[id]) retiredMaps[id].favorite = true;
+            if (!!mapsObjectRetired[id]) mapsObjectRetired[id].favorite = true;
+            if (!!bigMaps[id]) bigMaps[id].favorite = true;
+            if (!!mapsObjectBig[id]) mapsObjectBig[id].favorite = true;
+            if (!!smallMaps[id]) smallMaps[id].favorite = true;
+            if (!!mapsObjectSmall[id]) mapsObjectSmall[id].favorite = true;
         }
         e.target.classList.toggle('favorite');
     }
@@ -284,8 +306,12 @@
             if (!!mapsObject[id]) mapsObject[id].queued = false;
             if (!!ctfMaps[id]) ctfMaps[id].queued = false;
             if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = false;
-            if (!!oldMaps[id]) oldMaps[id].queued = false;
-            if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = false;
+            if (!!retiredMaps[id]) retiredMaps[id].queued = false;
+            if (!!mapsObjectRetired[id]) mapsObjectRetired[id].queued = false;
+            if (!!bigMaps[id]) bigMaps[id].queued = false;
+            if (!!mapsObjectBig[id]) mapsObjectBig[id].queued = false;
+            if (!!smallMaps[id]) smallMaps[id].queued = false;
+            if (!!mapsObjectSmall[id]) mapsObjectSmall[id].queued = false;
         } else {
             var timestamp = (new Date()).getTime();
             setCookie(id + '_queued', timestamp, 1);
@@ -293,8 +319,12 @@
             if (!!mapsObject[id]) mapsObject[id].queued = timestamp.toString();
             if (!!ctfMaps[id]) ctfMaps[id].queued = timestamp.toString();
             if (!!mapsObjectCTF[id]) mapsObjectCTF[id].queued = timestamp.toString();
-            if (!!oldMaps[id]) oldMaps[id].queued = timestamp.toString();
-            if (!!mapsObjectOld[id]) mapsObjectOld[id].queued = timestamp.toString();
+            if (!!retiredMaps[id]) retiredMaps[id].queued = timestamp.toString();
+            if (!!mapsObjectRetired[id]) mapsObjectRetired[id].queued = timestamp.toString();
+            if (!!bigMaps[id]) bigMaps[id].queued = timestamp.toString();
+            if (!!mapsObjectBig[id]) mapsObjectBig[id].queued = timestamp.toString();
+            if (!!smallMaps[id]) smallMaps[id].queued = timestamp.toString();
+            if (!!mapsObjectSmall[id]) mapsObjectSmall[id].queued = timestamp.toString();
         }
 
         $(e.target).fadeOut('fast', function() {
