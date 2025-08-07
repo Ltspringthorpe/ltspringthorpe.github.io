@@ -985,15 +985,15 @@ var nativeOrder = {
         playedTonight: getCookie('necro6_played'),
         queued: getCookie('necro6_queued'),
     },
-    'MW3Tourney2': {
-        id: 'MW3Tourney2',
+    'mw3tourney2': {
+        id: 'mw3tourney2',
         name: 'Untouchable',
         keywords: 'Shotgun,Rocket Launcher,Lightning Gun,Railgun,Plasma Gun,Red Armor,Yellow Armor,Megahealth',
-        favorite: getCookie('MW3Tourney2'),
+        favorite: getCookie('mw3tourney2'),
         notes: '',
         images: 1,
-        playedTonight: getCookie('MW3Tourney2_played'),
-        queued: getCookie('MW3Tourney2_queued'),
+        playedTonight: getCookie('mw3tourney2_played'),
+        queued: getCookie('mw3tourney2_queued'),
     },
     'mksteel': {
         id: 'mksteel',
