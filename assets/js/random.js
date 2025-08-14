@@ -27,7 +27,7 @@
             $('#mapTitle').html(chosenMap.name);
             $('#mapId').html(chosenMap.id);
             $('#randomMap button').prop('disabled', false);
-            $('#mapImage, #mapTitle, #mapId').fadeIn('fast');
+            $('#mapImage, #mapTitle, #mapId, #played').fadeIn('fast');
         });
     }
 
