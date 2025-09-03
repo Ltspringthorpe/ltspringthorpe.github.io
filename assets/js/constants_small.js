@@ -71,6 +71,7 @@ var smallMaps = {
         keywords: '',
         favorite: getCookie('oa_pvomit'),
         notes: 'No data yet.',
+        mod: '_small',
         images: 0,
         playedTonight: getCookie('oa_pvomit_played'),
         queued: getCookie('oa_pvomit_queued'),

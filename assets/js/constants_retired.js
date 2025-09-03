@@ -38,6 +38,7 @@ var retiredMaps = {
         keywords: '',
         favorite: getCookie('oa_dm6'),
         notes: 'No data yet.',
+        mod: '_retired',
         images: 0,
         playedTonight: getCookie('oa_dm6_played'),
         queued: getCookie('oa_dm6_queued'),
