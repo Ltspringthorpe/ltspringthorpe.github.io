@@ -65,6 +65,16 @@ var smallMaps = {
         playedTonight: getCookie('moes_played'),
         queued: getCookie('moes_queued'),
     },
+    'oa_pvomit': {
+        id: 'oa_pvomit',
+        name: '',
+        keywords: '',
+        favorite: getCookie('oa_pvomit'),
+        notes: 'No data yet.',
+        images: 0,
+        playedTonight: getCookie('oa_pvomit_played'),
+        queued: getCookie('oa_pvomit_queued'),
+    },
     'sg_2box4': {
         id: 'sg_2box4',
         name: '2box4',
