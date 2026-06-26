@@ -1,0 +1,7930 @@
+var wordList =
+[
+    {
+        "word": "abbr",
+        "source": []
+    },
+    {
+        "word": "acacia",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "academe",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "academia",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "academic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "academy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "acai",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "accede",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "acceded",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "accent",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "accept",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "acceptance",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "acclaim",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "acct",
+        "source": []
+    },
+    {
+        "word": "aced",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "acetate",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "acetic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ache",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "acid",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "acidic",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "acidy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "acme",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "acrid",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "activate",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "active",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "actual",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "actually",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "added",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "addict",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "adman",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "admin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "adrift",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "advt",
+        "source": []
+    },
+    {
+        "word": "aeon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "afar",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "affix",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "affixed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "affront",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "afloat",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "afoot",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "afraid",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "afro",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "agile",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ahem",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "aide",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "aided",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "aimed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "airman",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ajar",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "alee",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "alfalfa",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "algae",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "alibi",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "allay",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "allege",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "allele",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "alley",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "allot",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ally",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "almond",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "aloe",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "aloft",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "aloof",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "altar",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "alto",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "amalgam",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "amid",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "amyl",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "anally",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "anima",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "annex",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "annotator",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "anon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ante",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "antenna",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "antennae",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "anyhoo",
+        "source": []
+    },
+    {
+        "word": "aorta",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "apace",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "apathetic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "apiece",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "appetite",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "arbor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "arco",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "arguing",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "aria",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "arid",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "arrant",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "arum",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ataxia",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "atoll",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "atonal",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "attach",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "attache",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "attar",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "attempt",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "attic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "attn",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "atty",
+        "source": []
+    },
+    {
+        "word": "augur",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "auguring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "aura",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "aurora",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "auroral",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "avdp",
+        "source": []
+    },
+    {
+        "word": "aviate",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "axon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "baba",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bail",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bait",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ball",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "banal",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "banana",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "barb",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "barback",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "barbacoa",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "barbarian",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bark",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "barn",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "barrack",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "batt",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bibb",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bilabial",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bill",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "billion",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "billionth",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "biol",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "biotin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "birr",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "birria",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "blab",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "blat",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "blatant",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bldg",
+        "source": []
+    },
+    {
+        "word": "blin",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "blini",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "boar",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "bobbin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "boil",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "bonito",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "bookrack",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "boor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "brail",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "brain",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "bran",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "brat",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "briar",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "brickie",
+        "source": []
+    },
+    {
+        "word": "brill",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "brilliant",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "brit",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "brook",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cacao",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cache",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cachet",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cacti",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "caddie",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "caddied",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "caddy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "calf",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "call",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "calla",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "calm",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "calmly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "came",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "camel",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "camellia",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cami",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cann",
+        "source": []
+    },
+    {
+        "word": "cant",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cantata",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "canteen",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "capacitate",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cape",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "capiche",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "capt",
+        "source": []
+    },
+    {
+        "word": "captcha",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "captivate",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "captive",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "carb",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "card",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cardia",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cardiac",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "carob",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "carol",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "catcall",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "catch",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "catnap",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "catty",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "caul",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cava",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cave",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "caveat",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cecum",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cede",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ceded",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "celiac",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cell",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "celled",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "celli",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cement",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cent",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cetacean",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "chai",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chalice",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "challah",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "chap",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "chapati",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "chat",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cheap",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cheapie",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cheat",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cheekily",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cheep",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cheetah",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chemical",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "chge",
+        "source": []
+    },
+    {
+        "word": "chia",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chic",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chica",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chichi",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chick",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "chicle",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chili",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chill",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chilly",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "chime",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chip",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "chit",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "chitchat",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cicada",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cilia",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "cine",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "city",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "claim",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "clam",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "clammy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "clay",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cliche",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "click",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "clime",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "clinic",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cloaca",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "clomp",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "clop",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "clue",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "clued",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "clump",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "clumped",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "coal",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cobra",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "coca",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cockcrow",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cocoa",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "coconut",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cola",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "coll",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "collar",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "color",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "comp",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "compel",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "complex",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "concoct",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "concoction",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "conman",
+        "source": []
+    },
+    {
+        "word": "cont",
+        "source": []
+    },
+    {
+        "word": "continuity",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cool",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "coop",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "coot",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cope",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "coral",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cork",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "corolla",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "corp",
+        "source": []
+    },
+    {
+        "word": "corr",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "corral",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "cotton",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cottony",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cotty",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "count",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "county",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cower",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "coworker",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "crab",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "crack",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "creme",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "crew",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "crime",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "crimp",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "croak",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "croc",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "crock",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "crook",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "crow",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cuddle",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cuddled",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cued",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cuff",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cull",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "culled",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cult",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cupped",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "cutout",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "cyclic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dada",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "daddy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dado",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "daft",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dago",
+        "source": []
+    },
+    {
+        "word": "dame",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dammed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "damn",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "dart",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "data",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dead",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deadeye",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "decade",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "decay",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "decayed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deduce",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "deduced",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "defied",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deft",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deified",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dept",
+        "source": []
+    },
+    {
+        "word": "derv",
+        "source": []
+    },
+    {
+        "word": "detox",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "detoxed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "detoxified",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deuce",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "dewy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dhow",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "diacritic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "diad",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "diadem",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dial",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "diam",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "diamond",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "dict",
+        "source": []
+    },
+    {
+        "word": "dicta",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "didact",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "didactic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dido",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "died",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "diet",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dieted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "diffract",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dildo",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "dill",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "dirt",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ditto",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dobbed",
+        "source": []
+    },
+    {
+        "word": "dodo",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "doll",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "domain",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "dominion",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "domino",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "dona",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "donor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "doodad",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "doom",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "door",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dotcom",
+        "source": []
+    },
+    {
+        "word": "dote",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "doted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dotted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dowdy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "down",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "downed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "downy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "draft",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "drat",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "drift",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "droid",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "droning",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "drown",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "drowning",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "drug",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "drugging",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "druid",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "duding",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dung",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dunning",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dura",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "durian",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "during",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dyad",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "each",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "eagle",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "eaten",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "eave",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "eccl",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ecol",
+        "source": []
+    },
+    {
+        "word": "econ",
+        "source": []
+    },
+    {
+        "word": "edamame",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "eddied",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "edema",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "edified",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "edit",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "edited",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "educ",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "educe",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "educed",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "eellike",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "eely",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "effete",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "effetely",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "eggnog",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "elem",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "elev",
+        "source": []
+    },
+    {
+        "word": "elope",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "emanate",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "emcee",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "emceed",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "eminence",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "emir",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "empire",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "empiric",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "enact",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "enactment",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "encampment",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "encircle",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "encl",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ency",
+        "source": []
+    },
+    {
+        "word": "endow",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "endowed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "engage",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "entente",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "envy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "epee",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "epitaph",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "epithet",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ermine",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "etch",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "ethic",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "evenly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "evilly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ewer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "exit",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "exited",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "exon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "expel",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "expo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "eyeful",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "eyelet",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fact",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "factual",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "factually",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "faculty",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "faille",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "falafel",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fall",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fallacy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "falloff",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "farad",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "farro",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fart",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fatal",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "feel",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "feet",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fell",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ferry",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fete",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "feted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fetid",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fewer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fiat",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fief",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "fife",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "fifed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "file",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fitted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fixate",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fixated",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fixed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "flagella",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "flan",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "flat",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "flatfoot",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "flea",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "flee",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fleetly",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "float",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "floe",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "floor",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "flora",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "floral",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fluffy",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "flurry",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fluttery",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "foal",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fogie",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "foliage",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "foll",
+        "source": []
+    },
+    {
+        "word": "font",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fool",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "foot",
+        "source": [
+            "latimes",
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "footed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "footfall",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "footie",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "fora",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "forlorn",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "fort",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "frat",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "freely",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fretfully",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "front",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "frontal",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fryer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fully",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "furn",
+        "source": []
+    },
+    {
+        "word": "furry",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "fury",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "gaffe",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gage",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gaggle",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gale",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gamma",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gamy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gang",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gauging",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gaur",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gene",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "geog",
+        "source": []
+    },
+    {
+        "word": "geom",
+        "source": []
+    },
+    {
+        "word": "giggle",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "giggly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gigolo",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gill",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gillling",
+        "source": []
+    },
+    {
+        "word": "gird",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "girding",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "girl",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "girly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "glam",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "glee",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "glory",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gnomon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "goalie",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "goggle",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "goggly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "golly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gone",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gong",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gonna",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "google",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "googly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "googol",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "goon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gorging",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gorgon",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "goring",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gory",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grid",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "gridiron",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grill",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grim",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "grin",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grind",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grinding",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grinning",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grog",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "groggily",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "groggy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "groin",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "groom",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "grooming",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "groovy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grow",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "growing",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grown",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "grudging",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "guar",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "guard",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "guardian",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "guarding",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "guiding",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gumming",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gunning",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "guru",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "gyro",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "hamachi",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "hang",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "haptic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "hatch",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "hatchet",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "hate",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "hath",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "hatha",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "heap",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "heat",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "heath",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "hectic",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "heliacal",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "helical",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "hematite",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "heme",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "henge",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "henna",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hepatic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "hepcat",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "hewed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hewn",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hexagon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hick",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hickey",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hike",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hill",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "hilly",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hilt",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "hint",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "hippie",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "hitch",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "hobbit",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "hoedown",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hogan",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hone",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "honeydew",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "howdy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ibid",
+        "source": []
+    },
+    {
+        "word": "icemen",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "icicle",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "icily",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "icky",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "idea",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ideate",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ideated",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "idiom",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "idiot",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "idol",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "igloo",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ignoring",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "iguana",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ileum",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "iliac",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ilium",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "illegal",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "illy",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "imam",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "immediacy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "imminence",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "immuring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "impel",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "impeller",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "imper",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "imperf",
+        "source": []
+    },
+    {
+        "word": "imperil",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "inanely",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "incipience",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "incl",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "incline",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "indoor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ingrown",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "inhibit",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "inhibition",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "initio",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "inlaid",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "inland",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "inlay",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "inline",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "inner",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "innie",
+        "source": []
+    },
+    {
+        "word": "innit",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "into",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "intuit",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "intuition",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "inuring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "inurn",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "inurning",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ipecac",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "irenic",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "iron",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ironing",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ironwood",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ital",
+        "source": []
+    },
+    {
+        "word": "itch",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "jocular",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "juror",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "kick",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "kicky",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "kike",
+        "source": []
+    },
+    {
+        "word": "kill",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "labia",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "labial",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "labor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "lace",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "lacy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "laic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "laical",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "laid",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lama",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "land",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lark",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "leach",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "leaf",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "leafage",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "leanly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "lech",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "leech",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "leer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "leerier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "leery",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lefty",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "legal",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "lemme",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lemur",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lenience",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "leper",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "levelly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "levy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "librarian",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "lice",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "lick",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "lido",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "liege",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "lien",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lieu",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "life",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "like",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "likely",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "lilac",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "lilo",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lilt",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lily",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "lima",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "lime",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "limier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "limp",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "limper",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "line",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lineally",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "linen",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "liner",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lino",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lint",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lion",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lire",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lively",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "llama",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "load",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "loaf",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "local",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "loco",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "loft",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "loge",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "logo",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "logroll",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "logy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "loin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lolcat",
+        "source": []
+    },
+    {
+        "word": "loll",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "loop",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "loot",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lope",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "lotion",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lotto",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lull",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lulu",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lump",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lumpier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lure",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lurgy",
+        "source": []
+    },
+    {
+        "word": "lyre",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "macadam",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "macadamia",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mace",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "maced",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mache",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "machete",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "madam",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "madame",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "made",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "madman",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "magi",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "magic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "magical",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "magically",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "magma",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mahimahi",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "maid",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "mail",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "maim",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "maimed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "main",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mainland",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "malic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "malicee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mall",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mama",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mamma",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mammal",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "manatee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mandala",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mandolin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mania",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "manna",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "manta",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "marijuana",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "marina",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "marinara",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "marm",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "match",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mate",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "math",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "matte",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mayday",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mead",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "meant",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "meat",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mecca",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "media",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "meet",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "melee",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "meme",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mentee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mercer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mere",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mermen",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "merrier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "meta",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mete",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mica",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "mice",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "midday",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "midi",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "midland",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mien",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mild",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mile",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "miler",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "milieu",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mill",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "miller",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mime",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mimic",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "miming",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mince",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mincer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mind",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mine",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "miner",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mini",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "minim",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "minima",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "minimum",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mining",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "minion",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "minor",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "minoring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mire",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mirier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mirin",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "miring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mirror",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mirroring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "modal",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mold",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "monad",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mono",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mononym",
+        "source": []
+    },
+    {
+        "word": "mood",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mooing",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "moon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mooning",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "moor",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mooring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mope",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "morn",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "morning",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "moron",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mourn",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mourning",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mugging",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mule",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mull",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "mumu",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mungo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "murmur",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "murmuring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "muumuu",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "myalgia",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "myalgic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "naan",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "naiad",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "naively",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "nametape",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "nana",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "nanny",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "narrator",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "natal",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "natant",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "natl",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "navy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "neat",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "neaten",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "negro",
+        "source": []
+    },
+    {
+        "word": "nene",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "neon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "neut",
+        "source": []
+    },
+    {
+        "word": "nice",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nicer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "niece",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nigiri",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "nine",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ninepin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ninja",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ninny",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ninth",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nipper",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nippier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nipple",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nitty",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "nodal",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nohow",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "noir",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "nomad",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nonagon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "none",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "nonfat",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nonfatal",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "nonword",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "noon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "nori",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "norm",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "notion",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "novene",
+        "source": []
+    },
+    {
+        "word": "nudging",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "nutty",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "oarlock",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "obit",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "occur",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ocular",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "odor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "offal",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ogee",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ogle",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "okra",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "oleo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ollie",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "onion",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "onto",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "opcode",
+        "source": []
+    },
+    {
+        "word": "oracular",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "oral",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "orator",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "orca",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "orgy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "orig",
+        "source": []
+    },
+    {
+        "word": "origin",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "otic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "owed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "owned",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "oxen",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pace",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pact",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "pancetta",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pant",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "papa",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "patch",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pate",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "patent",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "patentee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "path",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pathetic",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pave",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "peace",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "peach",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "peat",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "peel",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "peeler",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "peen",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "peep",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pence",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pencil",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "penicillin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "penile",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "penmen",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pennant",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pent",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pentane",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "people",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "percipience",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "peril",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "perm",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "phat",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pica",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "piccata",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "picnic",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pieta",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pile",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pileup",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pill",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pimp",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pimple",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pimplier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pincer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pine",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pinier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pipeline",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pippin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pita",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pitapat",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pitch",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "pith",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "plebby",
+        "source": []
+    },
+    {
+        "word": "plop",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "plum",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "plume",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "plumier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "plump",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "plumper",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "poem",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pole",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "poll",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "polo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pome",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pomelo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pommel",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pomp",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pompom",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pool",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "poop",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pope",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "popup",
+        "source": []
+    },
+    {
+        "word": "preemie",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "preeminence",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "preen",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "prelim",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "premier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "premiere",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "prim",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "prime",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "primer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "primmer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "primp",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "prince",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "princelier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "principle",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pron",
+        "source": []
+    },
+    {
+        "word": "prov",
+        "source": []
+    },
+    {
+        "word": "puce",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "puerile",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pule",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pull",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "puller",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pulp",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pulpier",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pummel",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "pupil",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "purl",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "purlieu",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "purple",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "purpler",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "quot",
+        "source": []
+    },
+    {
+        "word": "rabbi",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rabbit",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rack",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "radar",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "radii",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "raft",
+        "source": [
+            "latimes",
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "raid",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rain",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "raja",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rani",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rant",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rattan",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rcpt",
+        "source": []
+    },
+    {
+        "word": "recline",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "recliner",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "reel",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rein",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "reline",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rely",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rennin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "repel",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "repine",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "retry",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "retweet",
+        "source": []
+    },
+    {
+        "word": "rework",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ribbit",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ridding",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ridging",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "riding",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rigging",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rigid",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rigor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rile",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rill",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rime",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rimming",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rind",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ring",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ringing",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ripen",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ripple",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "roar",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "robocall",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rock",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rococo",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "rolf",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "roll",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "roma",
+        "source": []
+    },
+    {
+        "word": "rondo",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "rood",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "roof",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "room",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rooming",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "root",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rota",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rotor",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rower",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rowing",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "ruefully",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ruffly",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ruin",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ruing",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ruining",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rule",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "ruler",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rumor",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rumoring",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rumple",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rung",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "running",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "rutty",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tace",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tacet",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "tach",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "tache",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tacit",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tact",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "tactful",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tactfully",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tactic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "talc",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tall",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "talon",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tame",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tamp",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tantra",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tapa",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "tape",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "tarn",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "taro",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tarot",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tart",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tartan",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tartar",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tattoo",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "taxi",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "taxied",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "teabag",
+        "source": []
+    },
+    {
+        "word": "teach",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "team",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "teammate",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "teat",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "tech",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "techie",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "teed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "teem",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "teen",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "teepee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "teeth",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "teethe",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "teff",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "telly",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "temp",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tempt",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tenant",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tenement",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tenet",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tent",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tepee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "terry",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "text",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "texted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "that",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "thatch",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "thee",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "them",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "thematic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "theme",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "theta",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "thin",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tibia",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tibial",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tide",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tided",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tidied",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tied",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "tiff",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "till",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tilt",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tinct",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tinny",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tint",
+        "source": [
+            "spellsbee",
+            "latimes"
+        ]
+    },
+    {
+        "word": "tiny",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tithe",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "titivate",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "toed",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "toff",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "toffee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "toil",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "toll",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tonal",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tonic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tony",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tool",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "toon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "toot",
+        "source": [
+            "latimes",
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "tooted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "torn",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tort",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "total",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tote",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "toted",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "toto",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tout",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "toxified",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "trey",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "triad",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tribal",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "troll",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tron",
+        "source": [
+            "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "trot",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "truly",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tuition",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tunic",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "turfy",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "tutti",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tutty",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tutu",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "tycoon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "umami",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "unarm",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "unction",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "uncut",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "undid",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ungag",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "unit",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "unity",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "univ",
+        "source": []
+    },
+    {
+        "word": "unjam",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "unman",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "unrig",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "unrigging",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "unto",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "uranium",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "urdu",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "urging",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "utterly",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "vacate",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "vainly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "valley",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vape",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "veiny",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "venally",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "venially",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vigil",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vigor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vilely",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "villainy",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "viny",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vinyl",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "virology",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vivace",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "vlog",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wanna",
+        "source": []
+    },
+    {
+        "word": "wedded",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "weed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "weeded",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "weedy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "week",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "weeny",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "weer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "wend",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wended",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "were",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "whee",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "when",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "whew",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "whey",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wiring",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "woke",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "wonned",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wood",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wooded",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wooden",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "woody",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wooed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wooer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "woof",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "woofer",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "woohoo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "word",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wording",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wore",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "work",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "worker",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "workforce",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "workweek",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "worn",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wowed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "wreck",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "wrecker",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "wring",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wringing",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wrong",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wrongdoing",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "wronging",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "xenon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "yell",
+        "source": [
+            "spellsbee",
+            "nyt"
+        ]
+    },
+    {
+        "word": "yogi",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "yuca",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "yucca",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "yule",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "yurt",
+        "source": [
+            "spellsbee"
+        ]
+    }
+];
