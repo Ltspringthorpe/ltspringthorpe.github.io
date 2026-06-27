@@ -263,7 +263,25 @@ var wordList =
         ]
     },
     {
+        "word": "agog",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "agony",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "ahem",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "ahoy",
         "source": [
             "latimes"
         ]
@@ -287,9 +305,21 @@ var wordList =
         ]
     },
     {
+        "word": "airily",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "airman",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "airy",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -409,6 +439,18 @@ var wordList =
         ]
     },
     {
+        "word": "ammo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "among",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "amyl",
         "source": [
             "nyt"
@@ -439,7 +481,19 @@ var wordList =
         ]
     },
     {
+        "word": "annoy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "anon",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "anonym",
         "source": [
             "latimes"
         ]
@@ -464,7 +518,9 @@ var wordList =
     },
     {
         "word": "anyhoo",
-        "source": []
+        "source": [
+            "latimes"
+        ]
     },
     {
         "word": "aorta",
@@ -517,6 +573,7 @@ var wordList =
     {
         "word": "aria",
         "source": [
+            "spellsbee",
             "nyt"
         ]
     },
@@ -528,6 +585,12 @@ var wordList =
     },
     {
         "word": "arrant",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "arrival",
         "source": [
             "spellsbee"
         ]
@@ -545,6 +608,12 @@ var wordList =
         ]
     },
     {
+        "word": "atilt",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "atoll",
         "source": [
             "spellsbee"
@@ -552,6 +621,18 @@ var wordList =
     },
     {
         "word": "atonal",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "atria",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "atrial",
         "source": [
             "spellsbee"
         ]
@@ -630,8 +711,20 @@ var wordList =
         ]
     },
     {
+        "word": "avail",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "avdp",
         "source": []
+    },
+    {
+        "word": "aviary",
+        "source": [
+            "spellsbee"
+        ]
     },
     {
         "word": "aviate",
@@ -731,6 +824,14 @@ var wordList =
         ]
     },
     {
+        "word": "bellow",
+        "source": "nyt"
+    },
+    {
+        "word": "below",
+        "source": "nyt"
+    },
+    {
         "word": "bibb",
         "source": [
             "latimes"
@@ -760,6 +861,10 @@ var wordList =
         "source": [
             "spellsbee"
         ]
+    },
+    {
+        "word": "billow",
+        "source": "nyt"
     },
     {
         "word": "biol",
@@ -808,6 +913,10 @@ var wordList =
         "source": []
     },
     {
+        "word": "blew",
+        "source": "nyt"
+    },
+    {
         "word": "blin",
         "source": [
             "latimes"
@@ -819,6 +928,14 @@ var wordList =
             "spellsbee",
             "latimes"
         ]
+    },
+    {
+        "word": "blow",
+        "source": "nyt"
+    },
+    {
+        "word": "blowpipe",
+        "source": "nyt"
     },
     {
         "word": "boar",
@@ -855,6 +972,18 @@ var wordList =
         "source": [
             "nyt"
         ]
+    },
+    {
+        "word": "bowel",
+        "source": "nyt"
+    },
+    {
+        "word": "bowl",
+        "source": "nyt"
+    },
+    {
+        "word": "bowwow",
+        "source": "nyt"
     },
     {
         "word": "brail",
@@ -2458,6 +2587,10 @@ var wordList =
         ]
     },
     {
+        "word": "elbow",
+        "source": "nyt"
+    },
+    {
         "word": "elem",
         "source": [
             "spellsbee"
@@ -3104,6 +3237,12 @@ var wordList =
         ]
     },
     {
+        "word": "gaga",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "gage",
         "source": [
             "latimes"
@@ -3124,12 +3263,14 @@ var wordList =
     {
         "word": "gamma",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
     {
         "word": "gamy",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
@@ -3507,7 +3648,19 @@ var wordList =
         ]
     },
     {
+        "word": "hammy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "hang",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "hangman",
         "source": [
             "latimes"
         ]
@@ -3827,6 +3980,12 @@ var wordList =
         ]
     },
     {
+        "word": "ilia",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "iliac",
         "source": [
             "nyt"
@@ -4066,7 +4225,9 @@ var wordList =
     },
     {
         "word": "ital",
-        "source": []
+        "source": [
+            "spellsbee"
+        ]
     },
     {
         "word": "itch",
@@ -4158,6 +4319,18 @@ var wordList =
         ]
     },
     {
+        "word": "lair",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "laity",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "lama",
         "source": [
             "nyt"
@@ -4165,6 +4338,12 @@ var wordList =
     },
     {
         "word": "land",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lariat",
         "source": [
             "spellsbee"
         ]
@@ -4278,6 +4457,12 @@ var wordList =
         ]
     },
     {
+        "word": "liar",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "librarian",
         "source": [
             "latimes"
@@ -4359,6 +4544,7 @@ var wordList =
     {
         "word": "lily",
         "source": [
+            "spellsbee",
             "latimes",
             "nyt"
         ]
@@ -4431,6 +4617,12 @@ var wordList =
     },
     {
         "word": "lion",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "lira",
         "source": [
             "spellsbee"
         ]
@@ -4682,11 +4874,18 @@ var wordList =
     {
         "word": "magma",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
     {
         "word": "mahimahi",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mahogany",
         "source": [
             "latimes"
         ]
@@ -4749,12 +4948,14 @@ var wordList =
     {
         "word": "mama",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
     {
         "word": "mamma",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
@@ -4762,6 +4963,18 @@ var wordList =
         "word": "mammal",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "mamo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mana",
+        "source": [
+            "latimes"
         ]
     },
     {
@@ -4783,6 +4996,24 @@ var wordList =
         ]
     },
     {
+        "word": "manga",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mango",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "mangy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "mania",
         "source": [
             "nyt"
@@ -4791,13 +5022,26 @@ var wordList =
     {
         "word": "manna",
         "source": [
+            "latimes",
             "nyt"
+        ]
+    },
+    {
+        "word": "mano",
+        "source": [
+            "latimes"
         ]
     },
     {
         "word": "manta",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "many",
+        "source": [
+            "latimes"
         ]
     },
     {
@@ -4852,6 +5096,12 @@ var wordList =
         "word": "mayday",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "mayo",
+        "source": [
+            "latimes"
         ]
     },
     {
@@ -5154,6 +5404,12 @@ var wordList =
         ]
     },
     {
+        "word": "moan",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "modal",
         "source": [
             "spellsbee"
@@ -5166,6 +5422,12 @@ var wordList =
         ]
     },
     {
+        "word": "momma",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "monad",
         "source": [
             "spellsbee"
@@ -5173,6 +5435,12 @@ var wordList =
     },
     {
         "word": "mono",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "monogamy",
         "source": [
             "latimes"
         ]
@@ -5321,6 +5589,12 @@ var wordList =
         ]
     },
     {
+        "word": "naggy",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "naiad",
         "source": [
             "spellsbee"
@@ -5348,6 +5622,7 @@ var wordList =
     {
         "word": "nanny",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
@@ -5856,6 +6131,10 @@ var wordList =
         ]
     },
     {
+        "word": "peewee",
+        "source": "nyt"
+    },
+    {
         "word": "pence",
         "source": [
             "spellsbee"
@@ -5928,6 +6207,10 @@ var wordList =
         ]
     },
     {
+        "word": "pewee",
+        "source": "nyt"
+    },
+    {
         "word": "phat",
         "source": [
             "nyt"
@@ -5974,6 +6257,10 @@ var wordList =
         "source": [
             "spellsbee"
         ]
+    },
+    {
+        "word": "pillow",
+        "source": "nyt"
     },
     {
         "word": "pimp",
@@ -6056,6 +6343,10 @@ var wordList =
         "source": [
             "latimes"
         ]
+    },
+    {
+        "word": "plow",
+        "source": "nyt"
     },
     {
         "word": "plum",
@@ -6162,6 +6453,10 @@ var wordList =
     {
         "word": "popup",
         "source": []
+    },
+    {
+        "word": "powwow",
+        "source": "nyt"
     },
     {
         "word": "preemie",
@@ -6381,6 +6676,12 @@ var wordList =
         ]
     },
     {
+        "word": "rail",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "rain",
         "source": [
             "nyt"
@@ -6400,6 +6701,12 @@ var wordList =
     },
     {
         "word": "rant",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rarity",
         "source": [
             "spellsbee"
         ]
@@ -6480,6 +6787,12 @@ var wordList =
     },
     {
         "word": "rework",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rial",
         "source": [
             "spellsbee"
         ]
@@ -6576,6 +6889,24 @@ var wordList =
     },
     {
         "word": "ripple",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rival",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "rivalry",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "riyal",
         "source": [
             "spellsbee"
         ]
@@ -6818,9 +7149,21 @@ var wordList =
         ]
     },
     {
+        "word": "tail",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "talc",
         "source": [
             "latimes"
+        ]
+    },
+    {
+        "word": "tali",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -7128,6 +7471,12 @@ var wordList =
         ]
     },
     {
+        "word": "tiara",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "tibia",
         "source": [
             "latimes"
@@ -7342,6 +7691,24 @@ var wordList =
         ]
     },
     {
+        "word": "trail",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "trait",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "travail",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "trey",
         "source": [
             "spellsbee"
@@ -7354,9 +7721,45 @@ var wordList =
         ]
     },
     {
+        "word": "trial",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "tribal",
         "source": [
             "latimes"
+        ]
+    },
+    {
+        "word": "trill",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "trivia",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "trivial",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "triviality",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "trivially",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -7575,6 +7978,12 @@ var wordList =
         ]
     },
     {
+        "word": "vial",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "vigil",
         "source": [
             "nyt"
@@ -7593,9 +8002,21 @@ var wordList =
         ]
     },
     {
+        "word": "villa",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "villainy",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "villi",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -7611,15 +8032,63 @@ var wordList =
         ]
     },
     {
+        "word": "viral",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "virility",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "virology",
         "source": [
             "nyt"
         ]
     },
     {
+        "word": "vita",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "vital",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "vitality",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "vitally",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "viva",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "vivace",
         "source": [
             "latimes"
+        ]
+    },
+    {
+        "word": "vivaria",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -7669,10 +8138,22 @@ var wordList =
         ]
     },
     {
+        "word": "weep",
+        "source": "nyt"
+    },
+    {
+        "word": "weepie",
+        "source": "nyt"
+    },
+    {
         "word": "weer",
         "source": [
             "spellsbee"
         ]
+    },
+    {
+        "word": "well",
+        "source": "nyt"
     },
     {
         "word": "wend",
@@ -7717,10 +8198,30 @@ var wordList =
         ]
     },
     {
+        "word": "wile",
+        "source": "nyt"
+    },
+    {
+        "word": "will",
+        "source": "nyt"
+    },
+    {
+        "word": "willow",
+        "source": "nyt"
+    },
+    {
+        "word": "wipe",
+        "source": "nyt"
+    },
+    {
         "word": "wiring",
         "source": [
             "nyt"
         ]
+    },
+    {
+        "word": "wobble",
+        "source": "nyt"
     },
     {
         "word": "woke",
@@ -7787,6 +8288,10 @@ var wordList =
         "source": [
             "latimes"
         ]
+    },
+    {
+        "word": "wool",
+        "source": "nyt"
     },
     {
         "word": "word",
@@ -7891,10 +8396,28 @@ var wordList =
         ]
     },
     {
+        "word": "yahoo",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "yang",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "yell",
         "source": [
             "spellsbee",
             "nyt"
+        ]
+    },
+    {
+        "word": "yoga",
+        "source": [
+            "latimes"
         ]
     },
     {
