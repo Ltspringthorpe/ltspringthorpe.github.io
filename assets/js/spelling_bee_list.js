@@ -178,6 +178,12 @@ var wordList =
         ]
     },
     {
+        "word": "adenine",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "adman",
         "source": [
             "spellsbee"
@@ -289,12 +295,14 @@ var wordList =
     {
         "word": "aide",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
     {
         "word": "aided",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
@@ -541,7 +549,19 @@ var wordList =
         ]
     },
     {
+        "word": "apian",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "apiece",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "appendix",
         "source": [
             "latimes"
         ]
@@ -730,6 +750,12 @@ var wordList =
         "word": "aviate",
         "source": [
             "latimes"
+        ]
+    },
+    {
+        "word": "await",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -2032,6 +2058,7 @@ var wordList =
     {
         "word": "data",
         "source": [
+            "spellsbee",
             "latimes"
         ]
     },
@@ -2096,6 +2123,30 @@ var wordList =
         ]
     },
     {
+        "word": "delve",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "delved",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "delving",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "denied",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "dept",
         "source": []
     },
@@ -2125,6 +2176,42 @@ var wordList =
         "word": "deuce",
         "source": [
             "spellsbee"
+        ]
+    },
+    {
+        "word": "devein",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deveined",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deveining",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "devil",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deviled",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "deviling",
+        "source": [
+            "nyt"
         ]
     },
     {
@@ -2206,6 +2293,7 @@ var wordList =
     {
         "word": "died",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
@@ -2240,6 +2328,30 @@ var wordList =
         ]
     },
     {
+        "word": "dine",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dined",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dinned",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "dipped",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "dirt",
         "source": [
             "latimes"
@@ -2247,6 +2359,72 @@ var wordList =
     },
     {
         "word": "ditto",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dive",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dived",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "divide",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "divided",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dividend",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "dividing",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "divine",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "divined",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "diving",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "divining",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "divvied",
         "source": [
             "nyt"
         ]
@@ -2598,7 +2776,15 @@ var wordList =
     },
     {
         "word": "elev",
-        "source": []
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "eleven",
+        "source": [
+            "nyt"
+        ]
     },
     {
         "word": "elope",
@@ -2684,6 +2870,12 @@ var wordList =
         "source": []
     },
     {
+        "word": "endive",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "endow",
         "source": [
             "latimes"
@@ -2702,7 +2894,31 @@ var wordList =
         ]
     },
     {
+        "word": "enliven",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "enlivened",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "enlivening",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "entente",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "envied",
         "source": [
             "nyt"
         ]
@@ -2752,7 +2968,31 @@ var wordList =
         ]
     },
     {
+        "word": "even",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "evened",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "evening",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "evenly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "evil",
         "source": [
             "nyt"
         ]
@@ -3239,6 +3479,7 @@ var wordList =
     {
         "word": "gaga",
         "source": [
+            "spellsbee",
             "latimes"
         ]
     },
@@ -3252,6 +3493,12 @@ var wordList =
         "word": "gaggle",
         "source": [
             "latimes"
+        ]
+    },
+    {
+        "word": "gait",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -3293,6 +3540,12 @@ var wordList =
         ]
     },
     {
+        "word": "gawd",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "gene",
         "source": [
             "latimes"
@@ -3305,6 +3558,18 @@ var wordList =
     {
         "word": "geom",
         "source": []
+    },
+    {
+        "word": "ghat",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "gigawatt",
+        "source": [
+            "spellsbee"
+        ]
     },
     {
         "word": "giggle",
@@ -3354,6 +3619,24 @@ var wordList =
     },
     {
         "word": "girly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "give",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "given",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "giving",
         "source": [
             "nyt"
         ]
@@ -3641,6 +3924,12 @@ var wordList =
         ]
     },
     {
+        "word": "hadith",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "hamachi",
         "source": [
             "latimes",
@@ -3695,6 +3984,7 @@ var wordList =
     {
         "word": "hath",
         "source": [
+            "spellsbee",
             "latimes",
             "nyt"
         ]
@@ -3922,6 +4212,7 @@ var wordList =
     {
         "word": "idea",
         "source": [
+            "latimes",
             "nyt"
         ]
     },
@@ -4063,6 +4354,12 @@ var wordList =
         ]
     },
     {
+        "word": "inane",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "inanely",
         "source": [
             "nyt"
@@ -4084,6 +4381,30 @@ var wordList =
         "word": "incline",
         "source": [
             "spellsbee"
+        ]
+    },
+    {
+        "word": "indeed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "index",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "indexed",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "indie",
+        "source": [
+            "latimes"
         ]
     },
     {
@@ -4141,6 +4462,12 @@ var wordList =
         ]
     },
     {
+        "word": "inned",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "inner",
         "source": [
             "spellsbee"
@@ -4148,7 +4475,9 @@ var wordList =
     },
     {
         "word": "innie",
-        "source": []
+        "source": [
+            "latimes"
+        ]
     },
     {
         "word": "innit",
@@ -4194,6 +4523,24 @@ var wordList =
         ]
     },
     {
+        "word": "inveigle",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "inveigled",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "inveigling",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "ipecac",
         "source": [
             "latimes"
@@ -4233,6 +4580,12 @@ var wordList =
         "word": "itch",
         "source": [
             "latimes",
+            "nyt"
+        ]
+    },
+    {
+        "word": "ivied",
+        "source": [
             "nyt"
         ]
     },
@@ -4445,7 +4798,37 @@ var wordList =
         ]
     },
     {
+        "word": "levee",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "level",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "leveled",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "leveling",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "levelly",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "levied",
         "source": [
             "nyt"
         ]
@@ -4634,7 +5017,49 @@ var wordList =
         ]
     },
     {
+        "word": "live",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "lived",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "lively",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "liven",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "livened",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "livening",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "livid",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "living",
         "source": [
             "nyt"
         ]
@@ -5597,6 +6022,7 @@ var wordList =
     {
         "word": "naiad",
         "source": [
+            "latimes",
             "spellsbee"
         ]
     },
@@ -5715,12 +6141,14 @@ var wordList =
     {
         "word": "nine",
         "source": [
+            "latimes",
             "spellsbee"
         ]
     },
     {
         "word": "ninepin",
         "source": [
+            "latimes",
             "spellsbee"
         ]
     },
@@ -5743,6 +6171,12 @@ var wordList =
         ]
     },
     {
+        "word": "nipped",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "nipper",
         "source": [
             "spellsbee"
@@ -5762,6 +6196,12 @@ var wordList =
     },
     {
         "word": "nitty",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "nixed",
         "source": [
             "latimes"
         ]
@@ -6026,9 +6466,33 @@ var wordList =
         ]
     },
     {
+        "word": "paid",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pain",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pained",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "pancetta",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "panini",
+        "source": [
+            "latimes"
         ]
     },
     {
@@ -6235,6 +6699,12 @@ var wordList =
         ]
     },
     {
+        "word": "pied",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "pieta",
         "source": [
             "latimes"
@@ -6281,6 +6751,12 @@ var wordList =
         ]
     },
     {
+        "word": "pina",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
         "word": "pincer",
         "source": [
             "spellsbee"
@@ -6289,13 +6765,50 @@ var wordList =
     {
         "word": "pine",
         "source": [
+            "latimes",
             "spellsbee"
+        ]
+    },
+    {
+        "word": "pined",
+        "source": [
+            "latimes"
         ]
     },
     {
         "word": "pinier",
         "source": [
             "spellsbee"
+        ]
+    },
+    {
+        "word": "pinna",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pinnae",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pinned",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "pipe",
+        "source": [
+            "latimes"
+        ]
+    },
+    {
+        "word": "piped",
+        "source": [
+            "latimes"
         ]
     },
     {
@@ -6307,6 +6820,7 @@ var wordList =
     {
         "word": "pippin",
         "source": [
+            "latimes",
             "spellsbee"
         ]
     },
@@ -6332,6 +6846,12 @@ var wordList =
         "word": "pith",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "pixie",
+        "source": [
+            "latimes"
         ]
     },
     {
@@ -7149,6 +7669,12 @@ var wordList =
         ]
     },
     {
+        "word": "taiga",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "tail",
         "source": [
             "spellsbee"
@@ -7421,6 +7947,7 @@ var wordList =
     {
         "word": "that",
         "source": [
+            "spellsbee",
             "latimes",
             "nyt"
         ]
@@ -7430,6 +7957,12 @@ var wordList =
         "source": [
             "latimes",
             "nyt"
+        ]
+    },
+    {
+        "word": "thaw",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -7516,6 +8049,12 @@ var wordList =
         "word": "tiff",
         "source": [
             "nyt"
+        ]
+    },
+    {
+        "word": "tightwad",
+        "source": [
+            "spellsbee"
         ]
     },
     {
@@ -7960,13 +8499,91 @@ var wordList =
         ]
     },
     {
+        "word": "vegged",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "veggie",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vegging",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "veil",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "veiled",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "veiling",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vein",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "veined",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "veining",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "veiny",
         "source": [
             "nyt"
         ]
     },
     {
+        "word": "veld",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "venally",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vend",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vended",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vending",
         "source": [
             "nyt"
         ]
@@ -7984,6 +8601,12 @@ var wordList =
         ]
     },
     {
+        "word": "vied",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "vigil",
         "source": [
             "nyt"
@@ -7991,6 +8614,12 @@ var wordList =
     },
     {
         "word": "vigor",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
+        "word": "vile",
         "source": [
             "nyt"
         ]
@@ -8017,6 +8646,12 @@ var wordList =
         "word": "villi",
         "source": [
             "spellsbee"
+        ]
+    },
+    {
+        "word": "vine",
+        "source": [
+            "nyt"
         ]
     },
     {
@@ -8092,14 +8727,38 @@ var wordList =
         ]
     },
     {
+        "word": "vivid",
+        "source": [
+            "nyt"
+        ]
+    },
+    {
         "word": "vlog",
         "source": [
             "nyt"
         ]
     },
     {
+        "word": "wadi",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
+        "word": "wait",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "wanna",
         "source": []
+    },
+    {
+        "word": "watt",
+        "source": [
+            "spellsbee"
+        ]
     },
     {
         "word": "wedded",
@@ -8174,6 +8833,12 @@ var wordList =
         ]
     },
     {
+        "word": "what",
+        "source": [
+            "spellsbee"
+        ]
+    },
+    {
         "word": "whee",
         "source": [
             "latimes"
@@ -8195,6 +8860,12 @@ var wordList =
         "word": "whey",
         "source": [
             "latimes"
+        ]
+    },
+    {
+        "word": "wigwag",
+        "source": [
+            "spellsbee"
         ]
     },
     {
