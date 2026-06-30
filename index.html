@@ -240,55 +240,91 @@
             </section>
 
             <!-- Mounts -->
-            <section id="mounts">
-                <div id="mountsContainer" class="hidden">
-                    <h2>Cheesy Poofs</h2>
-                    <div id="inputParams">
-                        <div>
-                            <div>Regional Info:</div>
-                            <div style="width: 32%; display: inline-block;">
-                                <label>Region</label>
-                                <input id="region" type="text" name="region" value="us" />
-                            </div>
-                            <div style="width: 32%; display: inline-block;">
-                                <label>Namespace</label>
-                                <input id="namespace" type="text" name="namespace" value="profile-us" />
-                            </div>
-                            <div style="width: 32%; display: inline-block;">
-                                <label>Locale</label>
-                                <input id="locale" type="text" name="locale" value="en_US" />
-                            </div>
-                        </div><br>
+            <section id="mounts" class="hidden">
+                <h2>Cheesy Poofs</h2>
+                <div id="inputParams">
+                    <div>
+                        <div>Regional Info:</div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Region</label>
+                            <input id="region" type="text" name="region" value="us" />
+                        </div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Namespace</label>
+                            <input id="namespace" type="text" name="namespace" value="profile-us" />
+                        </div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Locale</label>
+                            <input id="locale" type="text" name="locale" value="en_US" />
+                        </div>
+                    </div><br>
 
-                        <div>
-                            <div>Character 1:</div>
-                            <div style="width: 32%; display: inline-block;">
-                                <label>Name*</label>
-                                <input id="toon1" type="text" name="toon_1" value="atmiste" />
-                            </div>
-                            <div style="width: 32%; display: inline-block;">
-                                <label>Realm*</label>
-                                <input id="realm1" type="text" name="realm_1" value="doomhammer" />
-                            </div>
-                        </div><br>
+                    <div>
+                        <div>Character 1:</div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Name*</label>
+                            <input id="toon1" type="text" name="toon_1" value="atmiste" />
+                        </div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Realm*</label>
+                            <input id="realm1" type="text" name="realm_1" value="doomhammer" />
+                        </div>
+                    </div><br>
 
-                        <div>
-                            <div>Character 2:</div>
-                            <div style="width: 32%; display: inline-block;">
-                                <label>Name*</label>
-                                <input id="toon2" type="text" name="toon_2" value="mordoq" />
-                            </div>
-                            <div style="width: 32%; display: inline-block;">
-                                <label>Realm*</label>
-                                <input id="realm2" type="text" name="realm_2" value="doomhammer" />
-                            </div>
-                        </div><br>
+                    <div>
+                        <div>Character 2:</div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Name*</label>
+                            <input id="toon2" type="text" name="toon_2" value="mordoq" />
+                        </div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Realm*</label>
+                            <input id="realm2" type="text" name="realm_2" value="doomhammer" />
+                        </div>
+                    </div><br>
 
-                        <input id="go" type="submit" value="GO!" style="width: 100px;" />
-                    </div>
-
-                    <div id="lists" style="margin-top: 24px;"></div>
+                    <input id="go" type="submit" value="GO!" style="width: 100px;" />
                 </div>
+
+                <div id="lists" style="margin-top: 24px;"></div>
+            </section>
+
+            <!-- Spelling Bee -->
+            <section id="spellingBee" class="hidden">
+                <h2>Word Blossom Solver</h2>
+                <div id="inputParamsBee">
+                    <div>
+                        <div>Regional Info:</div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Region</label>
+                            <input id="region" type="text" name="region" value="us" />
+                        </div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Namespace</label>
+                            <input id="namespace" type="text" name="namespace" value="profile-us" />
+                        </div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Locale</label>
+                            <input id="locale" type="text" name="locale" value="en_US" />
+                        </div>
+                    </div><br>
+
+                    <div>
+                        <div>Character 1:</div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Name*</label>
+                            <input id="toon1" type="text" name="toon_1" value="atmiste" />
+                        </div>
+                        <div style="width: 32%; display: inline-block;">
+                            <label>Realm*</label>
+                            <input id="realm1" type="text" name="realm_1" value="doomhammer" />
+                        </div>
+                    </div><br>
+
+                    <input id="go" type="submit" value="GO!" style="width: 100px;" />
+                </div>
+
+                <div id="lists" style="margin-top: 24px;"></div>
             </section>
         </div>
 
@@ -297,7 +333,8 @@
             <div class="inner">
                 <ul class="copyright">
                     <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-                    <li><a id="mountsBtn" href="#mounts" onclick="">Mounts</a></li>
+                    <!-- <li><a id="mountsBtn" href="#mounts" onclick="">Mounts</a></li> -->
+                    <!-- <li><a id="spellingBeeBtn" href="#spellingbee" onclick="">Word Blossom Solver</a></li> -->
                     <li><a id="q3mapsBtn" href="./q3maps.html" onclick="">Q3Maps</a></li>
                 </ul>
             </div>
@@ -311,5 +348,7 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/mounts.js"></script>
+        <script src="assets/js/spelling_bee_list.js"></script>
+        <script src="assets/js/spelling_bee.js"></script>
     </body>
 </html>

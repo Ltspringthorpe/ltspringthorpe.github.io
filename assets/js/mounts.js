@@ -22,7 +22,7 @@
     const client_secret = '55-97-67-66-72-72-121-105-110-106-55-113-79-52-78-76-109-66-119-99-70-53-70-79-85-107-50-111-111-79-83-77';
 
     $('#mountsBtn').on('click', function() {
-        $('#mountsContainer').toggleClass('hidden');
+        $('#mounts').toggleClass('hidden');
 
         $('#go').on('click', function() {
             $('#lists').empty();
