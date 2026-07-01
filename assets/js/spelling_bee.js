@@ -74,3 +74,6 @@ var solve = function(letters, source = '', orderBy = 'alphabetical') {
 // $('#spellingBeeBtn').on('click', function() {
 //     $('#spellingBee').toggleClass('hidden');
 // });
+
+// note for self:
+// NYT repeated word regex - \b([a-z]{4,})\1\b
