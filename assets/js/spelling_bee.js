@@ -11,6 +11,7 @@ var cleanList = function() {
                 newSource = newSource.concat(value[i].source);
             }
             newSource = [...new Set(newSource)];
+            newSource = newSource.sort();
             var newValue = [{ word: value[0].word, source: newSource }];
             groupedList[value[0].word] = newValue;
         }
