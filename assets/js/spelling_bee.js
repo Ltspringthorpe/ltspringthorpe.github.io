@@ -78,3 +78,4 @@ var solve = function(letters, source = '', orderBy = 'alphabetical') {
 
 // note for self:
 // NYT repeated word regex - \b([a-z]{4,})\1\b
+// jquery for scraping LA Times words - $('.word-inner-container').find('a').each(function() { console.log(this.innerHTML) })
