@@ -71,11 +71,27 @@ var solve = function(letters, source = '', orderBy = 'alphabetical') {
     return results;
 }
 
-// handle button click to toggle tool visibility
-// $('#spellingBeeBtn').on('click', function() {
-//     $('#spellingBee').toggleClass('hidden');
-// });
+/*
 
-// note for self:
-// NYT repeated word regex - \b([a-z]{4,})\1\b
-// jquery for scraping LA Times words - $('.word-inner-container').find('a').each(function() { console.log(this.innerHTML) })
+handle button click to toggle tool visibility -
+$('#spellingBeeBtn').on('click', function() {
+    $('#spellingBee').toggleClass('hidden');
+});
+
+NYT repeated word regex -
+\b([a-z]{4,})\1\b
+
+regex for find & replace -
+{\n        "word": "([a-z]*)",\n        "source": \[\n            "
+{ word: '$1', source: ['
+
+{\n        "word": "([a-z]*)",\n        "source": \[]\n    },
+{ word: '$1', source: [] },
+
+",\n            "
+', '
+
+"\n        \]\n    },
+'] },
+
+*/
