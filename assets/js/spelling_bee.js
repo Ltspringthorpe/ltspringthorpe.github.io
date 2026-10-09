@@ -79,7 +79,8 @@ $('#spellingBeeBtn').on('click', function() {
 });
 
 NYT repeated word regex -
-\b([a-z]{4,})\1\b
+\b([a-z]{4,})\1\n
+{ word: '$1', source: ['nyt'] },\n
 
 regex for find & replace -
 {\n        "word": "([a-z]*)",\n        "source": \[\n            "
