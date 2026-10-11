@@ -79,10 +79,15 @@ $('#spellingBeeBtn').on('click', function() {
 });
 
 NYT repeated word regex -
-\b([a-z]{4,})\1\n
-{ word: '$1', source: ['nyt'] },\n
+^(    )*([a-z]{4,})\2\n
+    { word: '$2', source: ['nyt'] },\n
 
-regex for find & replace -
+Spellsbee & LA Times regex -
+^(    )*([a-z]{4,})\b\n
+    { word: '$2', source: ['spellsbee'] },\n
+    { word: '$2', source: ['latimes'] },\n
+
+regex for cleaning the list -
 {\n        "word": "([a-z]*)",\n        "source": \[\n            "
 { word: '$1', source: ['
 
