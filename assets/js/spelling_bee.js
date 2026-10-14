@@ -79,7 +79,7 @@ $('#spellingBeeBtn').on('click', function() {
 });
 
 NYT repeated word regex -
-^(    )*([a-z]{4,})\2\n
+^(    )*([a-z]{4,})\2(\s\(pangram\))*\n
     { word: '$2', source: ['nyt'] },\n
 
 Spellsbee & LA Times regex -
