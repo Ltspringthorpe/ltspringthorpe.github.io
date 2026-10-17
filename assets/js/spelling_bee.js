@@ -31,6 +31,15 @@ var cleanList = function() {
         return i[0];
     });
 
+    newWordList = JSON.stringify(newWordList);
+    // console.log(newWordList);
+
+    newWordList = newWordList.replace(/\[{/g, `var wordList =\n[\n{`);
+    newWordList = newWordList.replace(/{"word":"([a-z]*)","source":\["/g, `    { word: '$1', source: ['`);
+    newWordList = newWordList.replace(/{"word":"([a-z]*)","source":\[]},/g ,`    { word: '$1', source: [] },\n`);
+    newWordList = newWordList.replace(/","/g, `', '`);
+    newWordList = newWordList.replace(/"\]},*/g, `'] },\n`);
+    newWordList += ';\n';
     return newWordList;
 }
 
@@ -86,18 +95,5 @@ Spellsbee & LA Times regex -
 ^(    )*([a-z]{4,})\b\n
     { word: '$2', source: ['spellsbee'] },\n
     { word: '$2', source: ['latimes'] },\n
-
-regex for cleaning the list -
-{\n        "word": "([a-z]*)",\n        "source": \[\n            "
-{ word: '$1', source: ['
-
-{\n        "word": "([a-z]*)",\n        "source": \[]\n    },
-{ word: '$1', source: [] },
-
-",\n            "
-', '
-
-"\n        \]\n    },
-'] },
 
 */
