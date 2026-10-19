@@ -31,16 +31,17 @@ var cleanList = function() {
         return i[0];
     });
 
-    newWordList = JSON.stringify(newWordList);
-    // console.log(newWordList);
+    // make it pretty for copy/pasting
+    // this won't be necessary once my wordlist is complete
+    var stringList = JSON.stringify(newWordList);
+    stringList = stringList.replace(/\[{/g, `var wordList =\n[\n{`);
+    stringList = stringList.replace(/{"word":"([a-z]*)","source":\["/g, `    { word: '$1', source: ['`);
+    stringList = stringList.replace(/{"word":"([a-z]*)","source":\[]},/g ,`    { word: '$1', source: [] },\n`);
+    stringList = stringList.replace(/","/g, `', '`);
+    stringList = stringList.replace(/"\]},*/g, `'] },\n`);
+    stringList += ';\n';
 
-    newWordList = newWordList.replace(/\[{/g, `var wordList =\n[\n{`);
-    newWordList = newWordList.replace(/{"word":"([a-z]*)","source":\["/g, `    { word: '$1', source: ['`);
-    newWordList = newWordList.replace(/{"word":"([a-z]*)","source":\[]},/g ,`    { word: '$1', source: [] },\n`);
-    newWordList = newWordList.replace(/","/g, `', '`);
-    newWordList = newWordList.replace(/"\]},*/g, `'] },\n`);
-    newWordList += ';\n';
-    return newWordList;
+    return stringList;
 }
 
 var solve = function(letters, source = '', orderBy = 'alphabetical') {
@@ -48,6 +49,16 @@ var solve = function(letters, source = '', orderBy = 'alphabetical') {
 
     // the magic letter is the first letter of the 'letters' input
     var magicLetter = letters[0];
+
+    if (typeof wordList === 'string') {
+        wordList = wordList.slice(15);
+        wordList = wordList.replaceAll('\n', '');
+        wordList = wordList.replaceAll('word:', '"word":');
+        wordList = wordList.replaceAll('source:', '"source":');
+        wordList = wordList.replaceAll(`'`, `"`);
+        wordList = wordList.replace('},];', '}]');
+        wordList = JSON.parse(wordList);
+    }
 
     for (var i = 0; i < wordList.length; i++) {
         let noMatch = false;
