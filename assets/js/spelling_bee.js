@@ -36,7 +36,6 @@ var cleanList = function() {
     var stringList = JSON.stringify(newWordList);
     stringList = stringList.replace(/\[{/g, `var wordList =\n[\n{`);
     stringList = stringList.replace(/{"word":"([a-z]*)","source":\["/g, `    { word: '$1', source: ['`);
-    stringList = stringList.replace(/{"word":"([a-z]*)","source":\[]},/g ,`    { word: '$1', source: [] },\n`);
     stringList = stringList.replace(/","/g, `', '`);
     stringList = stringList.replace(/"\]},*/g, `'] },\n`);
     stringList += ';\n';
